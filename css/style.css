@@ -1019,560 +1019,224 @@ a {
     margin-top: 5px;
   }
 }
-/* reset */
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Poppins", "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
+#step {
+  margin-bottom: 100px;
+  margin-top: -111px;
 }
-
-ul, ol, li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* tab 이동 */
-#skipNavi li a {
-  display: block;
-  width: 100%;
-  height: 40px;
-  background: #4b8ed5;
-  font: bold 15px/40px "arial";
-  color: #fff;
-  text-align: center;
-  position: fixed;
-  top: -40px;
-  left: 0;
-  z-index: 1;
-}
-#skipNavi li a.on {
-  top: 0;
-}
-
-/* header */
-#header2 {
-  width: 100%;
-  border-bottom: 1px solid #efefef;
-  position: relative;
-  padding-top: 50px;
-}
-#header2 .inner {
+#step .inner {
   width: 1180px;
-  height: 100px;
   margin: 0 auto;
-  position: relative;
-}
-#header2 .inner h1 {
-  position: absolute;
-  top: 50%;
-  margin-top: -25px;
-}
-#header2 .inner h1 a {
-  color: #111;
-  font-size: 30px;
-  display: block;
-}
-#header2 .inner .gnb {
-  text-align: center;
-  box-sizing: border-box;
+  height: 60px;
   font-size: 0;
-}
-#header2 .inner .gnb::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#header2 .inner .gnb > li {
-  transition: 0.5s;
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-}
-#header2 .inner .gnb > li > a {
-  display: block;
-  color: #333;
-  font-size: 16px;
-  width: 118px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-  font-weight: 600;
-}
-#header2 .inner .gnb > li > .subGnb {
-  position: absolute;
-  left: 0;
-  display: none;
-  font-weight: 300;
-  text-align: center;
-  width: 100%;
-}
-#header2 .inner .gnb > li > .subGnb > li {
-  position: relative;
-  transition: 0.5s;
-}
-#header2 .inner .gnb > li > .subGnb > li > a {
-  width: 100%;
-  height: 70px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 50px;
-  color: #777;
-  position: relative;
-  transition: 0.5s;
-  font-weight: 400;
-  padding: 5px;
-  box-sizing: border-box;
-}
-#header2 .inner .gnb > li > .subGnb > li > a::after {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
+  background: #eee;
   border-radius: 5px;
-  background: #568ded;
-  position: absolute;
-  right: -10px;
-  top: -3px;
-  transition: 0.5s;
-  opacity: 0;
+  overflow: hidden;
 }
-#header2 .inner .gnb > li > .subGnb > li > a:hover::after {
-  right: -5px;
-  opacity: 1;
-}
-#header2 .inner .gnb > li > .subGnb > li:hover a {
-  color: #568ded;
-  font-weight: 600;
-}
-#header2 .inner .gnb > li.on a {
-  color: #4086ff;
-  transition: 0.5s;
-}
-#header2 .inner .icons {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-#header2 .inner .icons a {
-  margin-left: 10px;
-  background-color: #eee;
-  width: 35px;
-  height: 35px;
+#step .inner span {
+  font-size: 14px;
   display: inline-block;
-  border-radius: 35px;
-  text-align: center;
-  line-height: 35px;
-  color: #777;
-}
-#header2 .inner .btnCall {
-  display: none;
-  width: 30px;
-  height: 25px;
-  position: absolute;
-  right: 0;
-  top: 50%;
+  width: 33.3333%;
+  height: 100%;
+  color: #888;
+  line-height: 60px;
   box-sizing: border-box;
-  margin-right: 0;
-  transform: translateY(-50%);
+  text-align: center;
 }
-#header2 .inner .btnCall::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#header2 .inner .btnCall span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-#header2 .inner .btnCall::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-#header2 .inner .snsMenu {
-  position: absolute;
-  top: -40px;
-  left: 0;
-}
-#header2 .inner .snsMenu li {
-  display: inline-block;
+#step .inner span b {
   margin-right: 10px;
-  background: #eee;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  text-align: center;
 }
-#header2 .inner .snsMenu li:last-child {
-  margin-right: 0;
-}
-#header2 .inner .snsMenu li a {
-  color: #777;
-  line-height: 26px;
-  font-size: 13px;
-}
-#header2 .inner .login {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  font-size: 0;
-}
-#header2 .inner .login li {
-  display: inline-block;
-  position: relative;
-  background: #eee;
-  border-radius: 35px;
-}
-#header2 .inner .login li a {
-  display: block;
-  font-size: 11px;
-  color: #777;
-  font-weight: 300;
-  padding: 4px 13px;
-  box-sizing: border-box;
-}
-#header2 .inner .login li a img {
+#step .inner span img {
   width: 20px;
   vertical-align: middle;
-}
-#header2 .inner .login li:nth-child(1) {
-  border-radius: 35px 0 0 35px;
-}
-#header2 .inner .login li:nth-child(2) {
-  background-color: #616161;
   margin-right: 10px;
-  border-radius: 0 35px 35px 0;
 }
-#header2 .inner .login li:nth-child(2) a {
-  color: #f2f2f2;
-}
-
-/* 서브페이지 타이틀 */
-#sub_title {
-  width: 100%;
-  padding: 70px 0 110px 0;
-}
-#sub_title .inner {
-  width: 1180px;
-  border-bottom: 1px solid #ccc;
-  margin: 0 auto;
-}
-#sub_title .inner h1 {
-  color: #444;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-#sub_title .inner .sub_menu a {
-  display: inline-block;
-  color: #555;
-  vertical-align: middle;
-  padding: 0 5px;
-  margin-bottom: 20px;
-}
-#sub_title .inner .sub_menu a::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 13px;
-  background: #ccc;
-  margin-left: 10px;
-}
-#sub_title .inner .sub_menu a img {
-  width: 16px;
-}
-#sub_title .inner .sub_menu a:nth-child(3) {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1;
-}
-#sub_title .inner .sub_menu a:nth-child(3) img {
-  width: 10px;
-  margin-left: 5px;
-}
-#sub_title .inner .sub_menu a:nth-child(3)::after {
-  display: none;
+#step .inner span.on {
+  clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 0 51%, 0% 0%);
+  background: cornflowerblue;
+  color: #fff;
 }
 
-#footer2 {
-  width: 100%;
-  background: #333;
-  color: #888;
-  padding: 40px 0;
-}
-#footer2 .upper {
-  border-bottom: 1px solid #555;
-}
-#footer2 .upper .inner {
-  width: 1180px;
-  margin: 0 auto 30px auto;
-  position: relative;
-}
-#footer2 .upper .inner h1 a {
-  color: #888;
-}
-#footer2 .upper .inner select {
-  background: transparent;
-  background: #444;
-  color: #888;
-  border: none;
-  padding: 10px 100px 10px 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 14px;
-}
-#footer2 .lower {
-  margin-top: 30px;
-}
-#footer2 .lower .inner {
+#checkedBox {
   width: 1180px;
   margin: 0 auto;
-  position: relative;
 }
-#footer2 .lower .inner address {
-  font-style: unset;
-  font-size: 14px;
-  margin-bottom: 10px;
-  line-height: 1.3;
-  color: #999;
-  font-weight: 100;
+#checkedBox h2 {
+  color: #222;
+  font-size: 26px;
+  font-weight: 600;
 }
-#footer2 .lower .inner address p {
-  margin-bottom: 5px;
-}
-#footer2 .lower .inner address p:last-of-type {
+#checkedBox h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
   margin-bottom: 30px;
 }
-#footer2 .lower .inner #footmenu a {
-  color: #aaa;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 1.2;
-  margin-right: 20px;
-}
-#footer2 .lower .inner .callCenter {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
-  color: #bbbbbb;
-  font-size: 13px;
-  letter-spacing: 1.5px;
+#checkedBox p {
+  font-size: 14px;
+  color: #555;
   font-weight: 100;
+  margin-bottom: 50px;
 }
-#footer2 .lower .inner .callCenter .call {
+#checkedBox form {
+  border: none;
+}
+#checkedBox form fieldset {
+  border: none;
+}
+#checkedBox form fieldset legend {
+  display: none;
+}
+#checkedBox form fieldset textarea {
+  background: #eee;
+  border: none;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #555;
+}
+#checkedBox form fieldset label {
+  text-align: right;
+  display: block;
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+#checkedBox .btn {
+  width: 600px;
+  height: 60px;
+  text-align: center;
+  margin: 50px auto;
+  display: block;
+  border: none;
+  background: cornflowerblue;
+  font-size: 17px;
+  font-weight: 300;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 60px;
+}
+
+#step {
+  margin-bottom: 100px;
+  margin-top: -111px;
+}
+#step .inner {
+  width: 1180px;
+  margin: 0 auto;
+  height: 60px;
+  font-size: 0;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#step .inner span {
+  font-size: 14px;
+  display: inline-block;
+  width: 33.3333%;
+  height: 100%;
+  color: #888;
+  line-height: 60px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#step .inner span b {
+  margin-right: 10px;
+}
+#step .inner span img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#step .inner span.on {
+  clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 4% 51%, 0% 0%);
+  background: cornflowerblue;
+  color: #fff;
+}
+
+#checkedBox2 {
+  width: 1180px;
+  margin: 0 auto;
+}
+#checkedBox2 h2 {
+  color: #222;
+  font-size: 26px;
   font-weight: 600;
-  font-size: 25px;
-  line-height: 1;
-  color: #999;
-  margin-top: 10px;
 }
-
-@media screen and (max-width: 1179px) {
-  #header2 {
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  #header2 #topMenu {
-    padding: 8px 0;
-  }
-  #header2 #topMenu .inner {
-    width: 100%;
-    height: 30px;
-  }
-  #header2 .mainMenu {
-    width: 100%;
-    height: 80px;
-  }
-  #header2 .mainMenu h1 a {
-    color: #111;
-    font-size: 30px;
-    display: block;
-  }
-  #header2 .mainMenu .menuWeb .gnb {
-    display: none;
-  }
-  #header2 .mainMenu .icons {
-    display: none;
-  }
-  #header2 .mainMenu .btnCall {
-    display: block;
-  }
-
-  /* 서브페이지 타이틀 */
-  #sub_title {
-    padding: 70px 20px 110px 20px;
-  }
-  #sub_title .inner {
-    width: 100%;
-  }
-  #sub_title .inner h1 {
-    font-size: 30px;
-  }
-  #sub_title .inner .sub_menu a {
-    display: inline-block;
-    color: #555;
-    vertical-align: middle;
-    padding: 0 5px;
-    margin-bottom: 20px;
-  }
-  #sub_title .inner .sub_menu a img {
-    width: 16px;
-  }
-
-  #footer2 {
-    width: 100%;
-    padding: 40px 0;
-  }
-  #footer2 .upper .inner {
-    width: 100%;
-    margin: 0 20px 30px 20px;
-    position: relative;
-  }
-  #footer2 .upper .inner select {
-    background: transparent;
-    border: 1px solid #888;
-    color: #888;
-    padding: 5px 100px 5px 10px;
-    position: absolute;
-    top: 10px;
-    right: 40px;
-  }
-  #footer2 .lower {
-    margin-top: 30px;
-  }
-  #footer2 .lower .inner {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-  }
-  #footer2 .lower .inner address {
-    width: 100%;
-    font-style: unset;
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  #footer2 .lower .inner #footmenu {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  #footer2 .lower .inner #footmenu a {
-    font-size: 13px;
-    line-height: 1.2;
-    margin-right: 20px;
-  }
-  #footer2 .lower .inner .callCenter {
-    position: relative;
-    text-align: center;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-  }
-  #footer2 .lower .inner .callCenter .call {
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 1;
-    color: #999;
-    margin-top: 5px;
-  }
+#checkedBox2 h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 539px) {
-  #header2 #topMenu {
-    display: none;
-  }
-  #header2 .mainMenu {
-    margin-top: 10px;
-    height: 60px;
-  }
-  #header2 .mainMenu h1 a {
-    font-size: 28px;
-  }
-
-  /* 서브페이지 타이틀 */
-  #sub_title {
-    padding: 30px 20px 60px 20px;
-  }
-  #sub_title .inner {
-    width: 100%;
-  }
-  #sub_title .inner h1 {
-    font-size: 20px;
-  }
-  #sub_title .inner .sub_menu a {
-    font-size: 12px;
-  }
-  #sub_title .inner .sub_menu a img {
-    width: 12px;
-  }
-  #sub_title .inner .sub_menu a:nth-child(3) {
-    font-size: 12px;
-  }
-  #sub_title .inner .sub_menu a:nth-child(3) img {
-    width: 8px;
-  }
-
-  #footer2 {
-    width: 100%;
-    padding: 30px 0;
-  }
-  #footer2 .upper .inner {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  #footer2 .upper .inner h1 a {
-    color: #888;
-    display: block;
-    text-align: center;
-  }
-  #footer2 .upper .inner select {
-    display: none;
-  }
-  #footer2 .lower {
-    margin-top: 30px;
-  }
-  #footer2 .lower .inner #footmenu {
-    display: none;
-  }
-  #footer2 .lower .inner .callCenter {
-    position: relative;
-    text-align: center;
-    color: #bbbbbb;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-  }
-  #footer2 .lower .inner .callCenter .call {
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 1;
-    color: #999;
-    margin-top: 5px;
-  }
+#checkedBox2 p {
+  font-size: 14px;
+  color: #555;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+#checkedBox2 form {
+  border: none;
+}
+#checkedBox2 form fieldset {
+  border: none;
+}
+#checkedBox2 form fieldset legend {
+  display: none;
+}
+#checkedBox2 form fieldset table {
+  width: 100%;
+}
+#checkedBox2 form fieldset table caption {
+  display: none;
+}
+#checkedBox2 form fieldset table tr {
+  width: 100%;
+}
+#checkedBox2 form fieldset table tr th {
+  width: 20%;
+  padding: 35px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: left;
+}
+#checkedBox2 form fieldset table tr td {
+  width: 80%;
+}
+#checkedBox2 form fieldset table tr td input[type=text], #checkedBox2 form fieldset table tr td input[type=password] {
+  background: #efefef;
+  border: none;
+  width: 500px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 3px;
+}
+#checkedBox2 form fieldset table tr td select {
+  background: #efefef;
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 3px;
+}
+#checkedBox2 form fieldset table tr td button {
+  background: cornflowerblue;
+  color: #fff;
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 3px;
+}
+#checkedBox2 form fieldset table tr td input[type=text].error,
+#checkedBox2 form fieldset table tr td input[type=password].error,
+#checkedBox2 form fieldset table tr td select.error {
+  background: #da1e1e1b;
+  border: 1px solid #da1e1e;
+  color: #da1e1e;
+}
+#checkedBox2 form fieldset table tr.choice {
+  width: 100%;
 }
 /*한솔 TV 타이틀*/
 #ytb_tit {
@@ -1809,346 +1473,68 @@ a {
   border: 1px solid #ddd;
 }
 
-/* reset */
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Poppins", "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
-}
-
-ul, ol, li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* tab 이동 */
-#skipNavi li a {
-  display: block;
-  width: 100%;
-  height: 40px;
-  background: #4b8ed5;
-  font: bold 15px/40px "arial";
-  color: #fff;
-  text-align: center;
-  position: fixed;
-  top: -40px;
-  left: 0;
-  z-index: 1;
-}
-#skipNavi li a.on {
-  top: 0;
-}
-
-/* header */
-#header2 {
-  width: 100%;
-  border-bottom: 1px solid #efefef;
-  position: relative;
-  padding-top: 50px;
-}
-#header2 .inner {
-  width: 1180px;
-  height: 100px;
-  margin: 0 auto;
-  position: relative;
-}
-#header2 .inner h1 {
-  position: absolute;
-  top: 50%;
-  margin-top: -25px;
-}
-#header2 .inner h1 a {
-  color: #111;
-  font-size: 30px;
-  display: block;
-}
-#header2 .inner .gnb {
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 0;
-}
-#header2 .inner .gnb::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#header2 .inner .gnb > li {
-  transition: 0.5s;
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-}
-#header2 .inner .gnb > li > a {
-  display: block;
-  color: #333;
-  font-size: 16px;
-  width: 118px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-  font-weight: 600;
-}
-#header2 .inner .gnb > li > .subGnb {
-  position: absolute;
-  left: 0;
-  display: none;
-  font-weight: 300;
-  text-align: center;
-  width: 100%;
-}
-#header2 .inner .gnb > li > .subGnb > li {
-  position: relative;
-  transition: 0.5s;
-}
-#header2 .inner .gnb > li > .subGnb > li > a {
-  width: 100%;
-  height: 70px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 50px;
-  color: #777;
-  position: relative;
-  transition: 0.5s;
-  font-weight: 400;
-  padding: 5px;
-  box-sizing: border-box;
-}
-#header2 .inner .gnb > li > .subGnb > li > a::after {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  background: #568ded;
-  position: absolute;
-  right: -10px;
-  top: -3px;
-  transition: 0.5s;
-  opacity: 0;
-}
-#header2 .inner .gnb > li > .subGnb > li > a:hover::after {
-  right: -5px;
-  opacity: 1;
-}
-#header2 .inner .gnb > li > .subGnb > li:hover a {
-  color: #568ded;
-  font-weight: 600;
-}
-#header2 .inner .gnb > li.on a {
-  color: #4086ff;
-  transition: 0.5s;
-}
-#header2 .inner .icons {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-#header2 .inner .icons a {
-  margin-left: 10px;
-  background-color: #eee;
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  border-radius: 35px;
-  text-align: center;
-  line-height: 35px;
-  color: #777;
-}
-#header2 .inner .btnCall {
-  display: none;
-  width: 30px;
-  height: 25px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  box-sizing: border-box;
-  margin-right: 0;
-  transform: translateY(-50%);
-}
-#header2 .inner .btnCall::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#header2 .inner .btnCall span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-#header2 .inner .btnCall::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-#header2 .inner .snsMenu {
-  position: absolute;
-  top: -40px;
-  left: 0;
-}
-#header2 .inner .snsMenu li {
-  display: inline-block;
-  margin-right: 10px;
-  background: #eee;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  text-align: center;
-}
-#header2 .inner .snsMenu li:last-child {
-  margin-right: 0;
-}
-#header2 .inner .snsMenu li a {
-  color: #777;
-  line-height: 26px;
-  font-size: 13px;
-}
-#header2 .inner .login {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  font-size: 0;
-}
-#header2 .inner .login li {
-  display: inline-block;
-  position: relative;
-  background: #eee;
-  border-radius: 35px;
-}
-#header2 .inner .login li a {
-  display: block;
-  font-size: 11px;
-  color: #777;
-  font-weight: 300;
-  padding: 4px 13px;
-  box-sizing: border-box;
-}
-#header2 .inner .login li a img {
-  width: 20px;
-  vertical-align: middle;
-}
-#header2 .inner .login li:nth-child(1) {
-  border-radius: 35px 0 0 35px;
-}
-#header2 .inner .login li:nth-child(2) {
-  background-color: #616161;
-  margin-right: 10px;
-  border-radius: 0 35px 35px 0;
-}
-#header2 .inner .login li:nth-child(2) a {
-  color: #f2f2f2;
-}
-
-/* 서브페이지 타이틀 */
-#sub_title {
-  width: 100%;
-  padding: 70px 0 110px 0;
-}
-#sub_title .inner {
-  width: 1180px;
-  border-bottom: 1px solid #ccc;
-  margin: 0 auto;
-}
-#sub_title .inner h1 {
-  color: #444;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-#sub_title .inner .sub_menu a {
-  display: inline-block;
-  color: #555;
-  vertical-align: middle;
-  padding: 0 5px;
-  margin-bottom: 20px;
-}
-#sub_title .inner .sub_menu a::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 13px;
-  background: #ccc;
-  margin-left: 10px;
-}
-#sub_title .inner .sub_menu a img {
-  width: 16px;
-}
-#sub_title .inner .sub_menu a:nth-child(3) {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1;
-}
-#sub_title .inner .sub_menu a:nth-child(3) img {
-  width: 10px;
-  margin-left: 5px;
-}
-#sub_title .inner .sub_menu a:nth-child(3)::after {
-  display: none;
-}
-
 /* 조직도 */
 #organization .inner {
   width: 1180px;
   margin: 0 auto;
 }
 #organization .inner .first {
-  text-align: center;
+  width: 100%;
 }
-#organization .inner .first li {
-  display: inline-block;
-  text-align: center;
-  width: calc((1180px / 5) * 1);
+#organization .inner .first > li {
   margin-bottom: 50px;
 }
-#organization .inner .first li .owner {
+#organization .inner .first > li .second_center {
+  margin: 0 235px;
+}
+#organization .inner .first > li .owner {
   background: #222;
   border: none;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+  margin: 0 auto;
 }
-#organization .inner .first li > span {
+#organization .inner .first > li span {
   background: #ddd;
   height: 50px;
   display: block;
   text-align: center;
   line-height: 50px;
-  border-top: 2px solid #333;
+  border-top: 3px solid #333;
   border-bottom: 1px solid #bbb;
   color: #333;
+  width: calc((1180px / 5) * 1);
 }
-#organization .inner .first li .second li {
-  background: #fff;
-  color: #888;
-  border-bottom: 1px solid #bbb;
-  text-align: center;
-  padding: 20px 0;
+#organization .inner .first > li .second::after {
+  content: "";
+  display: block;
+  clear: both;
 }
-#organization .inner .first li .second li .third li {
+#organization .inner .first > li .second > li {
   background: #fff;
-  color: #888;
-  border-bottom: 1px solid #bbb;
+  padding: 30px 0;
+  float: left;
+  width: calc((1180px / 5) * 1);
+  border-bottom: 1px solid #ccc;
   text-align: center;
+}
+#organization .inner .first > li .second > li > span {
+  background: #ccc;
+  display: block;
+  color: #555;
+  width: 100%;
+}
+#organization .inner .first > li .second > li .third {
+  margin-top: 60px;
+}
+#organization .inner .first > li .second > li .third::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#organization .inner .first > li .second > li .third > li {
+  float: left;
 }
 
 #footer2 {
@@ -3113,18 +2499,6 @@ a {
   height: 100px;
   z-index: 5;
   padding: 20px;
-  clip-path: polygon(0% 0%, 92% 0, 100% 17%, 100% 100%, 0% 100%);
-}
-.content #gallery ul li .inner .itemInfo::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-top: 20px solid transparent;
-  border-left: 20px solid #568ded;
-  top: 0;
-  right: 0;
 }
 .content #gallery ul li .inner .itemInfo p {
   font: bold 18px/1 "arial";

@@ -1,0 +1,139 @@
+@charset 'utf-8';
+
+
+
+
+
+#step {
+    margin-bottom: 100px;
+    margin-top: -111px;
+    .inner {
+        width:1180px;
+        margin:0 auto;
+        height:60px;
+        font-size: 0;
+        background:#eee;
+        border-radius: 5px;
+        overflow: hidden;
+        
+        span {
+            font-size: 14px;
+            display: inline-block;
+            width:33.3333%;
+            height:100%;
+            color:#888;
+            line-height: 60px;
+            box-sizing: border-box;
+            text-align: center;
+            
+            b {
+                margin-right: 10px;
+            }
+            
+            img {
+                width:20px;
+                vertical-align: middle;
+                 margin-right:10px;
+            }
+
+
+            &.on {
+                clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 0 51%, 0% 0%);
+                background:cornflowerblue;
+                color:#fff;
+
+           
+            }
+
+        }
+    }
+}
+
+
+#checkedBox {
+    width:1180px;
+    margin:0 auto;
+
+    h2 {
+        color:#222;
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 18px;
+        color:#333;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 14px;
+        color:#555;
+        font-weight: 100;
+        margin-bottom: 50px;
+    }
+
+    form {
+        border:none;
+
+        fieldset {
+            border:none;
+            legend {
+                display: none;
+            }
+
+            textarea {
+                background:#eee;
+                border:none;
+                width:100%;
+                padding:30px;
+                box-sizing: border-box;
+                font-size: 13px;
+                color:#555;
+            }
+
+            label{
+                text-align: right;
+                display: block;
+                font-size: 17px;
+                margin-bottom: 50px;
+
+                input[type=checkbox] {
+                    
+                }
+
+
+            }
+
+
+        }
+
+
+
+
+
+    }
+
+
+
+    .btn{
+        width:600px;
+        height:60px;
+        text-align: center;
+        margin:50px auto;
+        display: block;
+        border:none;
+        background:cornflowerblue;
+        font-size: 17px;
+        font-weight: 300;
+        color:#fff;
+        border-radius: 5px;
+        line-height: 60px;
+
+
+
+    }
+
+
+}

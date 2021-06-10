@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입</title>
+    <script src="https://kit.fontawesome.com/44ca885d93.js" crossorigin="anonymous"></script>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/join.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#checkedBox2").myValidation({
+                isTxt: ["userid","email1","myname"] ,
+                isCheck: ["gender"],
+                isSelect: ["email2"],
+                isPwd: ["pwd1","pwd2"]
+            });
+
+        });
+    </script>
+    
+    
+</head>
+<body>
+    <ul id="skipNavi">
+        <li><a href="#topMenu">주메뉴 바로가기</a></li>
+        <li><a href="#section">본문 바로가기</a></li>
+        <li><a href="#footer">하단메뉴 바로가기</a></li>
+    </ul>
+    <header id="header2">
+        <div class="inner">
+                <h1><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+                <ul class="gnb">
+                        <li>
+                            <a href="location.html" data-menu="data/menu1.html">COMMPANY</a>
+                            <ul class="subGnb">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">전자공고</a></li>
+                                <li><a href="#">연혁</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="community.html" data-menu="data/menu2.html">NEWS</a>
+                            <ul class="subGnb">
+                                <li><a href="#">브랜드 뉴스</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="gallery.html" data-menu="data/menu3.html">PRODUCT</a>
+                            <ul class="subGnb">
+                                <li><a href="#">제품소개</a></li>
+                                <li><a href="#">인스퍼</a></li>
+                                <li><a href="#">신소재</a></li>
+                                <li><a href="#">연구개발</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="youtube.html" data-menu="data/menu4.html">MEDIA</a>
+                            <ul class="subGnb">
+                                <li><a href="#">언론보도</a></li>
+                                <li><a href="#">홍보영상</a></li>
+                                <li><a href="#">사회공헌</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html" data-menu="data/menu5.html">CONTACT US</a>
+                            <ul class="subGnb">
+                                <li><a href="#">고객지원</a></li>
+                                <li><a href="#">채용공고</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                </ul>
+                <div class="icons">
+                    <a href="members.html"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                </div>
+                <a href="#" class="btnCall"><span></span></a>
+                 <ul class="snsMenu">
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fab fa-facebook-f"></i></a></li>
+                 </ul>
+                <ul class="login">
+                    <li><a href="members.html">JOIN</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#"> KOR</a></li>
+                </ul>
+
+
+        </div>
+    </header>
+
+
+    <section id="sub_title">
+        <div class="inner">
+            <h1>JOIN</h1>
+            <nav class="sub_menu">
+                <a href="index.html"><img src="img/home_icon.png" alt="홈으로 이동"></a>
+                <a href="#">COMMUNITY</a>
+                <a href="#">JOIN <img src="img/down-arrow_icon.png" alt="다른페이지로 이동"></a>
+            </nav>
+        </div>
+    </section>
+
+    <section id="step">
+        <div class="inner">
+            <span><img src="img/join/checked_icon.png" alt=""> <b>SETP1 </b>약관동의 및 인증</span>
+            <span class="on"><img src="img/join/notes_icon.png" alt=""> <b>SETP2 </b>기본정보입력</span>
+            <span><img src="img/join/user_icon.png" alt=""> <b>SETP3 </b>회원가입완료</span>
+        </div>
+    </section>
+
+    <section id="checkedBox2">
+        <h2>STEP2. 기본정보입력</h2>
+        <h3>회원가입에 필요한 개인정보를 입력해주세요.</h3>
+        <p>개인정보의 처리와 관련하여 아래와 같이 업무를 위탁하고 있으며, 관계 법력에 따라 위탁계약 시 <br> 개인정보가 안정하게 관리될 수 있도록  필요한 사항을 규정하고 있습니다.</p>
+        <form action="/" method="post">
+            <fieldset>
+                <legend>회원가입 입력양식폼</legend>
+                <table summary="회원의 아이디,비번,성별, 취미 입력양식폼">
+                    <caption class="h">
+                        회원정보 입력양식 테이블
+                    </caption>
+                    <tr class="userid">
+                        <th><label for="id">아이디</label></th>
+                        <td><input type="text" id="userid" name="userid" placeholder="아이디를 입력해 주세요"></td>
+                        <button>중복확인</button>
+                    </tr>
+                    <tr class="pwd">
+                        <th><label for="pwd1">비밀번호</label></th>
+                        <td><input type="password" id="pwd1" name="pwd1" placeholder="비밀번호를 입력해 주세요"></td>
+                    </tr>
+                    <tr class="pwd2">
+                        <th><label for="pwd2">비밀번호재입력</label></th>
+                        <td><input type="password" id="pwd2" name="pwd2" placeholder="비밀번호를 재입력해 주세요"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="myname">이름</label></th>
+                        <td><input type="password" id="myname" name="myname" placeholder="이름를 입력해 주세요"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="phone">전화번호</label></th>
+                        <td>
+                            <select name="phone" id="phone">
+                                <option value="통신사">통신사</option>
+                                <option value="KT">KT</option>
+                                <option value="SKT">SKT</option>
+                                <option value="LGU+">LGU+</option>
+                            </select>
+                            <select name="num" id="num">
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                            </select> 
+                            <input type="text" placeholder="휴대폰번호를 입력해주세요 ">
+                            <button>인증번호발송</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="phone">인증번호입력</label></th>
+                        <td>
+                            <input type="text" placeholder="인증번호 4자리를 입력해주세요 ">
+                            <button>인증확인</button>
+                        </td>
+                    </tr>
+                    <tr class="gender">
+                        <th>성별</th>
+                        <td> <label for="male">  <input type="radio" id="male" name="gender" value="male" > 남성 </label>
+                            <label for="female">  <input type="radio" id="female" name="gender" value="female" > 여성 </label>
+                        </td>
+                    </tr>
+                    <tr class="choice">
+                        <hr>
+                        <h3>선택입력</h3> 
+                    </tr>
+                    <tr>
+                        <th><label for="birth">생년월일</label></th>
+                        <td>
+                            <select name="year" id="year">
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                            </select>
+                            <select name="month" id="month">
+                                <option value="jan">1월</option>
+                            </select> 
+                            <input type="text" placeholder="메일아이디를 입력해주세요 ">
+
+                        </td>
+                    </tr>
+
+                    
+                <tr class="email">
+                    <th><label for="email">E-mail</label></th>
+                    <td>
+                        <input type="text"  name="email1" id="email" placeholder="메일아이디를 입력해주세요 "> @ <select name="email2" id="email2">
+                            <option value="naver">naver.com</option>
+                            <option value="nate">nate.com</option>
+                            <option value="daum">daum.net</option>
+                        </select> 
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th><label for="phone">주소</label></th>
+                    <td>
+                        <input type="text" placeholder="주소를 입력해주세요 ">
+                        <button>인증확인</button>
+                        <input type="text" placeholder="나머지주소를 입력해주세요 ">
+                    </td>
+                </tr>
+                </table>
+                <input type="reset" value="CANCEL">
+                <input type="submit" value="CONFIRM">
+            </fieldset>
+        </form>
+    </section>
+
+
+
+
+    
+    <footer id="footer2">
+        <div class="upper">
+            <div class="inner">
+                <h1><a href="#">LOGO</a></h1>
+
+                <form action="post">
+                    <select name="family" id="family">
+                        <option value="">FAMILY SITE</option>
+                        <option value="">FAMILY SITE</option>
+                        <option value="">FAMILY SITE</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="inner">
+                <address>
+                    <p> 본관 ㅣ 서울특별시 강남구 테헤란로 592(역삼동) </p> 
+                    <p>분당센터 ㅣ 경기도 성남시 분당구 정자로12번길</p>
+                    <p> Copyright &copy; All rights reserved.</p> 
+                </address>
+               <nav id="footmenu">
+                   <a href="#">이용약관</a>
+                   <a href="#">개인정보처리방침</a>
+                   <a href="#">이메일무단수집거부</a>
+                   <a href="#">사이트맵</a>
+               </nav>
+               <div class="callCenter">
+                   <p>CUSTOMER CENTER</p>
+                   <p class="call">080-022-0153</p>
+               </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
