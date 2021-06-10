@@ -1,0 +1,309 @@
+@charset 'utf-8';
+
+
+
+/*한솔 TV 타이틀*/
+#ytb_tit {
+    background: url(../img/youtube/tit_bg.jpg) no-repeat;
+    margin-top: -111px;
+
+    .inner {
+        width:1180px;
+        margin:0 auto;
+        padding:100px 0 300px 0 ;
+        box-sizing: border-box;
+        position: relative;
+
+            h2 {
+                font-weight: 700;
+                font-size: 60px;
+                color:#333;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 100;
+            }
+            
+            button {
+                width:250px;
+                height:60px;
+                background:#c4302b;
+                color:#fff;
+                border:none;
+                border-radius: 5px;
+                position:absolute;
+                bottom:200px;
+                right:0;
+                font-size: 16px;
+                font-weight: 100;
+
+                .fa-youtube {
+                    font-size: 25px;
+                    vertical-align:middle;
+                    margin-right: 10px;
+
+                }
+            }
+    }
+
+    }
+
+
+/*유튜브*/
+#vidGallery {
+    width:1180px;
+    margin:0 auto;
+    position: relative;
+
+    &::after {
+        content:'';
+        display: block;
+        clear:both;
+    }
+
+
+/*유튜브 영상 메인*/
+
+    #galMain {
+        width:100%;
+        position:relative;
+        margin-top: -130px;
+        margin-bottom: 150px;
+
+        .artMain {
+            width: 100%;
+    
+            .pic {
+                width: 100%;
+                height:500px;
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                display: block;
+            }
+    
+            .con {
+                background:#fff;
+                width:60%;
+                height: 200px;
+                margin-top: -100px;
+                position: relative;
+                padding:50px;
+                box-sizing: border-box;
+                box-shadow: 5px 5px 20px rgba(84, 84, 84, 0.132);
+                
+    
+                h2 {
+                    font: 300 25px/1 'Spoqa Han Sans';
+                    margin-bottom: 10px;
+                }
+        
+                p {
+                    font: 100 13px/1.5 'Spoqa Han Sans';
+                    margin-bottom: 25px;
+                }
+    
+                span {
+                    font: 600 12px/1.5 'Spoqa Han Sans';
+                }
+                
+                .profile {
+                    position: absolute;
+                    background:rgb(97, 151, 216);
+                    width: 90px;
+                    height: 90px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    right: 50px;
+                    border-radius: 90px;
+                    background:url(../img/youtube/youtube_icon.jpg) no-repeat center;
+                    border:1px solid #ddd;
+
+                }
+    
+            }
+        }
+    }
+
+
+/* 검색창 및 필터 */
+    .filter {
+        position:relative;
+        margin-bottom: 60px;
+
+        &::after {
+            content: '';
+            display: block;
+            clear:both;
+        }
+
+
+        .filed {
+            float:left;
+
+            div {
+                display: inline-block;
+                margin-right: 15px;
+
+                a {
+                    color:#333;
+                    display: block;
+                    padding: 5px;
+                    transition: 0.5s;
+                    position: relative;
+
+                    &::after {
+                        content:'';
+                        display: block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 5px;
+                        background: rgb(86, 141, 237);
+                        position: absolute;
+                        right:-10px;
+                        top:0px;
+                        transition: 0.5s;
+                        opacity:0;
+                    }
+
+
+                    &.on {
+                        color: rgb(86, 141, 237);
+                        font-weight: 600;
+
+                        &::after {
+                            right:0px;
+                            opacity: 1;
+                         }
+
+                    }
+                }
+
+                &:hover {
+
+                    a{
+                       color: rgb(86, 141, 237);
+                       font-weight: 600;
+
+                       &::after {
+                        right:0px;
+                        opacity: 1;
+                     }
+
+                    }
+
+
+               }
+            }
+
+        }
+
+        
+        form  {
+            float:right;
+            fieldset {
+                border: none;
+        
+                legend {
+                    width: 1px;
+                    top: -999999px;
+                    opacity: 0;
+                    height: 1px;
+                }
+                input {
+                    width: 300px;
+                    border:none;
+                    
+                    background:#efefef;
+                    padding: 10px;
+                }
+                img {
+                    width: 15px;
+                    margin-left: -30px;
+                }
+            }
+
+        }
+    }
+
+
+/* 유튜브 리스트 */
+    .list {
+        &::after {
+            content:"";
+            display: block;
+            clear:both;
+        }
+        article {
+            float:left;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            width:33.333%;
+            padding:10px;
+            
+             .pic {
+                display: block;
+                width:100%;
+                height:350px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: center;
+                box-shadow: 5px 5px 20px rgba(84, 84, 84, 0.132);
+            }
+            .con {
+    
+                height: 150px;
+                padding: 30px;
+                background:#fff;
+                box-shadow: 5px 5px 20px rgba(84, 84, 84, 0.132);
+                position: relative;
+            
+                h2 {
+                    font: 400 20px/1 'Spoqa Han Sans';
+                    margin-bottom: 5px;
+                }
+    
+                p {
+                    font: 100 13px/1.5 'Spoqa Han Sans';
+                    margin-bottom: 20px;
+    
+                }
+                span {
+                    font: 400 15px/1.5 'Spoqa Han Sans';
+                }
+                    
+                .profile {
+                    position: absolute;
+                    background:rgb(97, 151, 216);
+                    width: 40px;
+                    height: 40px;
+                    bottom:20px;
+                    right: 20px;
+                    border-radius: 30px;
+                    background:url(../img/youtube/youtube_icon.jpg) no-repeat center ;
+                    background-size: cover;
+                    border:1px solid #ddd;
+
+                }
+    
+            }
+        }
+
+    }
+
+        
+
+
+
+
+
+ 
+
+}

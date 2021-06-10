@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>커뮤니티</title>
+    <script src="https://kit.fontawesome.com/44ca885d93.js" crossorigin="anonymous"></script>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/community.js"></script>
+
+
+</head>
+<body>
+    <ul id="skipNavi">
+        <li><a href="#topMenu">주메뉴 바로가기</a></li>
+        <li><a href="#section">본문 바로가기</a></li>
+        <li><a href="#footer">하단메뉴 바로가기</a></li>
+    </ul>
+    <header id="header2">
+        <div class="inner">
+                <h1><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+                <ul class="gnb">
+                        <li>
+                            <a href="location.html" data-menu="data/menu1.html">COMMPANY</a>
+                            <ul class="subGnb">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">스마트보안</a></li>
+                                <li><a href="#">서비스 사업</a></li>
+                                <li><a href="#">주요 공사실적</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="community.html" data-menu="data/menu2.html">NEWS</a>
+                            <ul class="subGnb">
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="#">브랜드 컨셉</a></li>
+                                <li><a href="#">브랜드 마크</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="gallery.html" data-menu="data/menu3.html">NOTICE</a>
+                            <ul class="subGnb">
+                                <li><a href="#">주가현황</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">결산공고</a></li>
+                                <li><a href="#">재무정보</a></li>
+                                <li><a href="#">내부정보관리규정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="youtube.html" data-menu="data/menu4.html">MEDIA</a>
+                            <ul class="subGnb">
+                                <li><a href="#">언론보도</a></li>
+                                <li><a href="#">홍보영상</a></li>
+                                <li><a href="#">사회공헌</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html" data-menu="data/menu5.html">ABOUT US</a>
+                            <ul class="subGnb">
+                                <li><a href="#">회사개요</a></li>
+                                <li><a href="#">경영철학</a></li>
+                                <li><a href="#">회사연혁</a></li>
+                            </ul>
+                        </li>
+                </ul>
+                <div class="icons">
+                    <a href="members.html"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                </div>
+                <a href="#" class="btnCall"><span></span></a>
+                 <ul class="snsMenu">
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fab fa-facebook-f"></i></a></li>
+                 </ul>
+                <ul class="login">
+                    <li><a href="members.html">JOIN</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#"> KOR</a></li>
+                </ul>
+
+
+        </div>
+    </header>
+    <section id="sub_title">
+        <div class="inner">
+            <h1>NEWS</h1>
+            <nav class="sub_menu">
+                <a href="index.html"><img src="img/home_icon.png" alt="홈으로 이동"></a>
+                <a href="#">브랜드 스토리</a>
+                <a href="#">NEWS <img src="img/down-arrow_icon.png" alt="다른페이지로 이동"></a>
+            </nav>
+        </div>
+    </section>
+
+    <section id="newsTitle">
+        <div class="inner">
+            <div class="titBox">
+                <h2>NEWS</h2> 
+                <p>‘inspiring’ 과 ‘paper’의 합성어로, 러프그로스지, 색지, <br> 무늬지, 펄지, 티끌지 등 다양한 색상과 패턴으로 <br> 구성된 개성있는 팬시지입니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id ="community">
+        <div class="inner">
+            <div id="tab">
+                <form action="/">
+                    <fieldset>
+                        <legend>검색창</legend>
+                        <input type="Search" id="Search" placeholder="검색어를 입력해주세요.">
+                        <img src="img/search_icon.png" id="Search" alt="검색버튼">
+                    </fieldset>
+                </form>
+                <dl>
+                    
+                    <dt class="tab_tit"><a href="#news" class="on">NEWS</a></dt>
+                    <dd id="news" class="on">
+                        <table summary = "작성일,제목,더보기">
+                        <caption>게시판목록</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">작성일</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">더보기</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="day"><span>30</span>  2021.02</td>
+                                <td class="title"><a href="#"><strong>모나미 컬러브원드브러쉬 6세트 출시</strong>
+                                모나미, 컬러브러쉬 6개세트 출시 디지트 파스텔 색상과 그레이푸드 색상 각 6색 추가, 필압 조절에 좋은 고무 재질의 브러쉬로 제작되어...</a></td>
+                                <td class="more"><a href="#" class="on"><span>MORE</span>+</a></td>
+                            </tr>
+                            <tr>
+                                <td class="day"><span>15</span>  2021.02</td>
+                                <td class="title"><a href="#"><strong>모나미 컬러브원드브러쉬 6세트 출시</strong>
+                                모나미, 컬러브러쉬 6개세트 출시 디지트 파스텔 색상과 그레이푸드 색상 각 6색 추가, 필압 조절에 좋은 고무 재질의 브러쉬로 제작되어...</a></td>
+                                <td class="more"><a href="#"><span>MORE</span>+</a></td>
+                            </tr>
+                            <tr>
+                                <td class="day"><span>10</span>  2021.02</td>
+                                <td class="title"><a href="#"><strong>모나미 컬러브원드브러쉬 6세트 출시</strong>
+                                모나미, 컬러브러쉬 6개세트 출시 디지트 파스텔 색상과 그레이푸드 색상 각 6색 추가, 필압 조절에 좋은 고무 재질의 브러쉬로 제작되어...</a></td>
+                                <td class="more"><a href="#"><span>MORE</span>+</a></td>
+                            </tr>
+                            <tr>
+                                <td class="day"><span>01</span>  2021.01</td>
+                                <td class="title"><a href="#"><strong>모나미 컬러브원드브러쉬 6세트 출시</strong>
+                                모나미, 컬러브러쉬 6개세트 출시 디지트 파스텔 색상과 그레이푸드 색상 각 6색 추가, 필압 조절에 좋은 고무 재질의 브러쉬로 제작되어...</a></td>
+                                <td class="more"><a href="#"><span>MORE</span>+</a></td>
+                            </tr>
+                            <tr>
+                                <td class="day"><span>08</span>  2021.02</td>
+                                <td class="title"><a href="#"><strong>모나미 컬러브원드브러쉬 6세트 출시</strong>
+                                모나미, 컬러브러쉬 6개세트 출시 디지트 파스텔 색상과 그레이푸드 색상 각 6색 추가, 필압 조절에 좋은 고무 재질의 브러쉬로 제작되어...</a></td>
+                                <td class="more"><a href="#"><span>MORE</span>+</a></td>
+                            </tr>
+                            <tr>
+                                <td class="day"><span>10</span>  2021.02</td>
+                                <td class="title"><a href="#"><strong>모나미 컬러브원드브러쉬 6세트 출시</strong>
+                                모나미, 컬러브러쉬 6개세트 출시 디지트 파스텔 색상과 그레이푸드 색상 각 6색 추가, 필압 조절에 좋은 고무 재질의 브러쉬로 제작되어...</a></td>
+                                <td class="more"><a href="#"><span>MORE</span>+</a></td>
+                            </tr>
+                            <tr>
+                                <td class="day"><span>17</span>  2021.02</td>
+                                <td class="title"><a href="#"><strong>모나미 컬러브원드브러쉬 6세트 출시</strong>
+                                모나미, 컬러브러쉬 6개세트 출시 디지트 파스텔 색상과 그레이푸드 색상 각 6색 추가, 필압 조절에 좋은 고무 재질의 브러쉬로 제작되어...</a></td>
+                                <td class="more"><a href="#"><span>MORE</span>+</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </dd>
+                    <dt class="tab_tit"><a href="#faq">FAQ</a></dt>
+                    <dd id="faq"><h1>FAQ내용 넣기</h1> </dd>
+                    <dt class="tab_tit"><a href="#notice">NOTICE</a></dt>
+                    <dd id="notice"><h1>notice 넣기</h1> </dd>
+                </dl>
+                <div class="pagination">
+                    <a href="#" class="prev"><img src="img/left-arrow.png" alt=""></a>
+
+                    <p class="numbers">
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+
+
+                    </p>
+                    <a href="#" class="next"><img src="img/right-arrow.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="info">
+        <div class="inner">
+            <article>
+                <img src="img/community/group.svg" alt="">
+                <h2><span>사이버 신문고</span>를 통해 <br> 고객과 함께 <br> 윤리경영을 실천합니다.</h2>
+                <p>사이버 신문고는 대내외 소통창구로서 임직원의 부당한 요구나 불공정한 행위에 관련된 내용을 제보해 주시기 바랍니다. </p>
+                <button>사이버 신문고 바로가기</button>
+            </article>
+            <article class="call">
+                <img src="img/community/customer-service.svg" alt="">
+                <div>
+                    <h2><span>고객센터</span><br> 1688-5500</h2>
+                </div>
+                <div>
+                    <h3>운영시간</h3>
+                    <p><b>평일</b> 09:00 ~ 18:00 l<b> 토</b> 09:00 ~ 18:00(일, 공유일 휴무)</p>
+                </div>
+                <button>고객센터 문의하기</button>
+            </article>
+
+        </div>
+    </section>
+
+
+
+    <footer id="footer2">
+        <div class="upper">
+            <div class="inner">
+                <h1><a href="#">LOGO</a></h1>
+
+                <form action="post">
+                    <select name="family" id="family">
+                        <option value="">FAMILY SITE</option>
+                        <option value="">FAMILY SITE</option>
+                        <option value="">FAMILY SITE</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="inner">
+                <address>
+                    <p> 본관 ㅣ 서울특별시 강남구 테헤란로 592(역삼동) </p> 
+                    <p>분당센터 ㅣ 경기도 성남시 분당구 정자로12번길</p>
+                    <p> Copyright &copy; All rights reserved.</p> 
+                </address>
+               <nav id="footmenu">
+                   <a href="#">이용약관</a>
+                   <a href="#">개인정보처리방침</a>
+                   <a href="#">이메일무단수집거부</a>
+                   <a href="#">사이트맵</a>
+               </nav>
+               <div class="callCenter">
+                   <p>CUSTOMER CENTER</p>
+                   <p class="call">080-022-0153</p>
+               </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
