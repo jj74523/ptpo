@@ -1815,20 +1815,22 @@ a {
     margin-top: 5px;
   }
 }
+#contact {
+  padding-top: 100px;
+}
 #contact .inner {
   width: 1180px;
   margin: 0 auto;
 }
 #contact .inner h2 {
   color: #222;
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 40px;
 }
-#contact .inner h3 {
-  font-size: 18px;
-  color: #333;
-  font-weight: 300;
-  margin-bottom: 30px;
+#contact .inner h2 span {
+  font-size: 60px;
+  font-weight: 700;
 }
 #contact .inner p {
   font-size: 14px;
@@ -1852,16 +1854,22 @@ a {
 #contact .inner form fieldset table caption {
   display: none;
 }
+#contact .inner form fieldset table::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 #contact .inner form fieldset table tr {
-  width: 100%;
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 #contact .inner form fieldset table tr th {
-  width: 20%;
-  padding: 35px;
   box-sizing: border-box;
   font-size: 15px;
   font-weight: 100;
-  text-align: left;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 #contact .inner form fieldset table tr th .must {
   position: relative;
@@ -1878,7 +1886,7 @@ a {
   border-radius: 6px;
 }
 #contact .inner form fieldset table tr td {
-  width: 100%;
+  display: block;
 }
 #contact .inner form fieldset table tr td input[type=text], #contact .inner form fieldset table tr td input[type=password] {
   background: #efefef;
@@ -1887,19 +1895,9 @@ a {
   height: 50px;
   padding: 20px;
   border-radius: 3px;
-  margin-right: 10px;
 }
 #contact .inner form fieldset table tr td select {
   background: #efefef;
-  border: none;
-  width: 200px;
-  height: 50px;
-  padding: 10px;
-  border-radius: 3px;
-}
-#contact .inner form fieldset table tr td button {
-  background: cornflowerblue;
-  color: #fff;
   border: none;
   width: 200px;
   height: 50px;
@@ -1913,42 +1911,57 @@ a {
   border: 1px solid #da1e1e;
   color: #da1e1e;
 }
-#contact .inner form fieldset table tr.phone td {
-  display: block;
-  margin-bottom: 10px;
-}
-#contact .inner form fieldset table tr.phone td > input[type=text], #contact .inner form fieldset table tr.phone td select {
-  width: 24%;
+#contact .inner form fieldset table tr.num select {
+  width: 200px;
   margin-right: 10px;
+}
+#contact .inner form fieldset table tr.num input[type=text] {
+  width: 290px;
+}
+#contact .inner form fieldset table tr.eMail input[type=text] {
+  width: 270px;
+}
+#contact .inner form fieldset table tr.eMail select {
+  width: 200px;
+}
+#contact .inner form fieldset table tr.title {
+  width: 100%;
+  display: block;
+}
+#contact .inner form fieldset table tr.title input[type=text] {
+  width: 1080px;
+}
+#contact .inner form fieldset table tr.title textarea {
+  width: 1080px;
+  border: none;
+  background: #efefef;
+  padding: 20px;
+  resize: none;
 }
 #contact .inner form fieldset .sbt {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
-#contact .inner form fieldset .sbt input[type=reset], #contact .inner form fieldset .sbt input[type=submit] {
+#contact .inner form fieldset .sbt input[type=submit] {
   background: cornflowerblue;
   color: #fff;
   border: none;
-  width: 250px;
-  height: 60px;
+  width: 200px;
+  height: 50px;
   padding: 10px;
   border-radius: 3px;
   text-align: center;
-}
-#contact .inner form fieldset .sbt input[type=reset] {
-  background: #eeeeee;
-  color: #7d7d7d;
 }
 
 #map {
   position: relative;
 }
-#map #mapBox {
+#map .inner #mapBox {
   width: 1180px;
   height: 500px;
   background: #000;
 }
-#map .branch {
+#map .inner .branch {
   position: absolute;
   width: 500px;
   top: 0;
@@ -1956,15 +1969,15 @@ a {
   background: #efefef;
   z-index: 2;
 }
-#map .branch li {
+#map .inner .branch li {
   border-bottom: 1px solid red;
 }
-#map .branch li::after {
+#map .inner .branch li::after {
   content: "";
   display: block;
   clear: both;
 }
-#map .branch li a {
+#map .inner .branch li a {
   display: block;
   width: 200px;
   text-align: center;

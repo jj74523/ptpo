@@ -2,22 +2,20 @@
 
 #contact {
 
+    padding-top: 100px;
     .inner {
-
         width:1180px;
         margin:0 auto;
 
         h2 {
             color:#222;
-            font-size: 26px;
-            font-weight: 600;
-        }
-    
-        h3 {
-            font-size: 18px;
-            color:#333;
-            font-weight: 300;
-            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: 200;
+            margin-bottom: 40px;
+            span {
+                font-size: 60px;
+                font-weight: 700;
+            }
         }
     
         p {
@@ -40,20 +38,27 @@
                 table {
                     width:100%;
                     margin-bottom: 80px;
+                     
                     caption {
                         display: none;
                     }
+                    &::after {
+                        content: '';
+                        display: block;
+                        clear:both;
+                    }
     
                     tr {
-                        width:100%;
+                        width:50%;
+                        display: inline-block;
+                        margin-bottom: 30px;
                         
                         th {
-                            width:20%;
-                            padding:35px;
                             box-sizing: border-box;
                             font-size: 15px;
                             font-weight: 100;
-                            text-align: left;
+                            display: inline-block;
+                            margin-bottom: 10px;
     
                             .must {
                                 position: relative;
@@ -69,14 +74,13 @@
                                     right:-15px;
                                     border-radius: 6px;
         
-    
                                 }
                             }
     
                         }
                         td {
-                            width:100%;
-    
+                            display: block;
+
                             input[type=text], input[type=password] {
                                 background:#efefef;
                                 border:none;
@@ -84,8 +88,8 @@
                                 height:50px;
                                 padding:20px;
                                 border-radius: 3px;
-                                margin-right: 10px;
                             }
+
                             select {
                                 background:#efefef;
                                 border:none;
@@ -94,18 +98,6 @@
                                 padding:10px;
                                 border-radius: 3px;
                             }
-    
-                            button {
-                                background:cornflowerblue;
-                                color:#fff;
-                                border:none;
-                                width:200px;
-                                height:50px;
-                                padding:10px;
-                                border-radius: 3px;
-                                
-                            }
-    
     
                             input[type=text].error,
                             input[type=password].error,
@@ -116,23 +108,45 @@
                             }
                         }
     
-                        &.phone {
-                            
-                            td {
-                                display: block;
-                                margin-bottom: 10px;
+                        &.num {
+                                    select  {
+                                        width:200px;
+                                        margin-right: 10px;
+                                    }
+    
+                                    input[type=text]  {
+                                        width:290px;
+                                    }
+                                
+                        }
+    
+                        &.eMail {
 
-                                > input[type=text],select  {
-                                    width:24%;
-                                    margin-right: 10px;
+                                input[type=text]  {
+                                    width:270px;
+                                }
+                                select  {
+                                    width:200px;
     
                                 }
-    
+                        }
 
-    
+                        &.title {
+                            width:100%;
+                            display: block;
+
+                            input[type=text]  {
+                                width:1080px;
+
                             }
-    
-                           
+                            textarea {
+                                width:1080px;
+                                border:none;
+                                background:#efefef;
+                                padding:20px;
+                                resize: none;
+                            }
+
                         }
     
                     }
@@ -141,27 +155,19 @@
     
                 .sbt {
                     text-align: center;
-                    margin-bottom: 70px;
+                    margin-bottom: 50px;
     
-                    input[type=reset], input[type=submit] {
+                    input[type=submit] {
                         background:cornflowerblue;
                         color:#fff;
                         border:none;
-                        width:250px;
-                        height:60px;
+                        width:200px;
+                        height:50px;
                         padding:10px;
                         border-radius: 3px;
                         text-align: center;
                     }
-                    input[type=reset] {
-                        background:rgb(238, 238, 238);
-                        color:rgb(125, 125, 125);
-    
-                    }
-    
                 }
-    
-    
     
             }
     
@@ -179,37 +185,41 @@
 #map {
     position: relative;
 
-    #mapBox{
+    .inner {
+        #mapBox{
 
-        width:1180px; 
-        height:500px; 
-        background:#000; 
-    }
-
+            width:1180px; 
+            height:500px; 
+            background:#000; 
+        }
     
-    .branch {
-        position: absolute;
-        width:500px;
-        top:0;
-        left:0;
-        background:#efefef;
-        z-index:2;
-
-        li{
-            border-bottom:1px solid red;
-            &::after {
-                content:'';
-                display:block;
-                clear:both;
-            }
-
-            a{
-                display:block;
-                width:200px; 
-                text-align:center; 
-                float:left;
+        
+        .branch {
+            position: absolute;
+            width:500px;
+            top:0;
+            left:0;
+            background:#efefef;
+            z-index:2;
+    
+            li{
+                border-bottom:1px solid red;
+                &::after {
+                    content:'';
+                    display:block;
+                    clear:both;
+                }
+    
+                a{
+                    display:block;
+                    width:200px; 
+                    text-align:center; 
+                    float:left;
+                }
             }
         }
+
     }
+    
 
 }

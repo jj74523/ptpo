@@ -90,71 +90,58 @@
 
         </div>
     </header>
-    <section id="sub_title">
-        <div class="inner">
-            <h1>CONTACT US</h1>
-            <nav class="sub_menu">
-                <a href="index.html"><img src="img/home_icon.png" alt="홈으로 이동"></a>
-                <a href="#">CONTACT</a>
-                <a href="#">CONTACT <img src="img/down-arrow_icon.png" alt="다른페이지로 이동"></a>
-            </nav>
-        </div>
-    </section>
     <section id="contact">
         <div class="inner">
-            <h2>HELLO.</h2>
-            <h3>회원가입에 필요한 개인정보를 입력해주세요.</h3>
+            <h2>WELCOME TO <br> <span>HANSOL</span></h2>
             <p>개인정보의 처리와 관련하여 아래와 같이 업무를 위탁하고 있으며, 관계 법력에 따라 위탁계약 시 <br> 개인정보가 안정하게 관리될 수 있도록  필요한 사항을 규정하고 있습니다.</p>
             <form action="/" method="post">
                 <fieldset>
                     <legend>contact form</legend>
-                    <table summary="회원의 아이디,비번,성별, 취미 입력양식폼">
+                    <table summary="contact form">
                         <caption>
                             contact form
                         </caption>
                         <tr class="name">
-                            <th><label for="myname" class="must">이름</label></th>
-                            <td><input type="text" id="myname" name="myname" placeholder="이름를 입력해 주세요"></td>
+                            <th><label for="myName" class="must">이름</label></th>
+                            <td><input type="text" id="myName" name="myname" placeholder="이름를 입력해 주세요"></td>
                         </tr>
                         <tr class="company">
-                            <th><label for="myname" class="must">회사명</label></th>
-                            <td><input type="password" id="myname" name="myname" placeholder="회사명을 입력해 주세요"></td>
+                            <th><label for="company" class="must">회사명</label></th>
+                            <td><input type="text" id="company" name="company" placeholder="회사명을 입력해 주세요"></td>
                         </tr>
-
-                        <tr class="phone">
-                            <th><label for="phone" class="must">전화번호</label></th>
+                        <tr class="num">
+                            <th><label for="num" class="must">전화번호</label></th>
                             <td>
-                                <select name="phone" id="phone2">
+                                <select name="num" id="num1">
                                     <option value="010">010</option>
                                     <option value="011">011</option>
                                 </select> 
-                                <input type="text" name="phone2" placeholder="휴대폰번호를 입력해주세요">
+                                <input type="text" name="num2" placeholder="휴대폰번호를 입력해주세요">
                             </td>
                         </tr>
-                        <tr class="email">
-                            <th><label for="email" class="must">E-mail</label></th>
+                        <tr class="eMail">
+                            <th><label for="eMail" class="must">E-mail</label></th>
                             <td>
-                                <input type="text"  name="email1" id="email" placeholder="메일아이디를 입력해주세요 "> @ <select name="email2" id="email2">
+                                <input type="text"  name="eMail1" id="eMail1" placeholder="메일아이디를 입력해주세요 "> @  <select name="eMail2" id="eMail2">
                                     <option value="naver">naver.com</option>
                                     <option value="nate">nate.com</option>
                                     <option value="daum">daum.net</option>
                                 </select> 
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="title">
                             <th><label for="title" class="must">제목</label></th>
                             <td><input type="text" id="myname" name="myname" placeholder="이름를 입력해 주세요"></td>
                         </tr>
-                        <tr>
-                            <th><label for="comments" class="must">제목</label></th>
-                            <td><textarea type="text" id="comments" name="comments" placeholder="이름를 입력해 주세요"></td>
+                        <tr class="title">
+                            <th><label for="comments" class="must">내용</label></th>
+                            <td>
+                                <textarea type="text"  cols="30" rows="10" placeholder="내용을 입력해 주세요"></textarea>
+                            </td>
                         </tr>
-
-
                     </table>
                     <div class="sbt">
-                        <input type="reset" value="CANCEL">
-                        <input type="submit" value="CONFIRM">
+                        <input type="submit" value="보내기">
                     </div>
                 </fieldset>
             </form>
@@ -162,20 +149,22 @@
     </section>
 
     <section id="map">
+        <div class="inner">
+            <div id="mapBox"></div>
+            <ul class="branch">
+                <li data-index="0" class="on">
+                    <a href="#">본사</a>
+                    <div>
+                        <P><Span>A. </Span>서울시 강남대로 쌸라라샬ㅆ라</P>
+                        <P><Span>A. </Span>서울시 강남대로 쌸라라샬ㅆ라</P>
+                        <P><Span>A. </Span>서울시 강남대로 쌸라라샬ㅆ라</P>
+                    </div>
+                </li>
+                <li data-index="1"><a href="#">지점1</a></li>
+                <li data-index="2"><a href="#">지점2</a></li>
+            </ul>
+        </div>
         
-        <div id="mapBox"></div>
-        <ul class="branch">
-            <li data-index="0" class="on">
-                <a href="#">본사</a>
-                <div>
-                    <P><Span>A. </Span>서울시 강남대로 쌸라라샬ㅆ라</P>
-                    <P><Span>A. </Span>서울시 강남대로 쌸라라샬ㅆ라</P>
-                    <P><Span>A. </Span>서울시 강남대로 쌸라라샬ㅆ라</P>
-                </div>
-            </li>
-            <li data-index="1"><a href="#">지점1</a></li>
-            <li data-index="2"><a href="#">지점2</a></li>
-        </ul>
     </section>
 
     <footer id="footer2">
