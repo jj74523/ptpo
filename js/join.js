@@ -1,5 +1,6 @@
 (function($){
 
+ 
     $.fn.myValidation = function(opt){
         new MyValidation(this, opt);
         return this;

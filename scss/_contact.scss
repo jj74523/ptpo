@@ -1,7 +1,180 @@
 @charset 'utf-8';
 
+#contact {
+
+    .inner {
+
+        width:1180px;
+        margin:0 auto;
+
+        h2 {
+            color:#222;
+            font-size: 26px;
+            font-weight: 600;
+        }
+    
+        h3 {
+            font-size: 18px;
+            color:#333;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+    
+        p {
+            font-size: 14px;
+            color:#555;
+            font-weight: 100;
+            margin-bottom: 50px;
+        }
+    
+        form {
+            border:none;
+    
+            fieldset {
+                border:none;
+    
+                legend {
+                    display: none;
+                }
+    
+                table {
+                    width:100%;
+                    margin-bottom: 80px;
+                    caption {
+                        display: none;
+                    }
+    
+                    tr {
+                        width:100%;
+                        
+                        th {
+                            width:20%;
+                            padding:35px;
+                            box-sizing: border-box;
+                            font-size: 15px;
+                            font-weight: 100;
+                            text-align: left;
+    
+                            .must {
+                                position: relative;
+    
+                                &::after {
+                                    content: '';
+                                    display: block;
+                                    width:6px;
+                                    height:6px;
+                                    background:cornflowerblue;
+                                    position: absolute;
+                                    top:0;
+                                    right:-15px;
+                                    border-radius: 6px;
+        
+    
+                                }
+                            }
+    
+                        }
+                        td {
+                            width:100%;
+    
+                            input[type=text], input[type=password] {
+                                background:#efefef;
+                                border:none;
+                                width:500px;
+                                height:50px;
+                                padding:20px;
+                                border-radius: 3px;
+                                margin-right: 10px;
+                            }
+                            select {
+                                background:#efefef;
+                                border:none;
+                                width:200px;
+                                height:50px;
+                                padding:10px;
+                                border-radius: 3px;
+                            }
+    
+                            button {
+                                background:cornflowerblue;
+                                color:#fff;
+                                border:none;
+                                width:200px;
+                                height:50px;
+                                padding:10px;
+                                border-radius: 3px;
+                                
+                            }
+    
+    
+                            input[type=text].error,
+                            input[type=password].error,
+                            select.error {
+                                background: #da1e1e1b;
+                                border: 1px solid #da1e1e;
+                                color:#da1e1e;
+                            }
+                        }
+    
+                        &.phone {
+                            
+                            td {
+                                display: block;
+                                margin-bottom: 10px;
+
+                                > input[type=text],select  {
+                                    width:24%;
+                                    margin-right: 10px;
+    
+                                }
+    
+
+    
+                            }
+    
+                           
+                        }
+    
+                    }
+    
+                }
+    
+                .sbt {
+                    text-align: center;
+                    margin-bottom: 70px;
+    
+                    input[type=reset], input[type=submit] {
+                        background:cornflowerblue;
+                        color:#fff;
+                        border:none;
+                        width:250px;
+                        height:60px;
+                        padding:10px;
+                        border-radius: 3px;
+                        text-align: center;
+                    }
+                    input[type=reset] {
+                        background:rgb(238, 238, 238);
+                        color:rgb(125, 125, 125);
+    
+                    }
+    
+                }
+    
+    
+    
+            }
+    
+    
+        }
+    
+
+    }
+
+    
 
 
+}
 
 #map {
     position: relative;

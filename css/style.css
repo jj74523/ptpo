@@ -1438,6 +1438,9 @@ a {
   width: 15px;
   margin-left: -30px;
 }
+#vidGallery .list {
+  margin-bottom: 150px;
+}
 #vidGallery .list::after {
   content: "";
   display: block;
@@ -1812,6 +1815,131 @@ a {
     margin-top: 5px;
   }
 }
+#contact .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#contact .inner h2 {
+  color: #222;
+  font-size: 26px;
+  font-weight: 600;
+}
+#contact .inner h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+#contact .inner p {
+  font-size: 14px;
+  color: #555;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+#contact .inner form {
+  border: none;
+}
+#contact .inner form fieldset {
+  border: none;
+}
+#contact .inner form fieldset legend {
+  display: none;
+}
+#contact .inner form fieldset table {
+  width: 100%;
+  margin-bottom: 80px;
+}
+#contact .inner form fieldset table caption {
+  display: none;
+}
+#contact .inner form fieldset table tr {
+  width: 100%;
+}
+#contact .inner form fieldset table tr th {
+  width: 20%;
+  padding: 35px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: left;
+}
+#contact .inner form fieldset table tr th .must {
+  position: relative;
+}
+#contact .inner form fieldset table tr th .must::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: cornflowerblue;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  border-radius: 6px;
+}
+#contact .inner form fieldset table tr td {
+  width: 100%;
+}
+#contact .inner form fieldset table tr td input[type=text], #contact .inner form fieldset table tr td input[type=password] {
+  background: #efefef;
+  border: none;
+  width: 500px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+#contact .inner form fieldset table tr td select {
+  background: #efefef;
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 3px;
+}
+#contact .inner form fieldset table tr td button {
+  background: cornflowerblue;
+  color: #fff;
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 3px;
+}
+#contact .inner form fieldset table tr td input[type=text].error,
+#contact .inner form fieldset table tr td input[type=password].error,
+#contact .inner form fieldset table tr td select.error {
+  background: #da1e1e1b;
+  border: 1px solid #da1e1e;
+  color: #da1e1e;
+}
+#contact .inner form fieldset table tr.phone td {
+  display: block;
+  margin-bottom: 10px;
+}
+#contact .inner form fieldset table tr.phone td > input[type=text], #contact .inner form fieldset table tr.phone td select {
+  width: 24%;
+  margin-right: 10px;
+}
+#contact .inner form fieldset .sbt {
+  text-align: center;
+  margin-bottom: 70px;
+}
+#contact .inner form fieldset .sbt input[type=reset], #contact .inner form fieldset .sbt input[type=submit] {
+  background: cornflowerblue;
+  color: #fff;
+  border: none;
+  width: 250px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+#contact .inner form fieldset .sbt input[type=reset] {
+  background: #eeeeee;
+  color: #7d7d7d;
+}
+
 #map {
   position: relative;
 }
@@ -1898,6 +2026,7 @@ a {
   width: 1180px;
   margin: 0 auto;
   min-height: 600px;
+  margin-bottom: 150px;
 }
 .content #search {
   text-align: right;
@@ -2071,7 +2200,6 @@ a {
   font-size: 12px;
   font-weight: 100;
   margin-left: 30px;
-  margin-bottom: 20px;
 }
 #header2 .bgGnb .banner span {
   display: inline-block;
@@ -2081,6 +2209,7 @@ a {
   font-size: 12px;
   font-weight: 400;
   color: #2a60bf;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 #header2 .bgGnb .banner span:nth-of-type(1) {
