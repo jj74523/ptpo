@@ -183,14 +183,18 @@
 }
 
 #map {
-    position: relative;
+    padding:50px 0 150px 0;
 
     .inner {
-        #mapBox{
+        width:1180px;
+        margin:0 auto;
+         position: relative; 
 
+        #mapBox{
             width:1180px; 
             height:500px; 
             background:#000; 
+            transform: translate(350px, 100px);
         }
     
         
@@ -202,20 +206,134 @@
             background:#efefef;
             z-index:2;
     
-            li{
-                border-bottom:1px solid red;
-                &::after {
-                    content:'';
-                    display:block;
-                    clear:both;
+            > li{
+                width:100%;
+                position: relative;    
+                border-bottom: 1px solid #dddd;
+
+        
+
+                &:last-child {
+                    border-bottom: none;
                 }
+
+                a {
+                    width:100%;
+                    color:#333;
+                    display: block;
+                    padding:30px;
+                    box-sizing: border-box;
+
+                    &::after {
+                        content:'';
+                        display: block;
+                        clear:both;
+                    }
+
+                    .comName {
+                        font-size:20px;
+                        float:left;
+                        width: 35%;
+                        transition: 0.5s;
+                        font-weight: 200;
+
+                        span {
+                            display: inline-block;
+                            padding:5px;
+                            position: relative;
+
+                            &::after {
+                                width:8px;
+                                height:8px;
+                                content: '';
+                                display: block;
+                                background:cornflowerblue;
+                                position: absolute;
+                                top: 0;
+                                right:-30px;
+                                border-radius: 8px;
+                                opacity: 0;
+                                transition: 0.5s;
+
+                            }
+                        }
+
+                        
+
+                    }
+
+                        .list {
+                            text-align: left;
+                            float:left;
+                            width:65%;
+                            display: block;
+
+                            p {
+                                width:100%;
+                                font-size: 13px;
+                                margin-bottom: 10px;
+                                color: #555;
+                                font-weight: 200;
+
+                                img {
+                                    width:25px;
+                                    margin-right: 10px;
+                                   vertical-align: middle;
     
-                a{
-                    display:block;
-                    width:200px; 
-                    text-align:center; 
-                    float:left;
+                                }
+
+                            }
+                            
+                            
+                        }
+
+                   
                 }
+
+                &.on {
+                    .comName {
+                        position: relative;
+                        color: cornflowerblue;
+                        font-weight: 600;
+
+                        span {
+                            &::after {
+                                right:-15px;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .list {
+                        p {
+
+                            font-weight: 400;
+                            color:cornflowerblue;
+                        }
+                        
+                    }
+                }
+
+                &:hover {
+                    .comName {
+                        position: relative;
+                        color: cornflowerblue;
+                        font-weight: 600;
+                        
+
+                        span {
+                            &::after {
+                                top: 0;
+                                right:-15px;
+                                opacity: 1;
+                            }
+
+                        }
+
+                     
+                    }
+                    
+                }
+
             }
         }
 

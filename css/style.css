@@ -1954,12 +1954,18 @@ a {
 }
 
 #map {
+  padding: 50px 0 150px 0;
+}
+#map .inner {
+  width: 1180px;
+  margin: 0 auto;
   position: relative;
 }
 #map .inner #mapBox {
   width: 1180px;
   height: 500px;
   background: #000;
+  transform: translate(350px, 100px);
 }
 #map .inner .branch {
   position: absolute;
@@ -1969,19 +1975,91 @@ a {
   background: #efefef;
   z-index: 2;
 }
-#map .inner .branch li {
-  border-bottom: 1px solid red;
+#map .inner .branch > li {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #dddd;
 }
-#map .inner .branch li::after {
+#map .inner .branch > li:last-child {
+  border-bottom: none;
+}
+#map .inner .branch > li a {
+  width: 100%;
+  color: #333;
+  display: block;
+  padding: 30px;
+  box-sizing: border-box;
+}
+#map .inner .branch > li a::after {
   content: "";
   display: block;
   clear: both;
 }
-#map .inner .branch li a {
-  display: block;
-  width: 200px;
-  text-align: center;
+#map .inner .branch > li a .comName {
+  font-size: 20px;
   float: left;
+  width: 35%;
+  transition: 0.5s;
+  font-weight: 200;
+}
+#map .inner .branch > li a .comName span {
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+}
+#map .inner .branch > li a .comName span::after {
+  width: 8px;
+  height: 8px;
+  content: "";
+  display: block;
+  background: cornflowerblue;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.5s;
+}
+#map .inner .branch > li a .list {
+  text-align: left;
+  float: left;
+  width: 65%;
+  display: block;
+}
+#map .inner .branch > li a .list p {
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: 200;
+}
+#map .inner .branch > li a .list p img {
+  width: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#map .inner .branch > li.on .comName {
+  position: relative;
+  color: cornflowerblue;
+  font-weight: 600;
+}
+#map .inner .branch > li.on .comName span::after {
+  right: -15px;
+  opacity: 1;
+}
+#map .inner .branch > li.on .list p {
+  font-weight: 400;
+  color: cornflowerblue;
+}
+#map .inner .branch > li:hover .comName {
+  position: relative;
+  color: cornflowerblue;
+  font-weight: 600;
+}
+#map .inner .branch > li:hover .comName span::after {
+  top: 0;
+  right: -15px;
+  opacity: 1;
 }
 
 #galTitle {
