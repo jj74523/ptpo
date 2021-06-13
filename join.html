@@ -15,18 +15,16 @@
     <script defer src="js/join.js"></script>
     <script>
         $(document).ready(function(){
-
             $("#checkedBox2").myValidation({
-                isTxt: ["userid","email1","myname"] ,
+                isTxt: ["userid","email","myname"] ,
                 isCheck: ["gender"],
-                isSelect: ["email2"],
+                isSelect: ["phone1","phone2"],
                 isPwd: ["pwd1","pwd2"]
             });
 
         });
     </script>
-    
-    
+
 </head>
 <body>
     <ul id="skipNavi">
@@ -34,6 +32,7 @@
         <li><a href="#section">본문 바로가기</a></li>
         <li><a href="#footer">하단메뉴 바로가기</a></li>
     </ul>
+
     <header id="header2">
         <div class="inner">
                 <h1><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
@@ -102,7 +101,6 @@
         </div>
     </header>
 
-
     <section id="sub_title">
         <div class="inner">
             <h1>JOIN</h1>
@@ -116,10 +114,31 @@
 
     <section id="step">
         <div class="inner">
-            <span><img src="img/join/checked_icon.png" alt=""> <b>SETP1 </b>약관동의 및 인증</span>
-            <span class="on"><img src="img/join/notes_icon.png" alt=""> <b>SETP2 </b>기본정보입력</span>
-            <span><img src="img/join/user_icon.png" alt=""> <b>SETP3 </b>회원가입완료</span>
+            <span class="on"><img src="img/join/on_notes_icon.png" alt=""> <b>SETP1 </b>약관동의 및 기본정보입력</span>
+            <span><img src="img/join/user_icon.png" alt=""> <b>SETP2 </b>회원가입완료</span>
         </div>
+    </section>
+
+    <section id="checkedBox">
+        <h2>STEP1. 약관동의 및 인증</h2>
+        <h3>개인정보 수집 및 이용에 대한 안내 및 동의서</h3>
+        <p>개인정보의 처리와 관련하여 아래와 같이 업무를 위탁하고 있으며, 관계 법력에 따라 위탁계약 시 <br> 개인정보가 안정하게 관리될 수 있도록  필요한 사항을 규정하고 있습니다.</p>
+        <form action="/" method="post">
+            <fieldset>
+                <legend>회원가입 입력양식폼</legend>
+                <textarea name="terms1" id="terms1" cols="30" rows="10" spellcheck="false">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsum, porro doloremque quasi saepe vitae iusto reiciendis tempora voluptatibus possimus aliquid totam perspiciatis distinctio ipsam, tenetur eveniet alias magnam numquam quam nemo sed facere? Autem unde culpa, quis soluta natus nostrum! Expedita, quibusdam obcaecati dolores vero fuga voluptates fugiat voluptatibus quisquam qui atque aperiam quasi mollitia ut? Repellat, beatae sint eveniet, iste amet quasi hic cupiditate tempore nemo adipisci maxime nobis doloremque recusandae minima cum ipsam aliquam? Quisquam, quaerat corrupti aspernatur saepe dignissimos, suscipit, deleniti at ab tenetur dolorum non ex impedit veniam officiis tempore dicta expedita minima molestias vel. Magnam, qui! Voluptatibus ipsa dolor quia minima quis recusandae? Dignissimos sed est facilis numquam maiores animi quia nemo placeat quasi. Perferendis mollitia reprehenderit, dolorum itaque dolore quia vitae obcaecati ad, illo voluptas deserunt? At voluptas sapiente libero ipsam quam assumenda sunt, nemo amet qui dolorum atque dolore architecto error magni? Eligendi consequatur nam ullam. Magnam, necessitatibus distinctio laudantium nesciunt magni, optio ipsam cumque pariatur officia vitae nemo in obcaecati, inventore vel sed enim dolorum qui blanditiis cupiditate non. Mollitia ipsa voluptatum corporis porro enim sint dolorem quos eius, nihil delectus? Nemo numquam nam aliquid fugit nisi voluptas hic. Deserunt incidunt minus in optio maxime alias quas nulla, facere assumenda? Voluptatem nulla, non maiores eos similique quod ducimus adipisci dicta aperiam inventore labore magnam quidem repudiandae ea! Quidem animi expedita itaque deserunt fugit soluta non eos illo similique, sint temporibus iusto saepe perspiciatis molestias nostrum, porro natus nesciunt quas aperiam voluptatem, tenetur repellat. Tempore unde corrupti quaerat blanditiis recusandae, deleniti, laboriosam temporibus, repellen
+                </textarea>
+                <label for="terms1" class="terms1">
+                    <input type="checkbox" id="terms1" name="terms1" value="terms1" > 동의합니다.
+                </label>
+
+                <textarea name="terms2" id="terms2" cols="30" rows="10" spellcheck="false">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsum, porro doloremque quasi saepe vitae iusto reiciendis tempora voluptatibus possimus aliquid totam perspiciatis distinctio ipsam, tenetur eveniet alias magnam numquam quam nemo sed facere? Autem unde culpa, quis soluta natus nostrum! Expedita, quibusdam obcaecati dolores vero fuga voluptates fugiat voluptatibus quisquam qui atque aperiam quasi mollitia ut? Repellat, beatae sint eveniet, iste amet quasi hic cupiditate tempore nemo adipisci maxime nobis doloremque recusandae minima cum ipsam aliquam? Quisquam, quaerat corrupti aspernatur saepe dignissimos, suscipit, deleniti at ab tenetur dolorum non ex impedit veniam officiis tempore dicta expedita minima molestias vel. Magnam, qui! Voluptatibus ipsa dolor quia minima quis recusandae? Dignissimos sed est facilis numquam maiores animi quia nemo placeat quasi. Perferendis mollitia reprehenderit, dolorum itaque dolore quia vitae obcaecati ad, illo voluptas deserunt? At voluptas sapiente libero ipsam quam assumenda sunt, nemo amet qui dolorum atque dolore architecto error magni? Eligendi consequatur nam ullam. Magnam, necessitatibus distinctio laudantium nesciunt magni, optio ipsam cumque pariatur officia vitae nemo in obcaecati, inventore vel sed enim dolorum qui blanditiis cupiditate non. Mollitia ipsa voluptatum corporis porro enim sint dolorem quos eius, nihil delectus? Nemo numquam nam aliquid fugit nisi voluptas hic. Deserunt incidunt minus in optio maxime alias quas nulla, facere assumenda? Voluptatem nulla, non maiores eos similique quod ducimus adipisci dicta aperiam inventore labore magnam quidem repudiandae ea! Quidem animi expedita itaque deserunt fugit soluta non eos illo similique, sint temporibus iusto saepe perspiciatis molestias nostrum, porro natus nesciunt quas aperiam voluptatem, tenetur repellat. Tempore unde corrupti quaerat blanditiis recusandae, deleniti, laboriosam temporibus, repellen
+                </textarea>
+                <label for="terms2" class="terms2">
+                    <input type="checkbox" id="terms2" name="terms2" value="terms2" > 동의합니다.
+                </label>
+            </fieldset>
+        </form>
     </section>
 
     <section id="checkedBox2">
@@ -134,55 +153,53 @@
                         회원정보 입력양식 테이블
                     </caption>
                     <tr class="userid">
-                        <th><label for="id">아이디</label></th>
-                        <td><input type="text" id="userid" name="userid" placeholder="아이디를 입력해 주세요"></td>
-                        <button>중복확인</button>
+                        <th><label for="id" class="must">아이디</label></th>
+                        <td><input type="text" id="userid" name="userid" placeholder="아이디를 입력해 주세요"><button>중복확인</button></td>
+                        
                     </tr>
-                    <tr class="pwd">
-                        <th><label for="pwd1">비밀번호</label></th>
+                    <tr class="pwd1">
+                        <th><label for="pwd1" class="must">비밀번호</label></th>
                         <td><input type="password" id="pwd1" name="pwd1" placeholder="비밀번호를 입력해 주세요"></td>
                     </tr>
                     <tr class="pwd2">
-                        <th><label for="pwd2">비밀번호재입력</label></th>
+                        <th><label for="pwd2" class="must">비밀번호재입력</label></th>
                         <td><input type="password" id="pwd2" name="pwd2" placeholder="비밀번호를 재입력해 주세요"></td>
                     </tr>
-                    <tr>
-                        <th><label for="myname">이름</label></th>
+                    <tr class="name">
+                        <th><label for="myname" class="must">이름</label></th>
                         <td><input type="password" id="myname" name="myname" placeholder="이름를 입력해 주세요"></td>
                     </tr>
-                    <tr>
-                        <th><label for="phone">전화번호</label></th>
+                    <tr class="phone">
+                        <th><label for="phone" class="must">전화번호</label></th>
                         <td>
-                            <select name="phone" id="phone">
+                            <select name="phone" id="phone1">
                                 <option value="통신사">통신사</option>
                                 <option value="KT">KT</option>
                                 <option value="SKT">SKT</option>
                                 <option value="LGU+">LGU+</option>
                             </select>
-                            <select name="num" id="num">
+                            <select name="num" id="phone2">
                                 <option value="010">010</option>
                                 <option value="011">011</option>
                             </select> 
-                            <input type="text" placeholder="휴대폰번호를 입력해주세요 ">
+                            <input type="text" id="phone3" placeholder="휴대폰번호를 입력해주세요">
                             <button>인증번호발송</button>
                         </td>
-                    </tr>
-                    <tr>
-                        <th><label for="phone">인증번호입력</label></th>
                         <td>
-                            <input type="text" placeholder="인증번호 4자리를 입력해주세요 ">
+                            <input type="text" id="phone4" placeholder="인증번호 4자리를 입력해주세요">
                             <button>인증확인</button>
                         </td>
                     </tr>
                     <tr class="gender">
                         <th>성별</th>
-                        <td> <label for="male">  <input type="radio" id="male" name="gender" value="male" > 남성 </label>
-                            <label for="female">  <input type="radio" id="female" name="gender" value="female" > 여성 </label>
+                        <td>
+                            <label for="male">
+                                <input type="radio" id="male" name="gender" value="male" > 남성
+                            </label>
+                            <label for="female">
+                                <input type="radio" id="female" name="gender" value="female" > 여성
+                            </label>
                         </td>
-                    </tr>
-                    <tr class="choice">
-                        <hr>
-                        <h3>선택입력</h3> 
                     </tr>
                     <tr>
                         <th><label for="birth">생년월일</label></th>
@@ -192,17 +209,19 @@
                                 <option value="2002">2002</option>
                                 <option value="2003">2003</option>
                             </select>
-                            <select name="month" id="month">
+                            <select name="month" id="month1">
                                 <option value="jan">1월</option>
                             </select> 
-                            <input type="text" placeholder="메일아이디를 입력해주세요 ">
+                            <select name="month" id="date">
+                                <option value="1">1일</option>
+                                <option value="2">2일</option>
+                                <option value="3">3일</option>
 
+                            </select> 
                         </td>
                     </tr>
-
-                    
                 <tr class="email">
-                    <th><label for="email">E-mail</label></th>
+                    <th><label for="email" class="must">E-mail</label></th>
                     <td>
                         <input type="text"  name="email1" id="email" placeholder="메일아이디를 입력해주세요 "> @ <select name="email2" id="email2">
                             <option value="naver">naver.com</option>
@@ -211,22 +230,25 @@
                         </select> 
                     </td>
                 </tr>
-
-
-                <tr>
-                    <th><label for="phone">주소</label></th>
+                <tr class="adress">
+                    <th><label for="adress1">주소</label></th>
                     <td>
-                        <input type="text" placeholder="주소를 입력해주세요 ">
-                        <button>인증확인</button>
-                        <input type="text" placeholder="나머지주소를 입력해주세요 ">
+                        <input type="text" name="adress1" id="adress1" placeholder="주소를 입력해주세요 ">
+                        <button>주소검색</button>
+                    </td>
+                    <td>
+                        <input type="text" name="adress1" id="adress2" placeholder="나머지주소를 입력해주세요 ">
                     </td>
                 </tr>
                 </table>
-                <input type="reset" value="CANCEL">
-                <input type="submit" value="CONFIRM">
+                <div class="sbt">
+                    <input type="reset" value="CANCEL">
+                    <input type="submit" value="CONFIRM">
+                </div>
             </fieldset>
         </form>
     </section>
+
 
 
 

@@ -1,10 +1,6 @@
 (function($){
 
-    //제이쿼리 객체의 fn공간에 myValidation으로 플러그인 등록
-    //옵션으로 받은 객체를 opt인수로 전달
     $.fn.myValidation = function(opt){
-        //내부에서 MyValidation생성자로 인스턴스 생성 
-        //이대 첫번째 인수 this --> $("#myForm")
         new MyValidation(this, opt);
         return this;
     }
@@ -14,9 +10,6 @@
         this.bindingEvent(opt);
     }
     MyValidation.prototype.init = function(el){
-        //el로 전달받는거 자체가 제이쿼리 선택자이기 때문에
-        //다시 제이쿼리 선택자로 감쌀 필요가 없음
-        // el --> $("#myForm")
         this.submit = el.find("input[type=submit]");
     }
     MyValidation.prototype.bindingEvent = function(opt){
@@ -40,7 +33,6 @@
                 }
             }  
             
-          
             if(opt.isPwd){      
                 if( !this.isPwd(opt.isPwd[0], opt.isPwd[1]) ) e.preventDefault();  
             }

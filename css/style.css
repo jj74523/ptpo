@@ -1035,9 +1035,9 @@ a {
 #step .inner span {
   font-size: 14px;
   display: inline-block;
-  width: 33.3333%;
+  width: 50%;
   height: 100%;
-  color: #888;
+  color: #999;
   line-height: 60px;
   box-sizing: border-box;
   text-align: center;
@@ -1054,11 +1054,12 @@ a {
   clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 0 51%, 0% 0%);
   background: cornflowerblue;
   color: #fff;
+  font-weight: 500;
 }
 
 #checkedBox {
   width: 1180px;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
 }
 #checkedBox h2 {
   color: #222;
@@ -1100,62 +1101,19 @@ a {
   display: block;
   font-size: 17px;
   margin-bottom: 50px;
-}
-#checkedBox .btn {
-  width: 600px;
-  height: 60px;
-  text-align: center;
-  margin: 50px auto;
-  display: block;
-  border: none;
-  background: cornflowerblue;
-  font-size: 17px;
-  font-weight: 300;
-  color: #fff;
-  border-radius: 5px;
-  line-height: 60px;
-}
-
-#step {
-  margin-bottom: 100px;
-  margin-top: -111px;
-}
-#step .inner {
-  width: 1180px;
-  margin: 0 auto;
-  height: 60px;
-  font-size: 0;
-  background: #eee;
-  border-radius: 5px;
-  overflow: hidden;
-}
-#step .inner span {
   font-size: 14px;
-  display: inline-block;
-  width: 33.3333%;
-  height: 100%;
-  color: #888;
-  line-height: 60px;
-  box-sizing: border-box;
-  text-align: center;
+  font-weight: 300;
 }
-#step .inner span b {
-  margin-right: 10px;
-}
-#step .inner span img {
-  width: 20px;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-#step .inner span.on {
-  clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 4% 51%, 0% 0%);
-  background: cornflowerblue;
-  color: #fff;
+#checkedBox form fieldset label input[id=terms1] {
+  margin-right: 5px;
+  vertical-align: auto;
 }
 
 #checkedBox2 {
   width: 1180px;
   margin: 0 auto;
+  border-top: 1px solid #d7d7d7;
+  padding-top: 60px;
 }
 #checkedBox2 h2 {
   color: #222;
@@ -1185,6 +1143,7 @@ a {
 }
 #checkedBox2 form fieldset table {
   width: 100%;
+  margin-bottom: 80px;
 }
 #checkedBox2 form fieldset table caption {
   display: none;
@@ -1200,8 +1159,22 @@ a {
   font-weight: 100;
   text-align: left;
 }
+#checkedBox2 form fieldset table tr th .must {
+  position: relative;
+}
+#checkedBox2 form fieldset table tr th .must::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: cornflowerblue;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  border-radius: 6px;
+}
 #checkedBox2 form fieldset table tr td {
-  width: 80%;
+  width: 100%;
 }
 #checkedBox2 form fieldset table tr td input[type=text], #checkedBox2 form fieldset table tr td input[type=password] {
   background: #efefef;
@@ -1210,6 +1183,7 @@ a {
   height: 50px;
   padding: 20px;
   border-radius: 3px;
+  margin-right: 10px;
 }
 #checkedBox2 form fieldset table tr td select {
   background: #efefef;
@@ -1235,9 +1209,52 @@ a {
   border: 1px solid #da1e1e;
   color: #da1e1e;
 }
-#checkedBox2 form fieldset table tr.choice {
-  width: 100%;
+#checkedBox2 form fieldset table tr.phone td {
+  display: block;
+  margin-bottom: 10px;
 }
+#checkedBox2 form fieldset table tr.phone td > input[type=text], #checkedBox2 form fieldset table tr.phone td select {
+  width: 24%;
+  margin-right: 10px;
+}
+#checkedBox2 form fieldset table tr.phone td:nth-of-type(2) input[type=text], #checkedBox2 form fieldset table tr.phone td:nth-of-type(2) select {
+  background: #efefef;
+  border: none;
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+#checkedBox2 form fieldset table tr.adress td {
+  display: block;
+  margin-bottom: 10px;
+}
+#checkedBox2 form fieldset table tr.adress td > input[type=text], #checkedBox2 form fieldset table tr.adress td select {
+  width: 60%;
+}
+#checkedBox2 form fieldset table tr.adress td:nth-of-type(2) input[type=text], #checkedBox2 form fieldset table tr.adress td:nth-of-type(2) select {
+  width: 60%;
+}
+#checkedBox2 form fieldset .sbt {
+  text-align: center;
+  margin-bottom: 70px;
+}
+#checkedBox2 form fieldset .sbt input[type=reset], #checkedBox2 form fieldset .sbt input[type=submit] {
+  background: cornflowerblue;
+  color: #fff;
+  border: none;
+  width: 250px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+#checkedBox2 form fieldset .sbt input[type=reset] {
+  background: #eeeeee;
+  color: #7d7d7d;
+}
+
 /*한솔 TV 타이틀*/
 #ytb_tit {
   background: url(../img/youtube/tit_bg.jpg) no-repeat;
@@ -1795,561 +1812,37 @@ a {
     margin-top: 5px;
   }
 }
-/* reset */
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Poppins", "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
-}
-
-ul, ol, li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* tab 이동 */
-#skipNavi li a {
-  display: block;
-  width: 100%;
-  height: 40px;
-  background: #4b8ed5;
-  font: bold 15px/40px "arial";
-  color: #fff;
-  text-align: center;
-  position: fixed;
-  top: -40px;
-  left: 0;
-  z-index: 1;
-}
-#skipNavi li a.on {
-  top: 0;
-}
-
-/* header */
-#header2 {
-  width: 100%;
-  border-bottom: 1px solid #efefef;
+#map {
   position: relative;
-  padding-top: 50px;
 }
-#header2 .inner {
+#map #mapBox {
   width: 1180px;
-  height: 100px;
-  margin: 0 auto;
-  position: relative;
+  height: 500px;
+  background: #000;
 }
-#header2 .inner h1 {
+#map .branch {
   position: absolute;
-  top: 50%;
-  margin-top: -25px;
+  width: 500px;
+  top: 0;
+  left: 0;
+  background: #efefef;
+  z-index: 2;
 }
-#header2 .inner h1 a {
-  color: #111;
-  font-size: 30px;
-  display: block;
+#map .branch li {
+  border-bottom: 1px solid red;
 }
-#header2 .inner .gnb {
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 0;
-}
-#header2 .inner .gnb::after {
+#map .branch li::after {
   content: "";
   display: block;
   clear: both;
 }
-#header2 .inner .gnb > li {
-  transition: 0.5s;
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-}
-#header2 .inner .gnb > li > a {
+#map .branch li a {
   display: block;
-  color: #333;
-  font-size: 16px;
-  width: 118px;
-  height: 100px;
+  width: 200px;
   text-align: center;
-  line-height: 100px;
-  font-weight: 600;
-}
-#header2 .inner .gnb > li > .subGnb {
-  position: absolute;
-  left: 0;
-  display: none;
-  font-weight: 300;
-  text-align: center;
-  width: 100%;
-}
-#header2 .inner .gnb > li > .subGnb > li {
-  position: relative;
-  transition: 0.5s;
-}
-#header2 .inner .gnb > li > .subGnb > li > a {
-  width: 100%;
-  height: 70px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 50px;
-  color: #777;
-  position: relative;
-  transition: 0.5s;
-  font-weight: 400;
-  padding: 5px;
-  box-sizing: border-box;
-}
-#header2 .inner .gnb > li > .subGnb > li > a::after {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  background: #568ded;
-  position: absolute;
-  right: -10px;
-  top: -3px;
-  transition: 0.5s;
-  opacity: 0;
-}
-#header2 .inner .gnb > li > .subGnb > li > a:hover::after {
-  right: -5px;
-  opacity: 1;
-}
-#header2 .inner .gnb > li > .subGnb > li:hover a {
-  color: #568ded;
-  font-weight: 600;
-}
-#header2 .inner .gnb > li.on a {
-  color: #4086ff;
-  transition: 0.5s;
-}
-#header2 .inner .icons {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-#header2 .inner .icons a {
-  margin-left: 10px;
-  background-color: #eee;
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  border-radius: 35px;
-  text-align: center;
-  line-height: 35px;
-  color: #777;
-}
-#header2 .inner .btnCall {
-  display: none;
-  width: 30px;
-  height: 25px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  box-sizing: border-box;
-  margin-right: 0;
-  transform: translateY(-50%);
-}
-#header2 .inner .btnCall::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#header2 .inner .btnCall span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-#header2 .inner .btnCall::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-#header2 .inner .snsMenu {
-  position: absolute;
-  top: -40px;
-  left: 0;
-}
-#header2 .inner .snsMenu li {
-  display: inline-block;
-  margin-right: 10px;
-  background: #eee;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  text-align: center;
-}
-#header2 .inner .snsMenu li:last-child {
-  margin-right: 0;
-}
-#header2 .inner .snsMenu li a {
-  color: #777;
-  line-height: 26px;
-  font-size: 13px;
-}
-#header2 .inner .login {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  font-size: 0;
-}
-#header2 .inner .login li {
-  display: inline-block;
-  position: relative;
-  background: #eee;
-  border-radius: 35px;
-}
-#header2 .inner .login li a {
-  display: block;
-  font-size: 11px;
-  color: #777;
-  font-weight: 300;
-  padding: 4px 13px;
-  box-sizing: border-box;
-}
-#header2 .inner .login li a img {
-  width: 20px;
-  vertical-align: middle;
-}
-#header2 .inner .login li:nth-child(1) {
-  border-radius: 35px 0 0 35px;
-}
-#header2 .inner .login li:nth-child(2) {
-  background-color: #616161;
-  margin-right: 10px;
-  border-radius: 0 35px 35px 0;
-}
-#header2 .inner .login li:nth-child(2) a {
-  color: #f2f2f2;
+  float: left;
 }
 
-/* 서브페이지 타이틀 */
-#sub_title {
-  width: 100%;
-  padding: 70px 0 110px 0;
-}
-#sub_title .inner {
-  width: 1180px;
-  border-bottom: 1px solid #ccc;
-  margin: 0 auto;
-}
-#sub_title .inner h1 {
-  color: #444;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-#sub_title .inner .sub_menu a {
-  display: inline-block;
-  color: #555;
-  vertical-align: middle;
-  padding: 0 5px;
-  margin-bottom: 20px;
-}
-#sub_title .inner .sub_menu a::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 13px;
-  background: #ccc;
-  margin-left: 10px;
-}
-#sub_title .inner .sub_menu a img {
-  width: 16px;
-}
-#sub_title .inner .sub_menu a:nth-child(3) {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1;
-}
-#sub_title .inner .sub_menu a:nth-child(3) img {
-  width: 10px;
-  margin-left: 5px;
-}
-#sub_title .inner .sub_menu a:nth-child(3)::after {
-  display: none;
-}
-
-#footer2 {
-  width: 100%;
-  background: #333;
-  color: #888;
-  padding: 40px 0;
-}
-#footer2 .upper {
-  border-bottom: 1px solid #555;
-}
-#footer2 .upper .inner {
-  width: 1180px;
-  margin: 0 auto 30px auto;
-  position: relative;
-}
-#footer2 .upper .inner h1 a {
-  color: #888;
-}
-#footer2 .upper .inner select {
-  background: transparent;
-  background: #444;
-  color: #888;
-  border: none;
-  padding: 10px 100px 10px 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 14px;
-}
-#footer2 .lower {
-  margin-top: 30px;
-}
-#footer2 .lower .inner {
-  width: 1180px;
-  margin: 0 auto;
-  position: relative;
-}
-#footer2 .lower .inner address {
-  font-style: unset;
-  font-size: 14px;
-  margin-bottom: 10px;
-  line-height: 1.3;
-  color: #999;
-  font-weight: 100;
-}
-#footer2 .lower .inner address p {
-  margin-bottom: 5px;
-}
-#footer2 .lower .inner address p:last-of-type {
-  margin-bottom: 30px;
-}
-#footer2 .lower .inner #footmenu a {
-  color: #aaa;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 1.2;
-  margin-right: 20px;
-}
-#footer2 .lower .inner .callCenter {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
-  color: #bbbbbb;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  font-weight: 100;
-}
-#footer2 .lower .inner .callCenter .call {
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 1;
-  color: #999;
-  margin-top: 10px;
-}
-
-@media screen and (max-width: 1179px) {
-  #header2 {
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  #header2 #topMenu {
-    padding: 8px 0;
-  }
-  #header2 #topMenu .inner {
-    width: 100%;
-    height: 30px;
-  }
-  #header2 .mainMenu {
-    width: 100%;
-    height: 80px;
-  }
-  #header2 .mainMenu h1 a {
-    color: #111;
-    font-size: 30px;
-    display: block;
-  }
-  #header2 .mainMenu .menuWeb .gnb {
-    display: none;
-  }
-  #header2 .mainMenu .icons {
-    display: none;
-  }
-  #header2 .mainMenu .btnCall {
-    display: block;
-  }
-
-  /* 서브페이지 타이틀 */
-  #sub_title {
-    padding: 70px 20px 110px 20px;
-  }
-  #sub_title .inner {
-    width: 100%;
-  }
-  #sub_title .inner h1 {
-    font-size: 30px;
-  }
-  #sub_title .inner .sub_menu a {
-    display: inline-block;
-    color: #555;
-    vertical-align: middle;
-    padding: 0 5px;
-    margin-bottom: 20px;
-  }
-  #sub_title .inner .sub_menu a img {
-    width: 16px;
-  }
-
-  #footer2 {
-    width: 100%;
-    padding: 40px 0;
-  }
-  #footer2 .upper .inner {
-    width: 100%;
-    margin: 0 20px 30px 20px;
-    position: relative;
-  }
-  #footer2 .upper .inner select {
-    background: transparent;
-    border: 1px solid #888;
-    color: #888;
-    padding: 5px 100px 5px 10px;
-    position: absolute;
-    top: 10px;
-    right: 40px;
-  }
-  #footer2 .lower {
-    margin-top: 30px;
-  }
-  #footer2 .lower .inner {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-  }
-  #footer2 .lower .inner address {
-    width: 100%;
-    font-style: unset;
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  #footer2 .lower .inner #footmenu {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  #footer2 .lower .inner #footmenu a {
-    font-size: 13px;
-    line-height: 1.2;
-    margin-right: 20px;
-  }
-  #footer2 .lower .inner .callCenter {
-    position: relative;
-    text-align: center;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-  }
-  #footer2 .lower .inner .callCenter .call {
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 1;
-    color: #999;
-    margin-top: 5px;
-  }
-}
-@media screen and (max-width: 539px) {
-  #header2 #topMenu {
-    display: none;
-  }
-  #header2 .mainMenu {
-    margin-top: 10px;
-    height: 60px;
-  }
-  #header2 .mainMenu h1 a {
-    font-size: 28px;
-  }
-
-  /* 서브페이지 타이틀 */
-  #sub_title {
-    padding: 30px 20px 60px 20px;
-  }
-  #sub_title .inner {
-    width: 100%;
-  }
-  #sub_title .inner h1 {
-    font-size: 20px;
-  }
-  #sub_title .inner .sub_menu a {
-    font-size: 12px;
-  }
-  #sub_title .inner .sub_menu a img {
-    width: 12px;
-  }
-  #sub_title .inner .sub_menu a:nth-child(3) {
-    font-size: 12px;
-  }
-  #sub_title .inner .sub_menu a:nth-child(3) img {
-    width: 8px;
-  }
-
-  #footer2 {
-    width: 100%;
-    padding: 30px 0;
-  }
-  #footer2 .upper .inner {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  #footer2 .upper .inner h1 a {
-    color: #888;
-    display: block;
-    text-align: center;
-  }
-  #footer2 .upper .inner select {
-    display: none;
-  }
-  #footer2 .lower {
-    margin-top: 30px;
-  }
-  #footer2 .lower .inner #footmenu {
-    display: none;
-  }
-  #footer2 .lower .inner .callCenter {
-    position: relative;
-    text-align: center;
-    color: #bbbbbb;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-  }
-  #footer2 .lower .inner .callCenter .call {
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 1;
-    color: #999;
-    margin-top: 5px;
-  }
-}
 #galTitle {
   width: 100%;
   background: url(../img//gallery/gallery_bg.jpg) top;
