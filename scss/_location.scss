@@ -9,15 +9,23 @@
 
         .first{
             width: 100%;
+            display: block;
+            background:blue;
+            text-align: center;
 
+
+            &::after {
+                content:'';
+                display: block;
+                clear:both;
+            }
             
-            > li {
+
+            >li {
                 margin-bottom: 50px;
+                width: 23%;
+                display: inline-block;
 
-                .second_center {
-                    margin:0 235px;
-                }
-            
                 .owner {
                     background:#222;
                     border:none;
@@ -25,9 +33,19 @@
                     font-size: 20px;
                     font-weight: 600;
                     margin:0 auto;
+                    width:100%;
+                    display: block;
+                    height:50px;
+                    line-height: 50px;
+                    
                 }
                 
-                span {
+                .second {
+
+                    background:gold;
+                }
+                
+                h3 {
                     background:#ddd;
                     height:50px;
                     display: block;
@@ -36,51 +54,16 @@
                     border-top: 3px solid #333;
                     border-bottom:1px solid #bbb;
                     color:#333;
-                    width:calc((1180px / 5) * 1);
+                    width:100%;
+                }
+
+                div {
+                    width:100%;
+                    background:#fff;
+                    border-bottom:1px solid #bbb;
                 }
                 
     
-                .second {
-
-                    &::after {
-                        content:'';
-                        display: block;
-                        clear:both;
-                    }
-                    
-                    >li {
-                        background:#fff;
-                        padding:30px 0;
-                        float:left;
-                        width:calc((1180px / 5) * 1);
-                        border-bottom: 1px solid #ccc;
-                        text-align: center;
-                    
-                       >span {
-                            background:#ccc;
-                            display: block;
-                            color:#555;
-                             width:100%;
-                       }
-
-                       .third {
-                           margin-top: 60px;
-
-                            &::after {
-                                content:'';
-                                display: block;
-                                clear:both;
-                            }   
-
-                            >li {
-                                float:left;
-                            }
-                       }
-
-                }
-
-    
-            }
         } 
         }
         

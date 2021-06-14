@@ -1496,12 +1496,19 @@ a {
 }
 #organization .inner .first {
   width: 100%;
+  display: block;
+  background: blue;
+  text-align: center;
+}
+#organization .inner .first::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 #organization .inner .first > li {
   margin-bottom: 50px;
-}
-#organization .inner .first > li .second_center {
-  margin: 0 235px;
+  width: 23%;
+  display: inline-block;
 }
 #organization .inner .first > li .owner {
   background: #222;
@@ -1510,8 +1517,15 @@ a {
   font-size: 20px;
   font-weight: 600;
   margin: 0 auto;
+  width: 100%;
+  display: block;
+  height: 50px;
+  line-height: 50px;
 }
-#organization .inner .first > li span {
+#organization .inner .first > li .second {
+  background: gold;
+}
+#organization .inner .first > li h3 {
   background: #ddd;
   height: 50px;
   display: block;
@@ -1520,37 +1534,12 @@ a {
   border-top: 3px solid #333;
   border-bottom: 1px solid #bbb;
   color: #333;
-  width: calc((1180px / 5) * 1);
-}
-#organization .inner .first > li .second::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#organization .inner .first > li .second > li {
-  background: #fff;
-  padding: 30px 0;
-  float: left;
-  width: calc((1180px / 5) * 1);
-  border-bottom: 1px solid #ccc;
-  text-align: center;
-}
-#organization .inner .first > li .second > li > span {
-  background: #ccc;
-  display: block;
-  color: #555;
   width: 100%;
 }
-#organization .inner .first > li .second > li .third {
-  margin-top: 60px;
-}
-#organization .inner .first > li .second > li .third::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#organization .inner .first > li .second > li .third > li {
-  float: left;
+#organization .inner .first > li div {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #bbb;
 }
 
 #footer2 {
