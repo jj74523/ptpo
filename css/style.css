@@ -194,44 +194,40 @@ a {
   right: 0px;
   opacity: 1;
 }
-#community .inner #tab dl dd {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1180px;
+#community .inner #tab dl > dd {
   display: none;
 }
-#community .inner #tab dl dd.on {
+#community .inner #tab dl > dd.on {
   display: block;
   position: relative;
 }
-#community .inner #tab dl #news table {
+#community .inner #tab dl #news table, #community .inner #tab dl #faq table, #community .inner #tab dl #notice table {
   margin-top: 50px;
   width: 100%;
   margin-bottom: 50px;
   border-collapse: collapse;
 }
-#community .inner #tab dl #news table caption {
+#community .inner #tab dl #news table caption, #community .inner #tab dl #faq table caption, #community .inner #tab dl #notice table caption {
   position: absolute;
   top: -999999px;
   width: 1px;
   opacity: 0;
 }
-#community .inner #tab dl #news table thead {
+#community .inner #tab dl #news table thead, #community .inner #tab dl #faq table thead, #community .inner #tab dl #notice table thead {
   position: absolute;
   top: -999999px;
   width: 1px;
   opacity: 0;
 }
-#community .inner #tab dl #news table tbody {
+#community .inner #tab dl #news table tbody, #community .inner #tab dl #faq table tbody, #community .inner #tab dl #notice table tbody {
   border-top: 2px solid #333;
 }
-#community .inner #tab dl #news table tbody tr td {
+#community .inner #tab dl #news table tbody tr td, #community .inner #tab dl #faq table tbody tr td, #community .inner #tab dl #notice table tbody tr td {
   border-collapse: collapse;
   border-bottom: 1px solid gainsboro;
   padding: 20px 0;
 }
-#community .inner #tab dl #news table tbody tr .day {
+#community .inner #tab dl #news table tbody tr .day, #community .inner #tab dl #faq table tbody tr .day, #community .inner #tab dl #notice table tbody tr .day {
   width: 10%;
   text-align: center;
   font-size: 12px;
@@ -239,7 +235,7 @@ a {
   color: #6c6c6c;
   position: relative;
 }
-#community .inner #tab dl #news table tbody tr .day::after {
+#community .inner #tab dl #news table tbody tr .day::after, #community .inner #tab dl #faq table tbody tr .day::after, #community .inner #tab dl #notice table tbody tr .day::after {
   content: "";
   display: block;
   width: 1px;
@@ -250,14 +246,14 @@ a {
   right: 0;
   margin-top: -20px;
 }
-#community .inner #tab dl #news table tbody tr .day span {
+#community .inner #tab dl #news table tbody tr .day span, #community .inner #tab dl #faq table tbody tr .day span, #community .inner #tab dl #notice table tbody tr .day span {
   font-weight: 600;
   font-size: 34px;
   line-height: 1.2;
   color: #333;
   display: block;
 }
-#community .inner #tab dl #news table tbody tr .title {
+#community .inner #tab dl #news table tbody tr .title, #community .inner #tab dl #faq table tbody tr .title, #community .inner #tab dl #notice table tbody tr .title {
   font-size: 14px;
   line-height: 1.2;
   width: 85%;
@@ -265,10 +261,10 @@ a {
   box-sizing: border-box;
   font-weight: 100;
 }
-#community .inner #tab dl #news table tbody tr .title a {
+#community .inner #tab dl #news table tbody tr .title a, #community .inner #tab dl #faq table tbody tr .title a, #community .inner #tab dl #notice table tbody tr .title a {
   color: #777;
 }
-#community .inner #tab dl #news table tbody tr .title strong {
+#community .inner #tab dl #news table tbody tr .title strong, #community .inner #tab dl #faq table tbody tr .title strong, #community .inner #tab dl #notice table tbody tr .title strong {
   display: block;
   color: #333;
   font-weight: 600;
@@ -276,7 +272,7 @@ a {
   line-height: 1.2;
   margin-bottom: 5px;
 }
-#community .inner #tab dl #news table tbody tr .more a {
+#community .inner #tab dl #news table tbody tr .more a, #community .inner #tab dl #faq table tbody tr .more a, #community .inner #tab dl #notice table tbody tr .more a {
   display: block;
   line-height: 40px;
   text-align: center;
@@ -286,12 +282,12 @@ a {
   background-color: #f4f4f4;
   transition: 0.5s;
 }
-#community .inner #tab dl #news table tbody tr .more a span {
+#community .inner #tab dl #news table tbody tr .more a span, #community .inner #tab dl #faq table tbody tr .more a span, #community .inner #tab dl #notice table tbody tr .more a span {
   font-size: 14px;
   opacity: 0;
   margin-left: -35px;
 }
-#community .inner #tab dl #news table tbody tr .more a:hover {
+#community .inner #tab dl #news table tbody tr .more a:hover, #community .inner #tab dl #faq table tbody tr .more a:hover, #community .inner #tab dl #notice table tbody tr .more a:hover {
   content: "";
   display: inline-block;
   width: 140px;
@@ -299,7 +295,7 @@ a {
   margin-left: -100px;
   color: #555;
 }
-#community .inner #tab dl #news table tbody tr .more a:hover span {
+#community .inner #tab dl #news table tbody tr .more a:hover span, #community .inner #tab dl #faq table tbody tr .more a:hover span, #community .inner #tab dl #notice table tbody tr .more a:hover span {
   opacity: 1;
   margin-left: 0;
 }

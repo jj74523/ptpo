@@ -224,31 +224,24 @@ a {text-decoration:none;}
 
                 }
 
-
-                dd  {
-                    position: absolute;
-                    top:0;
-                    left: 0;
-                    width: 1180px;
+                >dd  {
                     display: none;
-
 
                     &.on {
                         display: block;
                         position: relative;
                     }
 
-
                 }
 
-                #news {
-
+                #news, #faq, #notice {
 
                     table {
                         margin-top: 50px;
                         width: 100%;
                         margin-bottom:50px;
                         border-collapse: collapse;
+                        
                         caption {
                             position: absolute;
                             top: -999999px;
