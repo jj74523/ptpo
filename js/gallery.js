@@ -64,7 +64,6 @@
     }
 
     Flickr.prototype.getList = function(opt){
-        //type에 따라 ajax호출구문 변경
         var result_opt;
 
         if(opt.type == "search"){
@@ -117,7 +116,7 @@
         $gallery.empty();
         $gallery.append("<ul>");
 
-        //무조건 첫번쨰 li를 item-sizer클래스 지정해서 동적 생성
+
         $gallery.children("ul").append("<li class='item-sizer'>");
         
         $(data).each(function(index, data){
@@ -161,7 +160,6 @@
             )
         }.bind(this));       
         
-        //리스트 생성 완료시 isotope레이아웃 적용
         this.isoLayout();
     }
 
@@ -227,6 +225,5 @@
                 ).fadeIn()
         )
     }
-   
 
 })(jQuery);
