@@ -3,7 +3,6 @@
 // 폼 적용
 (function($){
 
-
     $.fn.myValidation = function(opt){
         new MyValidation(this, opt);
         return this;
@@ -24,18 +23,12 @@
                     if( !this.isTxt(opt.isTxt[i]) ) e.preventDefault();
                 }
             }        
-          
 
-           
             if(opt.isSelect){     
                 for(var i=0; i<opt.isSelect.length; i++){
                     if( !this.isSelect(opt.isSelect[i]) ) e.preventDefault();
                 }
             }  
-            
-            if(opt.isPwd){      
-                if( !this.isPwd(opt.isPwd[0], opt.isPwd[1]) ) e.preventDefault();  
-            }
           
         }.bind(this));
     }
