@@ -1815,7 +1815,7 @@ a {
   font-size: 60px;
   font-weight: 700;
 }
-#contact .inner p {
+#contact .inner > p {
   font-size: 14px;
   color: #555;
   font-weight: 100;
@@ -1889,10 +1889,15 @@ a {
 }
 #contact .inner form fieldset table tr td input[type=text].error,
 #contact .inner form fieldset table tr td input[type=password].error,
-#contact .inner form fieldset table tr td select.error {
+#contact .inner form fieldset table tr td select.error, #contact .inner form fieldset table tr td textarea.error {
   background: #da1e1e1b;
   border: 1px solid #da1e1e;
   color: #da1e1e;
+}
+#contact .inner form fieldset table tr td p {
+  color: red;
+  font-size: 12px;
+  opacity: 0;
 }
 #contact .inner form fieldset table tr.num select {
   width: 200px;

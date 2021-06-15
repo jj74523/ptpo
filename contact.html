@@ -15,7 +15,15 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=04bc11446c843b26c3d78b2f1233e370
     "></script>
     <script defer src="js/contact.js"></script>
-    
+    <script>
+        $(document).ready(function(){
+            $("#contact").myValidation({
+                isTxt: ["company","num2","eMail1","myname","con","title"] ,
+                isSelect: ["num","eMail2"]
+            });
+
+        });
+    </script>
 </head>
 <body>
     <ul id="skipNavi">
@@ -103,40 +111,55 @@
                         </caption>
                         <tr class="name">
                             <th><label for="myName" class="must">이름</label></th>
-                            <td><input type="text" id="myName" name="myname" placeholder="이름를 입력해 주세요"></td>
+                            <td>
+                                <input type="text" id="myName" name="myname" placeholder="이름를 입력해 주세요">
+                                <p>이름을 입력하세요.</p>
+                            </td>
                         </tr>
                         <tr class="company">
                             <th><label for="company" class="must">회사명</label></th>
-                            <td><input type="text" id="company" name="company" placeholder="회사명을 입력해 주세요"></td>
+                            <td>
+                                <input type="text" id="company" name="company" placeholder="회사명을 입력해 주세요">
+                                <p>회사명을 입력하세요.</p>
+                            </td>
                         </tr>
                         <tr class="num">
                             <th><label for="num" class="must">전화번호</label></th>
                             <td>
                                 <select name="num" id="num1">
+                                    <option value="">휴대폰번호</option>
                                     <option value="010">010</option>
                                     <option value="011">011</option>
                                 </select> 
                                 <input type="text" name="num2" placeholder="휴대폰번호를 입력해주세요">
+                                <p>연락처를 입력하세요.</p>
                             </td>
                         </tr>
                         <tr class="eMail">
                             <th><label for="eMail" class="must">E-mail</label></th>
                             <td>
-                                <input type="text"  name="eMail1" id="eMail1" placeholder="메일아이디를 입력해주세요 "> @  <select name="eMail2" id="eMail2">
+                                <input type="text"  name="eMail1" id="eMail1" placeholder="메일을 입력해주세요 "> @  <select name="eMail2" id="eMail2">
+                                    <option value="">이메일선택</option>
                                     <option value="naver">naver.com</option>
                                     <option value="nate">nate.com</option>
                                     <option value="daum">daum.net</option>
                                 </select> 
+                                <p>이메일을 입력하세요.</p>
                             </td>
                         </tr>
                         <tr class="title">
                             <th><label for="title" class="must">제목</label></th>
-                            <td><input type="text" id="myname" name="myname" placeholder="이름를 입력해 주세요"></td>
+                            <td>
+                                <input type="text" id="title" name="title" placeholder="제목을 입력해 주세요">
+                                <p>이메일을 입력하세요.</p>
+                            </td>
                         </tr>
                         <tr class="title">
                             <th><label for="comments" class="must">내용</label></th>
                             <td>
-                                <textarea type="text"  cols="30" rows="10" placeholder="내용을 입력해 주세요"></textarea>
+                                <textarea type="text"  cols="30" rows="10" placeholder="내용을 입력해 주세요" name="con"></textarea>
+                                <p>내용을 입력하세요.</p>
+
                             </td>
                         </tr>
                     </table>

@@ -1,10 +1,89 @@
-var container = document.querySelector("#mapBox"); //연결할 맵의 선택자
-var branch_btns = document.querySelectorAll(".branch li"); //지점보기 버튼 선택자
 
-//처음 로딩완료시 출력될 지도의 경도, 위도
-//1.구글맵에서 검색해서 경도,위도값 구함 (위치값이 정밀하지 못함)
-//2.카카오맵 api에서 클릭으로 마커표시 샘플코드 (위의 위치값을 적용)
-//3.해당 위치에서 우리가 원하는 위치를 정밀하게 마커로 찍어서 표시 (위도, 경도값) 구함
+
+// 폼 적용
+(function($){
+
+
+    $.fn.myValidation = function(opt){
+        new MyValidation(this, opt);
+        return this;
+    }
+
+    function MyValidation(el,opt){
+        this.init(el);  
+        this.bindingEvent(opt);
+    }
+    MyValidation.prototype.init = function(el){
+        this.submit = el.find("input[type=submit]");
+    }
+    MyValidation.prototype.bindingEvent = function(opt){
+        this.submit.on("click", function(e){  
+          
+            if(opt.isTxt){      
+                for(var i=0; i<opt.isTxt.length; i++){
+                    if( !this.isTxt(opt.isTxt[i]) ) e.preventDefault();
+                }
+            }        
+          
+
+           
+            if(opt.isSelect){     
+                for(var i=0; i<opt.isSelect.length; i++){
+                    if( !this.isSelect(opt.isSelect[i]) ) e.preventDefault();
+                }
+            }  
+            
+            if(opt.isPwd){      
+                if( !this.isPwd(opt.isPwd[0], opt.isPwd[1]) ) e.preventDefault();  
+            }
+          
+        }.bind(this));
+    }
+    MyValidation.prototype.isTxt = function(name){
+        var len = 5;    
+        var txt = $("[name="+name+"]").val();
+    
+        if(txt==""){
+            $("input[name="+name+"]").parent().find("p").css({opacity:"1"});
+            $("[name="+name+"]").addClass("error");
+            return false;
+        }else{
+            if(txt.length < len){
+                $("input[name="+name+"]").parent().find("p").text("최소 "+len+"글자 이상 입력하세요.").css({opacity:"1"});
+                $("[name="+name+"]").addClass("error");
+                return false;
+            }else {
+                $("[name="+name+"]").removeClass("error");
+                return true;
+            }
+        }
+    }
+
+
+    MyValidation.prototype.isSelect = function(name){
+        var sel = $("select[name="+name+"]").children("option:selected").val();
+    
+        if(sel == ""){
+            $("select[name="+name+"]").addClass("error");
+            return false;
+        }else{
+            $("select[name="+name+"]").removeClass("error");
+            return true;
+        }
+    }
+    
+})(jQuery);
+
+
+
+
+
+
+
+var container = document.querySelector("#mapBox");
+var branch_btns = document.querySelectorAll(".branch li");
+
+
 var options = { 
 	center: new kakao.maps.LatLng(37.50615938104634,126.75255391880641), 
 	level: 3 
@@ -15,14 +94,13 @@ var mapTypeControl = new kakao.maps.MapTypeControl();
 map.addControl(mapTypeControl, kakao.maps.ControlPosition.BOTTOMRIGHT);
 
 
-//각각의 본점, 지점의 이름, 위도,경도, 마커이미지, 마커수정위치값, 매칭되는 버튼을 등록
 var markerOptions = [
     {
         title:"본점", 
         latlng: new kakao.maps.LatLng(37.50615938104634,126.75255391880641),
         imgSrc : 'img/contact/marker1.png', 
         imgSize: new kakao.maps.Size(50,72),
-        imgPos : { offset: new kakao.maps.Point(113,99)}, //116, 99
+        imgPos : { offset: new kakao.maps.Point(113,99)}, 
         button: branch_btns[0]
     },
     {
@@ -65,8 +143,8 @@ for(var i=0; i< markerOptions.length; i++){
 }
 
 window.onresize = function(){
-    var active_btn = document.querySelector(".branch li.on"); //지점버튼의 활성화 선택자명
-    var active_index = active_btn.getAttribute("data-index");  //해당 버튼의 data-index속성값 
+    var active_btn = document.querySelector(".branch li.on"); 
+    var active_index = active_btn.getAttribute("data-index"); 
     console.log(active_index); 
     map.setCenter(markerOptions[active_index].latlng);
 }
@@ -80,15 +158,14 @@ function moveTo(target){
 
 setDraggable(true);
 function setDraggable(draggable) {
-    // 마우스 드래그로 지도 이동 가능여부를 설정합니다
     map.setDraggable(draggable);    
 }
 
 
 setZoomable(true); //false 
 function setZoomable(zoomable) {
-    // 마우스 휠로 지도 확대,축소 가능여부를 설정합니다
     map.setZoomable(zoomable);    
 }
 
  
+
