@@ -2,19 +2,21 @@
 //탭이동
 $("#tab .tab_tit a").on("click",function(e){
     e.preventDefault();
-    
     var target = $(this).attr("href");
 
     $("#tab .tab_tit a").removeClass("on");
     $(this).addClass("on");
 
-    $("#tab dd").hide(500);
-    $(target).show(500);
+    $("#tab dd").fadeOut();
+    $(target).fadeIn();
 });
 
-// 게시판 호출
 
-var url = "data/board.json";
+// 게시판 호출
+var url =[];
+url[0] ="data/board1.json";
+url[1] ="data/board2.json";
+url[2] ="data/board3.json";
 var resultData = callData(url);
 
 var $frame = $("#news");
@@ -29,23 +31,31 @@ createTable($notice, resultData);
 function callData(url){
     var result;
 
-    $.ajax({
-        url: url,
-        dataType: "json",
-        async: false
-    })
-    .success(function(data){
-        result = data.data;    
-    })
-    .error(function(err){
-        console.error(err);
-    });
+    for(var i=0; i < url.length; i++){
 
-    return result;
+        $.ajax({
+            url: url[i],
+            dataType: "json",
+            async: false
+            
+        })
+        .success(function(data){
+            result = data.data;   
+
+        })
+        .error(function(err){
+            console.log(err);
+        });
+        console.log(url[i]);
+    
+        return result;
+        
+    }
+
+
 }
 
 function createTable(target, items){
-
     target.append(
         $("<table>")
             .append(

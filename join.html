@@ -154,20 +154,21 @@
                     </caption>
                     <tr class="userid">
                         <th><label for="id" class="must">아이디</label></th>
-                        <td><input type="text" id="userid1" name="userid" placeholder="아이디를 입력해 주세요"><button>중복확인</button></td>
+                        <td><input type="text" id="userid1" name="userid" placeholder="아이디를 입력해 주세요"><button>중복확인</button><p>아이디를 입력하세요.</p></td>
+                        
                         
                     </tr>
                     <tr class="pwd1">
                         <th><label for="pwd1" class="must">비밀번호</label></th>
-                        <td><input type="password" id="pwd1" name="pwd1" placeholder="비밀번호를 입력해 주세요"></td>
+                        <td><input type="password" id="pwd1" name="pwd1" placeholder="비밀번호를 입력해 주세요"><p>비밀번호를 입력하세요.</p></td>
                     </tr>
                     <tr class="pwd2">
                         <th><label for="pwd2" class="must">비밀번호재입력</label></th>
-                        <td><input type="password" id="pwd2" name="pwd2" placeholder="비밀번호를 재입력해 주세요"></td>
+                        <td><input type="password" id="pwd2" name="pwd2" placeholder="비밀번호를 재입력해 주세요"><p>아이디를 입력하세요.</p></td>
                     </tr>
                     <tr class="name">
                         <th><label for="myname" class="must">이름</label></th>
-                        <td><input type="text" id="myname" name="myname" placeholder="이름를 입력해 주세요"></td>
+                        <td><input type="text" id="myname" name="myname" placeholder="이름를 입력해 주세요"><p>아이디를 입력하세요.</p></td>
                     </tr>
                     <tr class="phone">
                         <th><label for="phone" class="must">전화번호</label></th>
@@ -184,10 +185,12 @@
                             </select> 
                             <input type="text" name="phone2" placeholder="휴대폰번호를 입력해주세요">
                             <button>인증번호발송</button>
+                            <p>아이디를 입력하세요.</p>
                         </td>
                         <td>
                             <input type="text" name="phone2" placeholder="인증번호 4자리를 입력해주세요">
                             <button>인증확인</button>
+                            <p>아이디를 입력하세요.</p>
                         </td>
                     </tr>
                     <tr class="gender">
@@ -199,9 +202,11 @@
                             <label for="female">
                                 <input type="radio" id="female" name="gender" value="female" > 여성
                             </label>
+                            <p>성별을 입력해주세요</p>
+
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="birth">
                         <th><label for="birth">생년월일</label></th>
                         <td>
                             <select name="year" id="year">
@@ -220,26 +225,27 @@
                             </select> 
                         </td>
                     </tr>
-                <tr class="email">
-                    <th><label for="email" class="must">E-mail</label></th>
-                    <td>
-                        <input type="text"  name="email1" id="email" placeholder="메일아이디를 입력해주세요 "> @ <select name="email2" id="email2">
-                            <option value="naver">naver.com</option>
-                            <option value="nate">nate.com</option>
-                            <option value="daum">daum.net</option>
-                        </select> 
-                    </td>
-                </tr>
-                <tr class="adress">
-                    <th><label for="adress1">주소</label></th>
-                    <td>
-                        <input type="text" name="adress1" id="adress1" placeholder="주소를 입력해주세요 ">
-                        <button>주소검색</button>
-                    </td>
-                    <td>
-                        <input type="text" name="adress1" id="adress2" placeholder="나머지주소를 입력해주세요 ">
-                    </td>
-                </tr>
+                    <tr class="email">
+                        <th><label for="email" class="must">E-mail</label></th>
+                        <td>
+                            <input type="text"  name="email1" id="email" placeholder="메일아이디를 입력해주세요 "> @ <select name="email2" id="email2">
+                                <option value="naver">naver.com</option>
+                                <option value="nate">nate.com</option>
+                                <option value="daum">daum.net</option>
+                            </select> 
+                            <p>아이디를 입력하세요.</p>
+                        </td>
+                    </tr>
+                    <tr class="adress">
+                        <th><label for="adress1">주소</label></th>
+                        <td>
+                            <input type="text" name="adress1" id="adress1" placeholder="주소를 입력해주세요 ">
+                            <button>주소검색</button>
+                        </td>
+                        <td>
+                            <input type="text" name="adress1" id="adress2" placeholder="나머지주소를 입력해주세요 ">
+                        </td>
+                    </tr>
                 </table>
                 <div class="sbt">
                     <input type="reset" value="CANCEL">

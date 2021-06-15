@@ -43,6 +43,7 @@
     MyValidation.prototype.isTxt = function(name){
         var len = 5;    
         var txt = $("[name="+name+"]").val();
+        var $txtCheck = $("input[name="+name+"]");
         var msg = $("[name="+name+"]").attr("placeholder");
     
         if(txt==""){
@@ -51,7 +52,7 @@
             return false;
         }else{
             if(txt.length < len){
-                alert("최소 "+len+"글자 이상 입력하세요!");
+                $txtCheck.parent().find("p").css({opacity:"1"});
                 $("[name="+name+"]").addClass("error");
                 return false;
             }else {
@@ -75,26 +76,27 @@
         if(pwd1 === pwd2){
             if(pwd1.length >= 5){
                 i++;
+
             }else{
-                alert("비밀번호는 5자리 이상 입력하세요.");
+                $pwd1.parent().find("p").text("5자 이상 입력하세요.").css({opacity:"1"});
             }
     
             if( num.test(pwd1) ){
                 i++;
             }else {
-                alert("비밀번호에 숫자를 포함하세요.");
+                $pwd1.parent().find("p").text("비밀번호에 숫자를 포함하세요.").css({opacity:"1"});
             }
     
             if( eng.test(pwd1) ){
                 i++;
             }else{
-                alert("비밀번호에 문자를 포함하세요.");
+                $pwd1.parent().find("p").text("비밀번호에 문자를 포함하세요.").css({opacity:"1"});
             }
     
             if( spc.test(pwd1) ){
                 i++;
             }else{
-                alert("비밀번호에 특수문자를 포함하세요.");
+                $pwd1.parent().find("p").text("비밀번호에 특수문자를 포함하세요.").css({opacity:"1"});
             }
     
             if(i===4){
@@ -110,7 +112,7 @@
     
             
         }else{
-            alert("두 개의 비밀번호를 동일하게 입력하세요.")
+            $pwd2.parent().find("p").text("두개의 비밀번호를 동일하게 입력하세요.").css({opacity:"1"});
             $pwd1.addClass("error");
             $pwd2.addClass("error");
             return isConfirm;
@@ -121,10 +123,10 @@
         var isCheck = $("input[name="+name+"]").is(':checked');   
     
         if(isCheck){
-            $("input[name="+name+"]").parent().find("p").hide();
+            $("input[name="+name+"]").parent().parent().find("p").css({opacity:"0"});
             return true;
         }else{
-            $("input[name="+name+"]").parent().find("p").show();
+            $("input[name="+name+"]").parent().parent().find("p").css({opacity:"1"});
             return false;
         }
     }

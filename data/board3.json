@@ -1,0 +1,29 @@
+{
+    "data" : [
+        {
+            "link" : "#",
+            "title" : "한솔제지 ‘Paper Position’ 프로젝트, 파주출판단지에 오픈 ",
+            "txt" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit quas maxime recusandae, laudantium quae.",
+            "dateday":"01",
+            "date" : "2021.01"
+        },
+        {
+            "link" : "#",
+            "title" : "경력사원 채용 인재 Pool 운영 안내",
+            "txt" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit quas maxime recusandae, laudantium quae.",
+            "dateday":"02",
+            "date" : "2021.03"
+        },
+        {
+            "link" : "#",
+            "title" : "졸업작품展, INSPER 후원 이벤트",
+            "txt" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit quas maxime recusandae, laudantium quae.",
+            "dateday":"21",
+            "date" : "2021.02"
+        },
+       
+    ]
+
+    
+
+}

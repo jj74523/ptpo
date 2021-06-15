@@ -176,12 +176,12 @@
                 )
             )
             .append(
-                $("<a href='#' class='close'>").text("close").css({
+                $("<a href='#' class='close'>").css({
                     position:"absolute",
                     top:20,
                     right:20,
                     color:"#fff"
-                })
+                }).append($("<img src='../img/youtube/cancel_icon.png'>"))
             ).fadeIn()
         );
     

@@ -165,10 +165,11 @@
 
                 tr {
                     width:100%;
+                    vertical-align: baseline;
                     
                     th {
                         width:20%;
-                        padding:35px;
+                        padding:10px;
                         box-sizing: border-box;
                         font-size: 15px;
                         font-weight: 100;
@@ -212,6 +213,8 @@
                             height:50px;
                             padding:10px;
                             border-radius: 3px;
+                            margin-right: 10px;
+
                         }
 
                         button {
@@ -233,20 +236,26 @@
                             border: 1px solid #da1e1e;
                             color:#da1e1e;
                         }
+
+                        p {
+                            color: red;
+                            font-size: 12px;
+                            font-weight: 400;
+                            opacity: 0;
+                            
+                        }
                     }
 
                     &.phone {
                         
                         td {
                             display: block;
-                            margin-bottom: 10px;
+                            margin-bottom: -30px;
                             > input[type=text],select  {
                                 width:24%;
                                 margin-right: 10px;
 
                             }
-
-
                             &:nth-of-type(2){
                                 input[type=text], select {
                                     background:#efefef;
@@ -277,6 +286,25 @@
                             &:nth-of-type(2){
                                 input[type=text], select {
                                     width:60%;
+                                }
+                            }
+
+                        }
+
+                    }
+
+           
+                    &.email {
+
+                        td {
+
+                            > input[type=text],select  {
+                                width:31.5%;
+                            }
+
+                            &:nth-of-type(2){
+                                input[type=text], select {
+                                    width:10%;
                                 }
                             }
 

@@ -407,6 +407,7 @@ a {
   border: none;
   background-color: #568ded;
   color: #fff;
+  border-radius: 5px;
 }
 #info article:nth-of-type(1)::after {
   position: absolute;
@@ -416,7 +417,7 @@ a {
   display: block;
   content: "";
   width: 1px;
-  height: 230px;
+  height: 300px;
   background: #c1c1c1;
 }
 #info .call {
@@ -437,27 +438,28 @@ a {
 }
 #info .call div h2 {
   font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 35px;
-  float: inherit;
+  font-size: 40px;
 }
 #info .call div h2 span {
   font-weight: 200;
   font-size: 25px;
-  float: inherit;
 }
 #info .call div {
   float: left;
 }
-#info .call div p {
-  font-size: 14px;
+#info .call div h3 {
+  font-size: 16px;
   font-weight: 100;
-  margin-bottom: 40px;
-  float: inherit;
   display: block;
 }
-#info .call div p span {
-  font-size: 16px;
+#info .call div h3 b {
+  margin-left: 10px;
+}
+#info .call div h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+#info .call div h3:nth-of-type(2) b {
+  margin-left: 25px;
 }
 
 /* reset */
@@ -1146,10 +1148,11 @@ a {
 }
 #checkedBox2 form fieldset table tr {
   width: 100%;
+  vertical-align: baseline;
 }
 #checkedBox2 form fieldset table tr th {
   width: 20%;
-  padding: 35px;
+  padding: 10px;
   box-sizing: border-box;
   font-size: 15px;
   font-weight: 100;
@@ -1188,6 +1191,7 @@ a {
   height: 50px;
   padding: 10px;
   border-radius: 3px;
+  margin-right: 10px;
 }
 #checkedBox2 form fieldset table tr td button {
   background: cornflowerblue;
@@ -1205,9 +1209,15 @@ a {
   border: 1px solid #da1e1e;
   color: #da1e1e;
 }
+#checkedBox2 form fieldset table tr td p {
+  color: red;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0;
+}
 #checkedBox2 form fieldset table tr.phone td {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: -30px;
 }
 #checkedBox2 form fieldset table tr.phone td > input[type=text], #checkedBox2 form fieldset table tr.phone td select {
   width: 24%;
@@ -1231,6 +1241,12 @@ a {
 }
 #checkedBox2 form fieldset table tr.adress td:nth-of-type(2) input[type=text], #checkedBox2 form fieldset table tr.adress td:nth-of-type(2) select {
   width: 60%;
+}
+#checkedBox2 form fieldset table tr.email td > input[type=text], #checkedBox2 form fieldset table tr.email td select {
+  width: 31.5%;
+}
+#checkedBox2 form fieldset table tr.email td:nth-of-type(2) input[type=text], #checkedBox2 form fieldset table tr.email td:nth-of-type(2) select {
+  width: 10%;
 }
 #checkedBox2 form fieldset .sbt {
   text-align: center;

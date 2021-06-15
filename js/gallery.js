@@ -55,9 +55,9 @@
             this.createPop(imgSrc);
         }.bind(this));
 
-        $("body").on("click", ".pop span", function(){
-            $(".pop").fadeOut(500,function(){
-                $(".pop").remove();
+        $("body").on("click", ".galpop span", function(){
+            $(".galpop").fadeOut(500,function(){
+                $(".galpop").remove();
             })
         })
         
@@ -210,7 +210,7 @@
 
     Flickr.prototype.createPop = function(imgSrc){
         $("body").append(
-            $("<aside class='pop'>")
+            $("<aside class='galpop'>")
                 .css({
                     width: '100%', height: "100%", position: "fixed", top: 0, left: 0, zIndex: 10,
                     boxSizing: "border-box", padding: "5vw", background: "rgba(0,0,0,0.9)", display: "none"
@@ -219,9 +219,11 @@
                     $("<img>").attr("src", imgSrc).css({
                         width: "100%", height:"100%", objectFit: "cover"
                     }),
-                    $("<span>").text("close").css({
-                        cursor:"pointer", color:"#fff", position: "absolute", top: 20, right: 20
-                    })
+                    $("<span>").css({
+                        cursor:"pointer", position: "absolute", top: 20, right: 20
+                    }).append(
+                        $("<img src='../img/gallery/cancel_icon.png'>")
+                    )
                 ).fadeIn()
         )
     }

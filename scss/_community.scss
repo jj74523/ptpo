@@ -513,6 +513,7 @@ a {text-decoration:none;}
                 border:none;
                 background-color: rgb(86, 141, 237);
                 color: #fff;
+                border-radius: 5px;
             }
 
             &:nth-of-type(1)::after {
@@ -523,7 +524,7 @@ a {text-decoration:none;}
                 display: block;
                 content:'';
                 width:1px;
-                height:230px;
+                height:300px;
                 background:rgb(193, 193, 193);
             }
     }
@@ -544,32 +545,37 @@ a {text-decoration:none;}
 
             div {
                 float:left;
+
                 h2 {
                     font-weight: 700;
-                    margin-bottom: 10px;
-                    font-size: 35px;
-                    float: inherit;
+                    font-size: 40px;
+
                     span {
                         font-weight: 200;
                        font-size: 25px;
-                       float: inherit;
                     }
                 }
             }
 
             div {
                 float:left;
-                p {
-                    font-size: 14px;
+                h3 {
+                    font-size: 16px;
                     font-weight: 100;
-                    margin-bottom: 40px;
-                    float: inherit;
     
                     display: block;
     
-                    span {
-                        
-                        font-size: 16px;
+                    b {
+                        margin-left: 10px;
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 30px;
+                        b {
+                            margin-left: 25px;
+                        }
+    
+
                     }
                 }
             }
