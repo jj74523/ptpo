@@ -16,7 +16,7 @@
     <script>
         $(document).ready(function(){
             $("#checkedBox2").myValidation({
-                isTxt: ["userid","email1","phone2","myname"] ,
+                isTxt: ["userid","email1","phone2","phone3","myname"] ,
                 isCheck: ["gender"],
                 isSelect: ["email2","phone"],
                 isPwd: ["pwd1","pwd2"]
@@ -164,33 +164,34 @@
                     </tr>
                     <tr class="pwd2">
                         <th><label for="pwd2" class="must">비밀번호재입력</label></th>
-                        <td><input type="password" id="pwd2" name="pwd2" placeholder="비밀번호를 재입력해 주세요"><p>아이디를 입력하세요.</p></td>
+                        <td><input type="password" id="pwd2" name="pwd2" placeholder="비밀번호를 재입력해 주세요"><p>비밀번호를 입력하세요.</p></td>
                     </tr>
                     <tr class="name">
                         <th><label for="myname" class="must">이름</label></th>
-                        <td><input type="text" id="myname" name="myname" placeholder="이름를 입력해 주세요"><p>아이디를 입력하세요.</p></td>
+                        <td><input type="text" id="myname" name="myname" placeholder="이름을 입력해 주세요"><p>이름을 입력하세요.</p></td>
                     </tr>
                     <tr class="phone">
                         <th><label for="phone" class="must">전화번호</label></th>
                         <td>
                             <select name="phone" id="phone1">
-                                <option value="통신사">통신사</option>
+                                <option value="">통신사</option>
                                 <option value="KT">KT</option>
                                 <option value="SKT">SKT</option>
                                 <option value="LGU+">LGU+</option>
                             </select>
                             <select name="phone" id="phone2">
+                                <option value="">앞자리</option>
                                 <option value="010">010</option>
                                 <option value="011">011</option>
                             </select> 
                             <input type="text" name="phone2" placeholder="휴대폰번호를 입력해주세요">
                             <button>인증번호발송</button>
-                            <p>아이디를 입력하세요.</p>
+                            <p>휴대폰번호를 입력하세요.</p>
                         </td>
                         <td>
                             <input type="text" name="phone2" placeholder="인증번호 4자리를 입력해주세요">
                             <button>인증확인</button>
-                            <p>아이디를 입력하세요.</p>
+                            <p>휴대폰인증을 진행해주세요.</p>
                         </td>
                     </tr>
                     <tr class="gender">
@@ -202,7 +203,7 @@
                             <label for="female">
                                 <input type="radio" id="female" name="gender" value="female" > 여성
                             </label>
-                            <p>성별을 입력해주세요</p>
+                            <p>성별을 확인해주세요</p>
 
                         </td>
                     </tr>
@@ -221,19 +222,21 @@
                                 <option value="1">1일</option>
                                 <option value="2">2일</option>
                                 <option value="3">3일</option>
-
                             </select> 
+                            <p></p>
                         </td>
+                    
                     </tr>
                     <tr class="email">
                         <th><label for="email" class="must">E-mail</label></th>
                         <td>
                             <input type="text"  name="email1" id="email" placeholder="메일아이디를 입력해주세요 "> @ <select name="email2" id="email2">
+                                <option value="">이메일 선택</option>
                                 <option value="naver">naver.com</option>
                                 <option value="nate">nate.com</option>
                                 <option value="daum">daum.net</option>
                             </select> 
-                            <p>아이디를 입력하세요.</p>
+                            <p>메일을 입력하세요.</p>
                         </td>
                     </tr>
                     <tr class="adress">

@@ -43,16 +43,14 @@
     MyValidation.prototype.isTxt = function(name){
         var len = 5;    
         var txt = $("[name="+name+"]").val();
-        var $txtCheck = $("input[name="+name+"]");
-        var msg = $("[name="+name+"]").attr("placeholder");
     
         if(txt==""){
-            alert(msg);
+            $("input[name="+name+"]").parent().find("p").css({opacity:"1"});
             $("[name="+name+"]").addClass("error");
             return false;
         }else{
             if(txt.length < len){
-                $txtCheck.parent().find("p").css({opacity:"1"});
+                $("input[name="+name+"]").parent().find("p").text("최소 "+len+"글자 이상 입력하세요.").css({opacity:"1"});
                 $("[name="+name+"]").addClass("error");
                 return false;
             }else {
@@ -74,12 +72,7 @@
         var spc = /[~!@#$%^&*()_+\]\[-]/;
     
         if(pwd1 === pwd2){
-            if(pwd1.length >= 5){
-                i++;
-
-            }else{
-                $pwd1.parent().find("p").text("5자 이상 입력하세요.").css({opacity:"1"});
-            }
+            
     
             if( num.test(pwd1) ){
                 i++;
@@ -98,6 +91,13 @@
             }else{
                 $pwd1.parent().find("p").text("비밀번호에 특수문자를 포함하세요.").css({opacity:"1"});
             }
+            if(pwd1.length >= 5){
+                i++;
+
+            }else{
+                $pwd1.parent().find("p").text("5자 이상 입력하세요.").css({opacity:"1"});
+            }
+            
     
             if(i===4){
                 $pwd1.removeClass("error");
@@ -132,10 +132,8 @@
     }
     MyValidation.prototype.isSelect = function(name){
         var sel = $("select[name="+name+"]").children("option:selected").val();
-        var msg = $("select[name="+name+"]").children("option").eq(0).text();
     
         if(sel == ""){
-            alert(msg);
             $("select[name="+name+"]").addClass("error");
             return false;
         }else{
