@@ -1556,9 +1556,11 @@ a {
   height: 50px;
   display: block;
   line-height: 50px;
-  border-top: 2px solid #bccceb;
+  border-top: 1px solid #bccceb;
   border-bottom: 1px solid #bccceb;
-  color: cornflowerblue;
+  color: #555;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 #organization .inner .first > li .second > li div::after {
@@ -1618,6 +1620,9 @@ a {
   height: 50px;
 }
 
+#comInfo {
+  margin-bottom: 150px;
+}
 #comInfo > .inner {
   padding-top: 50px;
   width: 1180px;
@@ -1627,32 +1632,35 @@ a {
   font-size: 13px;
   font-weight: 100;
 }
-#comInfo > .inner h2 {
+#comInfo > .inner > h2 {
   font-size: 30px;
   margin-bottom: 20px;
 }
-#comInfo > .inner h3 {
+#comInfo > .inner > h3 {
   font-size: 18px;
   font-weight: 100;
   margin-bottom: 60px;
 }
 #comInfo > .inner article {
   box-sizing: border-box;
-  height: 1000px;
+  height: 2000px;
 }
 #comInfo > .inner article .box {
   width: calc(100%/4);
   box-sizing: border-box;
-  padding: 0 10px;
+  display: block;
+  height: 220px;
 }
 #comInfo > .inner article .box .inner {
   width: 100%;
+  padding: 0 20px;
 }
 #comInfo > .inner article .box .inner .caption {
   border-bottom: 2px solid #333;
+  padding: 5px 0;
   margin-bottom: 10px;
   font-size: 12px;
-  color: #555;
+  color: #888;
 }
 #comInfo > .inner article .box .inner h3 {
   font-size: 20px;
@@ -1660,15 +1668,44 @@ a {
 }
 #comInfo > .inner article .box .inner > div {
   padding: 14px;
-  padding-bottom: 30px;
   box-sizing: border-box;
   border-radius: 5px;
 }
 #comInfo > .inner article .box .inner > div img {
   width: 100%;
 }
-#comInfo > .inner article .imgbox {
-  background: #fff;
+#comInfo > .inner article .box:nth-of-type(2) {
+  height: 360px;
+}
+#comInfo > .inner article .box:nth-of-type(3) {
+  height: 150px;
+}
+#comInfo > .inner article .box:nth-of-type(4) {
+  height: 500px;
+}
+#comInfo > .inner article .box:nth-of-type(5) {
+  height: 200px;
+}
+#comInfo > .inner article .box:nth-of-type(6) {
+  height: 340px;
+}
+#comInfo > .inner article .box:nth-of-type(7) {
+  height: 200px;
+}
+#comInfo > .inner article .box:nth-of-type(8) {
+  height: 450px;
+}
+#comInfo > .inner article .box:nth-of-type(9) {
+  height: 310px;
+}
+#comInfo > .inner article .box:nth-of-type(10) {
+  height: 260px;
+}
+#comInfo > .inner article .box:nth-of-type(11) {
+  height: 250px;
+}
+#comInfo > .inner article .box:hover {
+  background: #eee;
 }
 
 #footer2 {
