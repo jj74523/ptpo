@@ -9,60 +9,7 @@ ul,ol,li {list-style:none;}
 a {text-decoration:none;}
 
 
-#sub_title {
-    width: 100%;
-    padding:70px 0 110px 0;
-
-    .inner {
-        width:1180px;
-        border-bottom:1px solid #ccc;
-        margin:0 auto;
-
-        h1 {
-            color:#444;
-            font-weight: 600;
-            font-size: 36px;
-            line-height: 1;
-            margin-bottom:15px;
-            }
-
-        .sub_menu {
-
-             a {
-                display: inline-block;
-                color:#555;
-                vertical-align: middle;
-                padding: 0 5px;
-                margin-bottom: 20px;
-
-               &::after {
-                    content:'';
-                    display: inline-block;
-                    width: 1px;
-                    height:13px;
-                    background:#ccc;
-                    margin-left: 10px;
-                }
-                img {
-                    width: 16px;
-                }
-
-                &:nth-child(3) {
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 1;
-                    img {
-                        width: 10px;
-                        margin-left: 5px;
-                    }
-                    &::after {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}
+/* 이미지 타이틀 */
 
 #newsTitle {
     width:100%;
@@ -110,7 +57,6 @@ a {text-decoration:none;}
 
 
 /* 커뮤니티 */
-
 #community {
     width: 100%;
 
@@ -456,6 +402,7 @@ a {text-decoration:none;}
 
 }
  
+/* 신문고, 고객센터 */
 
 #info {
     width:1180px;
@@ -589,3 +536,416 @@ a {text-decoration:none;}
 
 
 
+@media screen and (max-width:1179px) {
+
+    /* 이미지 타이틀 */
+    #newsTitle {
+        background:url(../img/news/news_bg.jpg) center;
+        background-size: cover;
+        padding:50px 0;
+        height:200px;
+        margin-top:-111px;
+        margin-bottom: 150px;
+
+        .inner {
+            width:100%;
+
+            .titBox {
+                width:250px;
+                padding:40px;
+                height:120px;
+                margin-top: 80px;
+                margin-right: 20px;
+        
+                h2 {
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
+        
+                p {
+                    display: none;
+                }
+        
+            }
+        }
+    }
+
+
+    /* 커뮤니티 */
+    #community {
+        width: 100%;
+
+        .inner {
+            width:100%;
+            margin:0 auto;
+            position:relative;
+
+            #tab {
+                form  {
+                    position: absolute;
+                    right: 0;
+                    top: -70px;
+
+                    fieldset {
+                        border: none;
+                
+                        legend {
+                            width: 1px;
+                            top: -999999px;
+                            opacity: 0;
+                            height: 1px;
+                        }
+                        input {
+                            display: none;
+                        }
+                        img {
+                           display: none;
+                        }
+                    }
+        
+                }
+        
+                dl {
+                    width:100%;
+                    padding:0 20px;
+
+                    dt {
+                        top: -50px;
+                        left: 20px;
+
+
+                        &:nth-of-type(2) {
+                            left:80px;
+                        }
+                        &:nth-of-type(3) {
+                            left:130px;
+                        }
+
+                        a {
+                            font-size: 14px;
+                            line-height: 1.2;
+                            padding: 5px;
+                
+                        
+                            &::after {
+                                content:'';
+                                display: block;
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 5px;
+                                position: absolute;
+                                right:-10px;
+                                top:0px;
+                                transition: 0.5s;
+                                opacity:0;
+                            }
+                
+
+                        }
+
+
+                    }
+
+                    #news, #faq, #notice {
+
+                        table {
+                            margin-top: 50px;
+                            width: 100%;
+                            margin-bottom:50px;
+
+                            tbody {
+                                tr {
+                                   
+                                    .day {
+                                        width: 15%;
+                
+                                        span {
+                                            font-size: 30px;
+                                            line-height: 1.2;
+                                        }
+                                        
+                                    }
+                
+                                    .title {
+                                        font-size: 14px;
+                                        width: 85%;
+                                        padding:0 30px;
+                
+                                        strong {
+                                            font-size: 16px;
+                                            margin-bottom: 5px;
+                                        }    
+                                        p {
+                                            display: none;
+                                        }
+                                    }
+                
+                                    .more {
+
+                                        a {
+                                            line-height: 40px;
+                                            width: 40px;
+                                            height:40px;
+                                            
+                                            span {
+                                                font-size:14px;
+                                                margin-left: -35px;
+                                            }
+                                        }
+                
+                                    }
+                
+                                }
+                
+                            }
+                        }
+                
+                    }
+
+                }
+
+                .pagination {
+                    margin-bottom: 70px;
+                    .numbers {
+
+                    }
+                    
+                }
+
+            }
+
+        }
+
+    }
+    
+    /* 신문고, 고객센터 */
+
+    #info {
+        width:100%;
+        margin-bottom: 0px;
+        padding: 20px;
+
+        .inner {
+            width:100%;
+            
+            article {
+                padding:20px;
+                float:left;
+                width: 100%;
+    
+                    img {
+                        width: 70px;
+                        float: left;
+                        margin: 10px 50px 50px 10px;
+                    }
+    
+                    h2 {
+                        font-weight: 200;
+                        margin-bottom: 30px;
+                        float:left;
+                        font-size: 20px;
+    
+                    }
+                    
+                    p {
+                        font-size: 13px;
+                        padding-right:30px;
+                        font-weight: 100;
+                        margin-bottom: 20px;
+    
+                    }
+                
+                    button {
+                        width:100%;
+                        height: 50px;
+                    }
+    
+            }
+    
+        .call {
+                width: 100%;
+    
+                    img {
+                        width: 70px;
+                    }
+    
+                    div {
+    
+                        h2 {
+                            font-weight: 700;
+                            font-size: 30px;
+                        }
+                    }
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:539px) {
+
+    /* 이미지 타이틀 */
+    #newsTitle {
+        padding:20px 0;
+        height:150px;
+        margin-bottom: 150px;
+
+        .inner {
+            width:100%;
+
+            .titBox {
+                width:130px;
+                padding:10px;
+                height:60px;
+                margin-top: 90px;
+        
+                h2 {
+                    font-size: 24px;
+                    margin-bottom: 0;
+                }
+        
+        
+            }
+        }
+    }
+
+
+    /* 커뮤니티 */
+    #community {
+        .inner {
+
+            #tab {
+               
+        
+                dl {
+                    padding:0 20px;
+
+                    dt {
+                        top: -40px;
+
+                    }
+
+                    #news, #faq, #notice {
+
+                        table {
+                            tbody {
+                                tr {
+                                   
+                                    .day {
+                                        display: none;
+                                        
+                                    }
+                
+                                    .title {
+                                        font-size: 13px;
+                                        width: 85%;
+                                        padding:0 10px;
+                
+                                        strong {
+                                            font-size: 14px;
+                                            margin-bottom: 5px;
+                                        }    
+                                        
+                                    }
+                
+                                    .more {
+
+                                        a {
+                                            line-height: 30px;
+                                            width: 30px;
+                                            height:30px;
+  
+                                        }
+                
+                                    }
+                
+                                }
+                
+                            }
+                        }
+                
+                    }
+
+                }
+
+                .pagination {
+                    margin-bottom: 70px;
+                    .numbers {
+                        a{
+                            &:nth-of-type(3) {
+                                display: none;
+                            }
+                            &:nth-of-type(4) {
+                                display: none;
+                            }
+                            &:nth-of-type(5) {
+                                display: none;
+                            }
+                        }
+                    }
+                    
+                }
+
+            }
+
+        }
+
+    }
+    
+    /* 신문고, 고객센터 */
+
+    #info {
+        width:100%;
+        margin-bottom: 0px;
+        padding: 20px;
+
+        .inner {
+            width:100%;
+            
+            article {
+                padding:20px;
+                    img {
+                        width: 50px;
+                        float:left;
+                        margin: 10px 50px 50px 10px;
+                    }
+    
+                    h2 {
+                        margin-bottom: 30px;
+                        font-size: 18px;
+    
+                    }
+                    
+                    p {
+                        display: none;
+    
+                    }
+    
+            }
+    
+        .call {
+                    img {
+                        width: 50px;
+                        margin-bottom: 30px;
+                    }
+    
+                    div {
+    
+                        h2 {
+                            font-weight: 700;
+                            font-size:26px;
+                        }
+                    }
+                    div {
+                        h3 {
+                            display: none;
+                        }
+                    }
+            }
+        }
+
+    }
+
+}

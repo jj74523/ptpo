@@ -15,53 +15,7 @@ a {
   text-decoration: none;
 }
 
-#sub_title {
-  width: 100%;
-  padding: 70px 0 110px 0;
-}
-#sub_title .inner {
-  width: 1180px;
-  border-bottom: 1px solid #ccc;
-  margin: 0 auto;
-}
-#sub_title .inner h1 {
-  color: #444;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-#sub_title .inner .sub_menu a {
-  display: inline-block;
-  color: #555;
-  vertical-align: middle;
-  padding: 0 5px;
-  margin-bottom: 20px;
-}
-#sub_title .inner .sub_menu a::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 13px;
-  background: #ccc;
-  margin-left: 10px;
-}
-#sub_title .inner .sub_menu a img {
-  width: 16px;
-}
-#sub_title .inner .sub_menu a:nth-child(3) {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1;
-}
-#sub_title .inner .sub_menu a:nth-child(3) img {
-  width: 10px;
-  margin-left: 5px;
-}
-#sub_title .inner .sub_menu a:nth-child(3)::after {
-  display: none;
-}
-
+/* 이미지 타이틀 */
 #newsTitle {
   width: 100%;
   background: url(../img/news/news_bg.jpg) top;
@@ -359,6 +313,7 @@ a {
   vertical-align: middle;
 }
 
+/* 신문고, 고객센터 */
 #info {
   width: 1180px;
   margin: 0 auto;
@@ -462,6 +417,270 @@ a {
   margin-left: 25px;
 }
 
+@media screen and (max-width: 1179px) {
+  /* 이미지 타이틀 */
+  #newsTitle {
+    background: url(../img/news/news_bg.jpg) center;
+    background-size: cover;
+    padding: 50px 0;
+    height: 200px;
+    margin-top: -111px;
+    margin-bottom: 150px;
+  }
+  #newsTitle .inner {
+    width: 100%;
+  }
+  #newsTitle .inner .titBox {
+    width: 250px;
+    padding: 40px;
+    height: 120px;
+    margin-top: 80px;
+    margin-right: 20px;
+  }
+  #newsTitle .inner .titBox h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #newsTitle .inner .titBox p {
+    display: none;
+  }
+
+  /* 커뮤니티 */
+  #community {
+    width: 100%;
+  }
+  #community .inner {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #community .inner #tab form {
+    position: absolute;
+    right: 0;
+    top: -70px;
+  }
+  #community .inner #tab form fieldset {
+    border: none;
+  }
+  #community .inner #tab form fieldset legend {
+    width: 1px;
+    top: -999999px;
+    opacity: 0;
+    height: 1px;
+  }
+  #community .inner #tab form fieldset input {
+    display: none;
+  }
+  #community .inner #tab form fieldset img {
+    display: none;
+  }
+  #community .inner #tab dl {
+    width: 100%;
+    padding: 0 20px;
+  }
+  #community .inner #tab dl dt {
+    top: -50px;
+    left: 20px;
+  }
+  #community .inner #tab dl dt:nth-of-type(2) {
+    left: 80px;
+  }
+  #community .inner #tab dl dt:nth-of-type(3) {
+    left: 130px;
+  }
+  #community .inner #tab dl dt a {
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 5px;
+  }
+  #community .inner #tab dl dt a::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  #community .inner #tab dl #news table, #community .inner #tab dl #faq table, #community .inner #tab dl #notice table {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #community .inner #tab dl #news table tbody tr .day, #community .inner #tab dl #faq table tbody tr .day, #community .inner #tab dl #notice table tbody tr .day {
+    width: 15%;
+  }
+  #community .inner #tab dl #news table tbody tr .day span, #community .inner #tab dl #faq table tbody tr .day span, #community .inner #tab dl #notice table tbody tr .day span {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  #community .inner #tab dl #news table tbody tr .title, #community .inner #tab dl #faq table tbody tr .title, #community .inner #tab dl #notice table tbody tr .title {
+    font-size: 14px;
+    width: 85%;
+    padding: 0 30px;
+  }
+  #community .inner #tab dl #news table tbody tr .title strong, #community .inner #tab dl #faq table tbody tr .title strong, #community .inner #tab dl #notice table tbody tr .title strong {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  #community .inner #tab dl #news table tbody tr .title p, #community .inner #tab dl #faq table tbody tr .title p, #community .inner #tab dl #notice table tbody tr .title p {
+    display: none;
+  }
+  #community .inner #tab dl #news table tbody tr .more a, #community .inner #tab dl #faq table tbody tr .more a, #community .inner #tab dl #notice table tbody tr .more a {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+  #community .inner #tab dl #news table tbody tr .more a span, #community .inner #tab dl #faq table tbody tr .more a span, #community .inner #tab dl #notice table tbody tr .more a span {
+    font-size: 14px;
+    margin-left: -35px;
+  }
+  #community .inner #tab .pagination {
+    margin-bottom: 70px;
+  }
+  /* 신문고, 고객센터 */
+  #info {
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 20px;
+  }
+  #info .inner {
+    width: 100%;
+  }
+  #info .inner article {
+    padding: 20px;
+    float: left;
+    width: 100%;
+  }
+  #info .inner article img {
+    width: 70px;
+    float: left;
+    margin: 10px 50px 50px 10px;
+  }
+  #info .inner article h2 {
+    font-weight: 200;
+    margin-bottom: 30px;
+    float: left;
+    font-size: 20px;
+  }
+  #info .inner article p {
+    font-size: 13px;
+    padding-right: 30px;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+  #info .inner article button {
+    width: 100%;
+    height: 50px;
+  }
+  #info .inner .call {
+    width: 100%;
+  }
+  #info .inner .call img {
+    width: 70px;
+  }
+  #info .inner .call div h2 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 539px) {
+  /* 이미지 타이틀 */
+  #newsTitle {
+    padding: 20px 0;
+    height: 150px;
+    margin-bottom: 150px;
+  }
+  #newsTitle .inner {
+    width: 100%;
+  }
+  #newsTitle .inner .titBox {
+    width: 130px;
+    padding: 10px;
+    height: 60px;
+    margin-top: 90px;
+  }
+  #newsTitle .inner .titBox h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  /* 커뮤니티 */
+  #community .inner #tab dl {
+    padding: 0 20px;
+  }
+  #community .inner #tab dl dt {
+    top: -40px;
+  }
+  #community .inner #tab dl #news table tbody tr .day, #community .inner #tab dl #faq table tbody tr .day, #community .inner #tab dl #notice table tbody tr .day {
+    display: none;
+  }
+  #community .inner #tab dl #news table tbody tr .title, #community .inner #tab dl #faq table tbody tr .title, #community .inner #tab dl #notice table tbody tr .title {
+    font-size: 13px;
+    width: 85%;
+    padding: 0 10px;
+  }
+  #community .inner #tab dl #news table tbody tr .title strong, #community .inner #tab dl #faq table tbody tr .title strong, #community .inner #tab dl #notice table tbody tr .title strong {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  #community .inner #tab dl #news table tbody tr .more a, #community .inner #tab dl #faq table tbody tr .more a, #community .inner #tab dl #notice table tbody tr .more a {
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  #community .inner #tab .pagination {
+    margin-bottom: 70px;
+  }
+  #community .inner #tab .pagination .numbers a:nth-of-type(3) {
+    display: none;
+  }
+  #community .inner #tab .pagination .numbers a:nth-of-type(4) {
+    display: none;
+  }
+  #community .inner #tab .pagination .numbers a:nth-of-type(5) {
+    display: none;
+  }
+
+  /* 신문고, 고객센터 */
+  #info {
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 20px;
+  }
+  #info .inner {
+    width: 100%;
+  }
+  #info .inner article {
+    padding: 20px;
+  }
+  #info .inner article img {
+    width: 50px;
+    float: left;
+    margin: 10px 50px 50px 10px;
+  }
+  #info .inner article h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  #info .inner article p {
+    display: none;
+  }
+  #info .inner .call img {
+    width: 50px;
+    margin-bottom: 30px;
+  }
+  #info .inner .call div h2 {
+    font-weight: 700;
+    font-size: 26px;
+  }
+  #info .inner .call div h3 {
+    display: none;
+  }
+}
 /* reset */
 * {
   margin: 0px;
