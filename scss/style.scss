@@ -28,14 +28,14 @@ a {text-decoration:none;}
     text-align:center; 
     position:fixed; 
     top:-40px; left:0; 
-    z-index: 1;
+    z-index: 200;
 
     &.on {
         top:0; 
     }
 }
 
-/* header */
+/* 헤더 */
 #header2 {
     width:100%;
     border-bottom:1px solid #efefef;
@@ -368,7 +368,6 @@ a {text-decoration:none;}
 }
 
 /* 서브페이지 타이틀 */
-
 #sub_title {
     width: 100%;
     padding:70px 0 110px 0;
@@ -424,7 +423,7 @@ a {text-decoration:none;}
     }
 }
 
-
+/* 풋터 */ 
 #footer2 {
     width: 100%;
     background:#333;
@@ -516,55 +515,133 @@ a {text-decoration:none;}
 
 
 @media screen and (max-width:1179px) {
-    
+
+
+    /* 헤더 */
     #header2 {
-        padding : 0 20px;
-        box-sizing: border-box;
+        width:100%;
+        padding-top: 50px;
 
-        #topMenu {
-            padding:8px 0;
 
-            .inner {
-                width:100%;
-                height:30px;
+        /* 배경 및 배너*/ 
+        .bgGnb {
+            .banner {
+                display: none;
             }
 
         }
 
-        .mainMenu {
+        .inner {
             width:100%;
-            height:80px;
+            height:100px;
 
-            h1 {
-                a {
-                    color:#111;
-                    font-size: 30px;
-                    display: block;
+                h1 {
+                    a {
+                        img {
+                            height:25px;
+                        }
+                    }
                 }
-            }
-
-            .menuWeb {
-
+        
                 .gnb {
-                    display: none;
+                        display: none;
+                        
+                        >li {
+                            width:130px;
+                            transition: 0.5s;
+                            display: inline-block;
+                            position: relative;
+                            z-index: 2;
 
+                            >a {
+                                display: block;
+                                color:#333;
+                                font-size: 16px;
+                                width: 100%;
+                                height:100px;
+                                text-align: center;
+                                line-height: 100px;
+                                font-weight: 600;
+                                
+                                &.on {
+                                        color:rgb(64, 134, 255);
+                                        transition: 0.5s;
+        
+                            }
+
+                            }
+
+                            >.subGnb {
+                                position: absolute;
+                                left: 0;
+                                display: none;
+                                font-weight: 300;
+                                text-align: center;
+                                width: 100%;
+                                padding:30px 0;
+                                box-sizing: border-box;
+                                
+
+                                >li {
+                                    position: relative;
+                                    width:100%;
+
+                                    >a { 
+                                        text-align: center;
+                                        font-size: 15px;
+                                        color: #555;
+                                        position: relative;
+                                        transition: 0.5s;
+                                        font-weight: 400;
+                                        padding:5px;
+                                        box-sizing: border-box;
+        
+                                        &::before {
+                                            content:'';
+                                            display: block;
+                                            width: 5px;
+                                            height: 5px;
+                                            border-radius: 5px;
+                                            background: rgb(86, 141, 237);
+                                            position: absolute;
+                                            right:-10px;
+                                            top:-3px;
+                                            transition: 0.5s;
+                                            opacity: 0;
+                                            border:1px solid green;
+                                        }
+                                    }
+                                }
+        
+                            }
+
+                        }
+                    }
+
+                .icons {
+                   display: none;
                 }
-            }
-
-            .icons {
-               display: none;
-            }
-
-            .btnCall {
-                display:block;
+        
+                .btnCall {
+                    display:block;
+                
+                }
+        
+                .snsMenu {
+                }
+        
+                .login {
+                       
+                }
             
-            }
+            
+
         }
+
 
     }
 
     /* 서브페이지 타이틀 */
-
     #sub_title {
         padding:70px 20px 110px 20px;
 
@@ -572,209 +649,201 @@ a {text-decoration:none;}
             width:100%;
 
             h1 {
-                font-size: 30px;
+                font-size: 24px;
                 }
 
             .sub_menu {
 
                 a {
-                    display: inline-block;
-                    color:#555;
-                    vertical-align: middle;
-                    padding: 0 5px;
-                    margin-bottom: 20px;
-
                     img {
-                        width: 16px;
+                        width: 15px;
                     }
 
+                    &:nth-child(3) {
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 1;
+                        img {
+                            width: 8px;
+                        }
+
+                    }
                 }
             }
         }
     }
 
-   
+    /* 풋터 */ 
     #footer2 {
         width: 100%;
-        padding:40px 0;
-        z-index: 2;
+        padding: 40px 20px;
+        box-sizing: border-box;
 
         .upper {
+            border-bottom:1px solid #555;
 
             .inner {
                 width: 100%;
-                margin:0 20px 30px 20px;
+                margin:0 auto 30px auto;
                 position: relative;
+
+                h1{
+                   display: inline-block;
+                    a{
+                        img {
+                            width: 110px;
+                        }
+                }
+                }
 
                 select {
                     background: transparent;
-                    border: 1px solid #888;
+                    background:#444;
                     color:#888;
-                    padding:5px 100px 5px 10px;
-                    position: absolute;
-                    top: 10px;
-                    right: 40px;
+                    border: none;
+                    padding:8px 100px 8px 10px;
+                    display: inline-block;
                 }
             }
         }
 
         .lower {
             margin-top: 30px;
-
+            
             .inner {
                 width:100%;
                 margin:0 auto;
                 position: relative;
+
                 address {
-                    width: 100%;
                     font-style: unset;
                     font-size: 14px;
                     margin-bottom: 10px;
-                    line-height: 1.5;
-                    text-align: center;
-                }
+                    line-height: 1.3;
+                    font-weight: 100;
 
-                #footmenu {
-                    text-align: center;
-                    margin-bottom: 20px;
-                    a {
-                        font-size: 13px;
-                        line-height: 1.2;
-                        margin-right:20px;
-                    }
+
                 }
 
                 .callCenter {
                     position: relative;
                     text-align: center;
-                    font-size:13px;
-                    letter-spacing: 1.5px;
 
-                    .call {
-                        font-weight: 600;
-                        font-size:25px;
-                        line-height: 1;
-                        color:#999;
-                        margin-top: 5px;
-                    }
-                    
+
                 }
             }
         }
     }
+
 
 
 
 }
 
 
+
 @media screen and (max-width:539px) {
-    
+
+
+    /* 헤더 */
     #header2 {
+        padding-top:0;
 
-        #topMenu {
-            display: none;
-
-        }
-
-        .mainMenu {
-            margin-top: 10px;
-            height: 60px;
-
-            h1 {
-                a {
-                    font-size: 28px;
-                }
+        /* 배경 및 배너*/ 
+        .bgGnb {
+            .banner {
+                display: none;
             }
-
         }
 
+        .inner {
+            height:80px;
+                h1 {
+                    a {
+                        img {
+                            height:20px;
+                        }
+                    }
+                }
+        
+                .snsMenu {
+                    display: none;
+                }
+        
+                .login {
+                    display: none;
+                       
+                }
+        }
     }
 
     /* 서브페이지 타이틀 */
-
     #sub_title {
-        padding:30px 20px 60px 20px;
+        padding:50px 20px 110px 20px;
 
         .inner {
-            width:100%;
+         
 
             h1 {
                 font-size: 20px;
                 }
 
             .sub_menu {
-
                 a {
-                    font-size: 12px;
-
                     img {
-                        width: 12px;
+                        width: 14px;
                     }
+
                     &:nth-child(3) {
                         font-size: 12px;
                         img {
-                            width: 8px;
+                            width: 6px;
                         }
-                    }
 
+                    }
                 }
             }
         }
     }
 
+    /* 풋터 */ 
     #footer2 {
         width: 100%;
-        padding:30px 0;
-    
+        padding: 40px 20px;
+        box-sizing: border-box;
+
         .upper {
+            border-bottom:1px solid #555;
+
             .inner {
                 width: 100%;
-                margin:0;
-                margin-bottom: 20px;
+                margin:0 auto 30px auto;
                 position: relative;
-    
-                h1 a{
-                    color:#888;
-                    display: block;
-                    text-align: center;
+
+                h1{
+                   display: block;
+                   margin-bottom: 30px;
+                    a{
+                        img {
+                            width: 110px;
+                        }
                 }
-    
+                }
+
                 select {
-                    display: none;
-                }
-            }
-        }
-    
-        .lower {
-            margin-top: 30px;
-            .inner {
-    
-                #footmenu {
-                    display: none;
-                }
-    
-                .callCenter {
+                    border: none;
+                    padding:8px 100px 8px 10px;
+                    display: block;
+                    width: 100%;
                     position: relative;
-                    text-align: center;
-                    color:rgb(187, 187, 187);
-                    font-size:13px;
-                    letter-spacing: 1.5px;
-                    
-    
-                    .call {
-                        font-weight: 600;
-                        font-size:25px;
-                        line-height: 1;
-                        color:#999;
-                        margin-top: 5px;
-                    }
-                    
                 }
             }
         }
+
     }
-    
+
+
 
 
 }
+

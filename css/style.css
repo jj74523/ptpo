@@ -2255,13 +2255,13 @@ a {
   position: fixed;
   top: -40px;
   left: 0;
-  z-index: 1;
+  z-index: 200;
 }
 #skipNavi li a.on {
   top: 0;
 }
 
-/* header */
+/* 헤더 */
 #header2 {
   width: 100%;
   border-bottom: 1px solid #efefef;
@@ -2568,6 +2568,7 @@ a {
   display: none;
 }
 
+/* 풋터 */
 #footer2 {
   width: 100%;
   background: #333;
@@ -2645,36 +2646,90 @@ a {
 }
 
 @media screen and (max-width: 1179px) {
+  /* 헤더 */
   #header2 {
-    padding: 0 20px;
+    width: 100%;
+    padding-top: 50px;
+    /* 배경 및 배너*/
+  }
+  #header2 .bgGnb .banner {
+    display: none;
+  }
+  #header2 .inner {
+    width: 100%;
+    height: 100px;
+  }
+  #header2 .inner h1 a img {
+    height: 25px;
+  }
+  #header2 .inner .gnb {
+    display: none;
+  }
+  #header2 .inner .gnb > li {
+    width: 130px;
+    transition: 0.5s;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+  }
+  #header2 .inner .gnb > li > a {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 600;
+  }
+  #header2 .inner .gnb > li > a.on {
+    color: #4086ff;
+    transition: 0.5s;
+  }
+  #header2 .inner .gnb > li > .subGnb {
+    position: absolute;
+    left: 0;
+    display: none;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
     box-sizing: border-box;
   }
-  #header2 #topMenu {
-    padding: 8px 0;
-  }
-  #header2 #topMenu .inner {
+  #header2 .inner .gnb > li > .subGnb > li {
+    position: relative;
     width: 100%;
-    height: 30px;
   }
-  #header2 .mainMenu {
-    width: 100%;
-    height: 80px;
+  #header2 .inner .gnb > li > .subGnb > li > a {
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+    position: relative;
+    transition: 0.5s;
+    font-weight: 400;
+    padding: 5px;
+    box-sizing: border-box;
   }
-  #header2 .mainMenu h1 a {
-    color: #111;
-    font-size: 30px;
+  #header2 .inner .gnb > li > .subGnb > li > a::before {
+    content: "";
     display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: #568ded;
+    position: absolute;
+    right: -10px;
+    top: -3px;
+    transition: 0.5s;
+    opacity: 0;
+    border: 1px solid green;
   }
-  #header2 .mainMenu .menuWeb .gnb {
+  #header2 .inner .icons {
     display: none;
   }
-  #header2 .mainMenu .icons {
-    display: none;
-  }
-  #header2 .mainMenu .btnCall {
+  #header2 .inner .btnCall {
     display: block;
   }
-
   /* 서브페이지 타이틀 */
   #sub_title {
     padding: 70px 20px 110px 20px;
@@ -2683,37 +2738,47 @@ a {
     width: 100%;
   }
   #sub_title .inner h1 {
-    font-size: 30px;
-  }
-  #sub_title .inner .sub_menu a {
-    display: inline-block;
-    color: #555;
-    vertical-align: middle;
-    padding: 0 5px;
-    margin-bottom: 20px;
+    font-size: 24px;
   }
   #sub_title .inner .sub_menu a img {
-    width: 16px;
+    width: 15px;
+  }
+  #sub_title .inner .sub_menu a:nth-child(3) {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1;
+  }
+  #sub_title .inner .sub_menu a:nth-child(3) img {
+    width: 8px;
   }
 
+  /* 풋터 */
   #footer2 {
     width: 100%;
-    padding: 40px 0;
-    z-index: 2;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  #footer2 .upper {
+    border-bottom: 1px solid #555;
   }
   #footer2 .upper .inner {
     width: 100%;
-    margin: 0 20px 30px 20px;
+    margin: 0 auto 30px auto;
     position: relative;
+  }
+  #footer2 .upper .inner h1 {
+    display: inline-block;
+  }
+  #footer2 .upper .inner h1 a img {
+    width: 110px;
   }
   #footer2 .upper .inner select {
     background: transparent;
-    border: 1px solid #888;
+    background: #444;
     color: #888;
-    padding: 5px 100px 5px 10px;
-    position: absolute;
-    top: 10px;
-    right: 40px;
+    border: none;
+    padding: 8px 100px 8px 10px;
+    display: inline-block;
   }
   #footer2 .lower {
     margin-top: 30px;
@@ -2724,108 +2789,83 @@ a {
     position: relative;
   }
   #footer2 .lower .inner address {
-    width: 100%;
     font-style: unset;
     font-size: 14px;
     margin-bottom: 10px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  #footer2 .lower .inner #footmenu {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  #footer2 .lower .inner #footmenu a {
-    font-size: 13px;
-    line-height: 1.2;
-    margin-right: 20px;
+    line-height: 1.3;
+    font-weight: 100;
   }
   #footer2 .lower .inner .callCenter {
     position: relative;
     text-align: center;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-  }
-  #footer2 .lower .inner .callCenter .call {
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 1;
-    color: #999;
-    margin-top: 5px;
   }
 }
 @media screen and (max-width: 539px) {
-  #header2 #topMenu {
+  /* 헤더 */
+  #header2 {
+    padding-top: 0;
+    /* 배경 및 배너*/
+  }
+  #header2 .bgGnb .banner {
     display: none;
   }
-  #header2 .mainMenu {
-    margin-top: 10px;
-    height: 60px;
+  #header2 .inner {
+    height: 80px;
   }
-  #header2 .mainMenu h1 a {
-    font-size: 28px;
+  #header2 .inner h1 a img {
+    height: 20px;
+  }
+  #header2 .inner .snsMenu {
+    display: none;
+  }
+  #header2 .inner .login {
+    display: none;
   }
 
   /* 서브페이지 타이틀 */
   #sub_title {
-    padding: 30px 20px 60px 20px;
-  }
-  #sub_title .inner {
-    width: 100%;
+    padding: 50px 20px 110px 20px;
   }
   #sub_title .inner h1 {
     font-size: 20px;
   }
-  #sub_title .inner .sub_menu a {
-    font-size: 12px;
-  }
   #sub_title .inner .sub_menu a img {
-    width: 12px;
+    width: 14px;
   }
   #sub_title .inner .sub_menu a:nth-child(3) {
     font-size: 12px;
   }
   #sub_title .inner .sub_menu a:nth-child(3) img {
-    width: 8px;
+    width: 6px;
   }
 
+  /* 풋터 */
   #footer2 {
     width: 100%;
-    padding: 30px 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  #footer2 .upper {
+    border-bottom: 1px solid #555;
   }
   #footer2 .upper .inner {
     width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 auto 30px auto;
     position: relative;
   }
-  #footer2 .upper .inner h1 a {
-    color: #888;
+  #footer2 .upper .inner h1 {
     display: block;
-    text-align: center;
+    margin-bottom: 30px;
+  }
+  #footer2 .upper .inner h1 a img {
+    width: 110px;
   }
   #footer2 .upper .inner select {
-    display: none;
-  }
-  #footer2 .lower {
-    margin-top: 30px;
-  }
-  #footer2 .lower .inner #footmenu {
-    display: none;
-  }
-  #footer2 .lower .inner .callCenter {
+    border: none;
+    padding: 8px 100px 8px 10px;
+    display: block;
+    width: 100%;
     position: relative;
-    text-align: center;
-    color: #bbbbbb;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-  }
-  #footer2 .lower .inner .callCenter .call {
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 1;
-    color: #999;
-    margin-top: 5px;
   }
 }
 
