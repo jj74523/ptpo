@@ -56,8 +56,8 @@ function openSub() {
             display:"none"
         }).append(
             $("<div class='banner'>").css({
-                width:560,
-                height:getSubMaxHeight(),
+                width:"30%",
+                height:"100%",
                 position:"absolute",
                 top:0,
                 left:0,
