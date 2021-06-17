@@ -308,3 +308,367 @@
  
 
 }
+
+
+
+@media screen and (max-width:1179px) {
+/*한솔 TV 타이틀*/
+#ytb_tit {
+    background-size: cover;
+
+    .inner {
+        width:100%;
+        padding:80px 20px 300px 20px ;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+            
+            button {
+                width:180px;
+                height:50px;
+                bottom:200px;
+                right:20px;
+                font-size: 13px;
+
+                .fa-youtube {
+                    font-size: 20px;
+                    vertical-align:text-bottom;
+                }
+            }
+    }
+
+    }
+
+
+/*유튜브*/
+#vidGallery {
+    width:100%;
+    position: relative;
+
+
+/*유튜브 영상 메인*/
+    #galMain {
+        width:100%;
+        margin-top: -200px;
+        margin-bottom: 150px;
+        padding:0 20px;
+        box-sizing: border-box;
+
+        .artMain {
+    
+            .pic {
+                height:500px;
+            }
+    
+            .con {
+                width:80%;
+                height: 150px;
+                margin-top: -120px;
+                padding:20px;
+                
+                h2 {
+                    font: 300 20px/1 'Spoqa Han Sans';
+                }
+        
+                p {
+                    font: 100 13px/1.5 'Spoqa Han Sans';
+                    padding-right: 100px;
+                }
+    
+                span {
+                    font: 600 12px/1.5 'Spoqa Han Sans';
+                }
+                
+                .profile {
+                    width: 60px;
+                    height: 60px;
+                    right: 20px;
+                    border-radius: 60px;
+                    background:url(../img/youtube/youtube_icon.jpg) no-repeat center/cover;
+
+                }
+    
+            }
+        }
+    }
+
+
+/* 검색창 및 필터 */
+    .filter {
+        margin-bottom: 20px;
+        padding:0 20px;
+        box-sizing: border-box;
+
+        .filed {
+
+            div {
+                display: inline-block;
+                margin-right: 5px;
+
+                a {
+                    padding: 5px;
+                    font-size: 13px;
+
+                }
+
+            }
+
+        }
+
+        
+        form  {
+            fieldset {
+
+                input {
+                    width:220px;
+                    padding: 10px;
+                    font-size: 10px;
+                }
+                img {
+                    width: 14px;
+                    margin-left: -25px;
+                    vertical-align: middle;
+                }
+            }
+
+        }
+    }
+
+
+/* 유튜브 리스트 */
+    .list {
+        margin-bottom: 150px;
+
+        article {
+            margin-bottom: 20px;
+            width:50%;
+            padding:10px;
+            
+             .pic {
+                width:100%;
+                height:250px;
+                background-position: center;
+                background-size: cover;
+            }
+            .con {
+    
+                height: 120px;
+                padding: 20px;
+            
+                h2 {
+                    font: 400 15px/1 'Spoqa Han Sans';
+                }
+    
+                p {
+                    font: 100 10px/1.5 'Spoqa Han Sans';
+    
+                }
+                span {
+                    font: 400 10px/1.5 'Spoqa Han Sans';
+                }
+                    
+                .profile {
+                    width: 30px;
+                    height: 30px;
+                    bottom:20px;
+                    right: 20px;
+                }
+    
+            }
+        }
+
+    }
+
+        
+
+
+
+
+
+ 
+
+}
+
+
+}
+
+
+@media screen and (max-width:539px) {
+    /*한솔 TV 타이틀*/
+    #ytb_tit {
+    
+        .inner {
+            padding:50px 20px 150px 20px ;
+    
+                h2 {
+                    font-size: 30px;
+                }
+    
+                h3 {
+                    font-size: 16px;
+                }
+    
+                p {
+                    display: none;
+                }
+                
+                button {
+                    width:150px;
+                    height:40px;
+                    bottom:80px;
+                    right: inherit;
+                    font-size: 13px;
+    
+                    .fa-youtube {
+                        font-size: 14px;
+                        vertical-align:middle;
+                    }
+                }
+        }
+    
+        }
+    
+    
+    /*유튜브*/
+    #vidGallery {
+        width:100%;
+        position: relative;
+    
+    
+    /*유튜브 영상 메인*/
+        #galMain {
+            width:100%;
+            margin-top: -200px;
+            margin-bottom: 80px;
+    
+            .artMain {
+        
+                .pic {
+                    height:500px;
+                }
+        
+                .con {
+                    width:80%;
+                    height: 100px;
+                    margin-top: -180px;
+                    padding:15px;
+                    
+                    h2 {
+                        font: 300 16px/1 'Spoqa Han Sans';
+                    }
+            
+                    p {
+                        display: none;
+                    }
+        
+                    span {
+                        font: 600 10px/1.5 'Spoqa Han Sans';
+                    }
+                    
+                    .profile {
+                        width: 30px;
+                        height: 30px;
+                        right: 20px;
+                        top: inherit;
+                        bottom:0;
+                        border-radius: 30px;
+    
+                    }
+        
+                }
+            }
+        }
+    
+    
+    /* 검색창 및 필터 */
+        .filter {
+            margin-bottom: 0px;
+            padding-left: 5px;
+            .filed {
+                
+                div {
+                    display: inline-block;
+                    margin-right: 5px;
+    
+                    a {
+                        padding: 5px;
+                        font-size: 13px;
+    
+                    }
+    
+                }
+    
+            }
+    
+            form  {
+                display: none;
+
+            }
+        }
+    
+    
+    /* 유튜브 리스트 */
+        .list {
+            margin-bottom: 120px;
+    
+            article {
+                margin-bottom: 20px;
+                width:100%;
+                padding:10px;
+                
+                 .pic {
+                    width:100%;
+                    height:250px;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .con {
+        
+                    height: 120px;
+                    padding: 20px;
+                
+                    h2 {
+                        font: 400 15px/1 'Spoqa Han Sans';
+                    }
+        
+                    p {
+                        font: 100 10px/1.5 'Spoqa Han Sans';
+        
+                    }
+                    span {
+                        font: 400 10px/1.5 'Spoqa Han Sans';
+                    }
+                        
+                    .profile {
+                        width: 30px;
+                        height: 30px;
+                        bottom:20px;
+                        right: 20px;
+                    }
+        
+                }
+            }
+    
+        }
+    
+            
+    
+    
+    
+    
+    
+     
+    
+    }
+    
+    
+    }

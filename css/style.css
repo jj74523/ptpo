@@ -1723,6 +1723,248 @@ a {
   border: 1px solid #ddd;
 }
 
+@media screen and (max-width: 1179px) {
+  /*한솔 TV 타이틀*/
+  #ytb_tit {
+    background-size: cover;
+  }
+  #ytb_tit .inner {
+    width: 100%;
+    padding: 80px 20px 300px 20px;
+  }
+  #ytb_tit .inner h2 {
+    font-size: 40px;
+  }
+  #ytb_tit .inner h3 {
+    font-size: 20px;
+  }
+  #ytb_tit .inner p {
+    font-size: 14px;
+  }
+  #ytb_tit .inner button {
+    width: 180px;
+    height: 50px;
+    bottom: 200px;
+    right: 20px;
+    font-size: 13px;
+  }
+  #ytb_tit .inner button .fa-youtube {
+    font-size: 20px;
+    vertical-align: text-bottom;
+  }
+
+  /*유튜브*/
+  #vidGallery {
+    width: 100%;
+    position: relative;
+    /*유튜브 영상 메인*/
+    /* 검색창 및 필터 */
+    /* 유튜브 리스트 */
+  }
+  #vidGallery #galMain {
+    width: 100%;
+    margin-top: -200px;
+    margin-bottom: 150px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  #vidGallery #galMain .artMain .pic {
+    height: 500px;
+  }
+  #vidGallery #galMain .artMain .con {
+    width: 80%;
+    height: 150px;
+    margin-top: -120px;
+    padding: 20px;
+  }
+  #vidGallery #galMain .artMain .con h2 {
+    font: 300 20px/1 "Spoqa Han Sans";
+  }
+  #vidGallery #galMain .artMain .con p {
+    font: 100 13px/1.5 "Spoqa Han Sans";
+    padding-right: 100px;
+  }
+  #vidGallery #galMain .artMain .con span {
+    font: 600 12px/1.5 "Spoqa Han Sans";
+  }
+  #vidGallery #galMain .artMain .con .profile {
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    border-radius: 60px;
+    background: url(../img/youtube/youtube_icon.jpg) no-repeat center/cover;
+  }
+  #vidGallery .filter {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  #vidGallery .filter .filed div {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  #vidGallery .filter .filed div a {
+    padding: 5px;
+    font-size: 13px;
+  }
+  #vidGallery .filter form fieldset input {
+    width: 220px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  #vidGallery .filter form fieldset img {
+    width: 14px;
+    margin-left: -25px;
+    vertical-align: middle;
+  }
+  #vidGallery .list {
+    margin-bottom: 150px;
+  }
+  #vidGallery .list article {
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 10px;
+  }
+  #vidGallery .list article .pic {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+  }
+  #vidGallery .list article .con {
+    height: 120px;
+    padding: 20px;
+  }
+  #vidGallery .list article .con h2 {
+    font: 400 15px/1 "Spoqa Han Sans";
+  }
+  #vidGallery .list article .con p {
+    font: 100 10px/1.5 "Spoqa Han Sans";
+  }
+  #vidGallery .list article .con span {
+    font: 400 10px/1.5 "Spoqa Han Sans";
+  }
+  #vidGallery .list article .con .profile {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 539px) {
+  /*한솔 TV 타이틀*/
+  #ytb_tit .inner {
+    padding: 50px 20px 150px 20px;
+  }
+  #ytb_tit .inner h2 {
+    font-size: 30px;
+  }
+  #ytb_tit .inner h3 {
+    font-size: 16px;
+  }
+  #ytb_tit .inner p {
+    display: none;
+  }
+  #ytb_tit .inner button {
+    width: 150px;
+    height: 40px;
+    bottom: 80px;
+    right: inherit;
+    font-size: 13px;
+  }
+  #ytb_tit .inner button .fa-youtube {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  /*유튜브*/
+  #vidGallery {
+    width: 100%;
+    position: relative;
+    /*유튜브 영상 메인*/
+    /* 검색창 및 필터 */
+    /* 유튜브 리스트 */
+  }
+  #vidGallery #galMain {
+    width: 100%;
+    margin-top: -200px;
+    margin-bottom: 80px;
+  }
+  #vidGallery #galMain .artMain .pic {
+    height: 500px;
+  }
+  #vidGallery #galMain .artMain .con {
+    width: 80%;
+    height: 100px;
+    margin-top: -180px;
+    padding: 15px;
+  }
+  #vidGallery #galMain .artMain .con h2 {
+    font: 300 16px/1 "Spoqa Han Sans";
+  }
+  #vidGallery #galMain .artMain .con p {
+    display: none;
+  }
+  #vidGallery #galMain .artMain .con span {
+    font: 600 10px/1.5 "Spoqa Han Sans";
+  }
+  #vidGallery #galMain .artMain .con .profile {
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: inherit;
+    bottom: 0;
+    border-radius: 30px;
+  }
+  #vidGallery .filter {
+    margin-bottom: 0px;
+    padding-left: 5px;
+  }
+  #vidGallery .filter .filed div {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  #vidGallery .filter .filed div a {
+    padding: 5px;
+    font-size: 13px;
+  }
+  #vidGallery .filter form {
+    display: none;
+  }
+  #vidGallery .list {
+    margin-bottom: 120px;
+  }
+  #vidGallery .list article {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  #vidGallery .list article .pic {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+  }
+  #vidGallery .list article .con {
+    height: 120px;
+    padding: 20px;
+  }
+  #vidGallery .list article .con h2 {
+    font: 400 15px/1 "Spoqa Han Sans";
+  }
+  #vidGallery .list article .con p {
+    font: 100 10px/1.5 "Spoqa Han Sans";
+  }
+  #vidGallery .list article .con span {
+    font: 400 10px/1.5 "Spoqa Han Sans";
+  }
+  #vidGallery .list article .con .profile {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
 /* 조직도 */
 #organization {
   margin-bottom: 120px;
@@ -2536,6 +2778,59 @@ a {
     font: 10px/1 "arial";
   }
 }
+@media screen and (max-width: 539px) {
+  #galTitle {
+    padding: 20px 0;
+    height: 150px;
+    margin-bottom: 150px;
+  }
+  #galTitle .inner {
+    width: 100%;
+  }
+  #galTitle .inner .titBox {
+    width: 130px;
+    padding: 10px;
+    height: 60px;
+    margin-top: 90px;
+  }
+  #galTitle .inner .titBox h2 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+  #galTitle .inner .titBox p {
+    display: none;
+  }
+
+  .loading {
+    top: 80%;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .content #search {
+    display: none;
+  }
+  .content #gallery ul li {
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+  }
+  .content #gallery ul li.item-sizer {
+    width: 100%;
+    opacity: 0;
+  }
+  .content #gallery ul li:nth-of-type(2) {
+    width: 100%;
+  }
+  .content #gallery ul li:nth-of-type(4) {
+    height: 300px;
+  }
+  .content #gallery ul li:nth-of-type(7) {
+    width: 100%;
+  }
+}
 /* reset */
 * {
   margin: 0px;
@@ -2732,8 +3027,8 @@ a {
 }
 #header2 .inner .btnCall {
   display: none;
-  width: 30px;
-  height: 25px;
+  width: 26px;
+  height: 18px;
   position: absolute;
   right: 0;
   top: 50%;
@@ -2745,7 +3040,7 @@ a {
   content: "";
   display: block;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: #555;
   position: absolute;
   top: 0;
@@ -2754,7 +3049,7 @@ a {
 #header2 .inner .btnCall span {
   display: block;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: #555;
   position: absolute;
   top: 50%;
@@ -2765,7 +3060,7 @@ a {
   content: "";
   display: block;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: #555;
   position: absolute;
   bottom: 0;
@@ -3122,7 +3417,7 @@ a {
     height: 80px;
   }
   #header2 .inner h1 a img {
-    height: 20px;
+    height: 18px;
   }
   #header2 .inner .snsMenu {
     display: none;
