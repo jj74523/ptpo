@@ -1,28 +1,29 @@
 
-//탭이동
-$("#tab .tab_tit a").on("click",function(e){
+var items = ["data/board1.json", "data/board2.json", "data/board3.json"];
+var item_data =callData(items[0]);
+var target = $("#tab dd").eq(0);
+
+createTable(target, item_data);
+
+$("#tab dt").on("click",function(e){
     e.preventDefault();
-    var target = $(this).attr("href");
+    var i = $(this).index();
 
-    $("#tab .tab_tit a").removeClass("on");
-    $(this).addClass("on");
+    $("#tab dl dt a").removeClass("on");
+    $("#tab dl dt").eq(i).children("a").addClass("on");
 
-    $("#tab dd").fadeOut();
-    $(target).fadeIn();
+    $("#tab dl dd").removeClass("on");
+    $("#tab dl dd").html("");
+
+    $("#tab dl dd").eq(i).addClass("on");
+
+    var item_data = callData(items[i]);
+    var target = $("#tab dl dd").eq(i);
+    createTable(target, item_data);
+
 });
 
 
-// 게시판 호출
-var url ="data/board1.json";
-var resultData = callData(url);
-
-var $frame = $("#news");
-var $faq = $("#faq");
-var $notice = $("#notice");
-
-createTable($frame, resultData);
-createTable($faq, resultData);
-createTable($notice, resultData);
 
 
 function callData(url){

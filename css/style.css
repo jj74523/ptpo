@@ -2446,6 +2446,96 @@ a {
   color: #8f8f8f;
 }
 
+@media screen and (max-width: 1179px) {
+  #galTitle {
+    width: 100%;
+    background: url(../img//gallery/gallery_bg.jpg) top;
+    background-size: cover;
+    padding: 50px 0;
+    height: 200px;
+    margin-top: -111px;
+    margin-bottom: 150px;
+  }
+  #galTitle .inner {
+    width: 100%;
+  }
+  #galTitle .inner .titBox {
+    width: 250px;
+    padding: 40px;
+    height: 120px;
+    margin-top: 80px;
+    margin-right: 20px;
+  }
+  #galTitle .inner .titBox h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #galTitle .inner .titBox p {
+    display: none;
+  }
+
+  .loading {
+    top: 80%;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .content #search {
+    margin-right: 20px;
+  }
+  .content #gallery {
+    opacity: 0;
+    transform: translateY(100px);
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .content #gallery ul {
+    width: 100%;
+  }
+  .content #gallery ul li {
+    height: 300px;
+    width: 50%;
+    padding: 20px;
+  }
+  .content #gallery ul li.item-sizer {
+    width: 50%;
+    opacity: 0;
+  }
+  .content #gallery ul li:nth-of-type(2) {
+    width: 50%;
+  }
+  .content #gallery ul li:nth-of-type(4) {
+    height: 300px;
+  }
+  .content #gallery ul li:nth-of-type(7) {
+    width: 50%;
+  }
+  .content #gallery ul li .inner .itemInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    background: #fff;
+    height: 80px;
+    z-index: 5;
+    padding: 15px;
+  }
+  .content #gallery ul li .inner .itemInfo p {
+    font: bold 14px/1 "arial";
+    margin-bottom: 10px;
+  }
+  .content #gallery ul li .inner .itemInfo .profile {
+    width: 100%;
+  }
+  .content #gallery ul li .inner .itemInfo .profile img {
+    width: 20px;
+    height: 20px;
+  }
+  .content #gallery ul li .inner .itemInfo .profile span {
+    font: 10px/1 "arial";
+  }
+}
 /* reset */
 * {
   margin: 0px;

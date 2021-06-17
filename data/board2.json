@@ -2,7 +2,7 @@
     "data" : [
         {
             "link" : "#",
-            "title" : "졸업작품展, INSPER 후원 이벤트",
+            "title" : "2졸업작품展, INSPER 후원 이벤트",
             "txt" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit quas maxime recusandae, laudantium quae.",
             "dateday":"21",
             "date" : "2021.02"
@@ -27,7 +27,7 @@
             "txt" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit quas maxime recusandae, laudantium quae.",
             "dateday":"01",
             "date" : "2021.04"
-        },
+        }
 
     ]
 
