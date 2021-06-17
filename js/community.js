@@ -13,10 +13,7 @@ $("#tab .tab_tit a").on("click",function(e){
 
 
 // 게시판 호출
-var url =[];
-url[0] ="data/board1.json";
-url[1] ="data/board2.json";
-url[2] ="data/board3.json";
+var url ="data/board1.json";
 var resultData = callData(url);
 
 var $frame = $("#news");
@@ -31,10 +28,8 @@ createTable($notice, resultData);
 function callData(url){
     var result;
 
-    for(var i=0; i < url.length; i++){
-
         $.ajax({
-            url: url[i],
+            url: url,
             dataType: "json",
             async: false
             
@@ -46,12 +41,8 @@ function callData(url){
         .error(function(err){
             console.log(err);
         });
-        console.log(url[i]);
     
         return result;
-        
-    }
-
 
 }
 
