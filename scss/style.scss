@@ -292,6 +292,52 @@ a {text-decoration:none;}
             
             }
     
+            .menuMo {
+                position: fixed;
+                top:0;
+                right:-270px;
+                width:270px;
+                height:100%;
+                background:#eee;
+                z-index: 10;
+                transition: all 0.5s;
+                padding: 35px 30px;
+                box-sizing:border-box;
+                box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.413);
+
+                .close {
+                    position: absolute;
+                    right:20px;
+                    top:20px;
+                    opacity: 0.6;
+                    img {
+                        width: 25px;
+                    }
+                }
+                
+                #gnbMo {
+                    margin-top: 40px;
+
+                    li a {
+                        display:block;
+                        width:100%;
+                        padding:30px 0;
+                        font: bold 14px/1 'arial';
+                        color:cornflowerblue;
+                        text-align:center;
+                    }
+
+                }
+
+               
+
+                &.on {
+                    right:0;
+                }
+
+
+            }
+
             .snsMenu {
                     position: absolute;
                     top:-40px;
@@ -441,7 +487,7 @@ a {text-decoration:none;}
                 color:#888;
             }
 
-            select {
+            select#family {
                 background: transparent;
                 background:#444;
                 color:#888;
@@ -676,19 +722,22 @@ a {text-decoration:none;}
     /* 풋터 */ 
     #footer2 {
         width: 100%;
-        padding: 40px 20px;
+        padding: 0px 20px;
         box-sizing: border-box;
 
         .upper {
-            border-bottom:1px solid #555;
 
             .inner {
                 width: 100%;
-                margin:0 auto 30px auto;
+                margin:0 auto;
                 position: relative;
+                text-align: center;
+                padding:20px 0;
 
                 h1{
                    display: inline-block;
+                   margin-bottom: 20px;
+
                     a{
                         img {
                             width: 110px;
@@ -696,19 +745,20 @@ a {text-decoration:none;}
                 }
                 }
 
-                select {
-                    background: transparent;
-                    background:#444;
-                    color:#888;
-                    border: none;
-                    padding:8px 100px 8px 10px;
-                    display: inline-block;
+                select#family {
+                    padding:10px 100px 10px 10px;
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    font-size: 14px;
+                    width:300px;
                 }
             }
         }
 
         .lower {
-            margin-top: 30px;
+            margin-top: 0;
+            padding:40px;
             
             .inner {
                 width:100%;
@@ -807,41 +857,73 @@ a {text-decoration:none;}
     }
 
     /* 풋터 */ 
+
     #footer2 {
         width: 100%;
-        padding: 40px 20px;
+        padding: 0px 20px;
         box-sizing: border-box;
 
         .upper {
-            border-bottom:1px solid #555;
 
             .inner {
                 width: 100%;
-                margin:0 auto 30px auto;
+                margin:0 auto;
                 position: relative;
+                text-align: center;
+                padding:50px 0;
 
                 h1{
-                   display: block;
-                   margin-bottom: 30px;
+                   display: inline-block;
+                   margin-bottom: 20px;
+
                     a{
                         img {
-                            width: 110px;
+                            width: 100px;
                         }
                 }
                 }
 
-                select {
-                    border: none;
-                    padding:8px 100px 8px 10px;
-                    display: block;
-                    width: 100%;
+                select#family {
+                    padding:10px 100px 10px 10px;
                     position: relative;
+                    top: auto;
+                    right: auto;
+                    font-size: 14px;
+                    width:100%;
+                    display: block;
+                    
                 }
             }
         }
 
-    }
+        .lower {
+            margin-top: 0;
+            padding:40px;
+            
+            .inner {
+                width:100%;
+                margin:0 auto;
+                position: relative;
 
+                address {
+                    font-style: unset;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    line-height: 1.3;
+                    font-weight: 100;
+
+
+                }
+
+                .callCenter {
+                    position: relative;
+                    text-align: center;
+
+
+                }
+            }
+        }
+    }
 
 
 

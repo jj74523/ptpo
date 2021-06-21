@@ -5,17 +5,34 @@ var $gnb_ul = $gnb.children("ul");
 var $skipNavi_a = $("#skipNavi li a");
 var speed = 500;
 var doneClose = true;
+var $btnCall =$(".btnCall");
+var $menuMo = $(".menuMo");
+
+//태블릿-모바일 메뉴
+
+ if($(window).width() < 1179){    
+        openSub = false;
+        $btnCall.on("click",function(){
+            $(".menuMo").addClass("on");
+        });
+        
+        $(".close").on("click",function(){
+            $(this).parent(".menuMo").removeClass("on");
+        })
+}
 
 
 $header.on("mouseenter focusin", openSub);
 $header.on("mouseleave focusout", closeSub);
 
-
 $gnb.on("mouseenter focusIn",function(){
     $(this).children("a").addClass("on");
     var target = $(this).children("a").attr("data-menu");
     callData(target);
+
 });
+
+
 
 $gnb.on("mouseleave focusout",function(){
     $(this).children("a").removeClass("on");
@@ -88,6 +105,7 @@ function openSub() {
         $(".allBg").fadeIn(speed);
         doneClose = false;
     }
+
 }
 
 
@@ -113,6 +131,16 @@ function closeSub() {
     $(".allBg").fadeOut(speed/2, function(){
         $(this).remove();
     });
-
-
 }
+
+
+/* 모바일 */ 
+
+
+
+// btnCall.onclick = function(){
+//     btnCall.classList.toggle("on");
+//     menuMo.classList.toggle("on");
+// }
+
+
