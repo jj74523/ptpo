@@ -44,6 +44,7 @@ body {
                     caption {
                         display: none;
                     }
+                    
                     &::after {
                         content: '';
                         display: block;
@@ -230,15 +231,7 @@ body {
             right:56%;
             z-index: -1;
         }
-        
-        #mapBox{
-            width:1180px; 
-            height:500px; 
-            background:#000; 
-            transform: translate(290px, 100px);
-            position: relative; 
-        }
-    
+
         .branch {
             position: absolute;
             width:400px;
@@ -360,7 +353,6 @@ body {
                         color: cornflowerblue;
                         font-weight: 600;
                         
-
                         span {
                             &::after {
                                 top: 0;
@@ -377,6 +369,16 @@ body {
 
             }
         }
+        
+        #mapBox{
+            width:1180px; 
+            height:500px; 
+            background:#000; 
+            transform: translate(290px, 100px);
+            position: relative; 
+        }
+    
+
 
     }
     
@@ -385,13 +387,20 @@ body {
 
 
 @media screen and (max-width:1179px) {
+
+    body {
+        overflow-x:inherit;
+    }
+
     #contact {
         padding: 80px 20px 0;
+        width:100%;
+
         .inner {
             width:100%;
     
             h2 {
-                font-size: 24px;
+                font-size: 20px;
                 margin-bottom: 20px;
                 span {
                     font-size: 60px;
@@ -401,14 +410,16 @@ body {
             >p {
                 font-size: 14px;
                 margin-bottom: 50px;
-                padding-right: 200px;
+                padding-right: 180px;
             }
         
             form {
-                padding: 0 20px;
-                box-sizing: border-box;
+                width:100%;
 
                 fieldset {
+                    width:100%;
+                    
+
                     table {
                         width:100%;
                         margin-bottom: 20px;
@@ -424,33 +435,26 @@ body {
                             td {
     
                                 input[type=text], input[type=password] {
-                                    background:#efefef;
-                                    border:none;
-                                    width:100%;
                                     height:50px;
                                     padding:20px;
-                                    border-radius: 3px;
                                 }
     
                                 select {
-                                    background:#efefef;
-                                    border:none;
-                                    width:200px;
+                                    width:100%;
                                     height:50px;
                                     padding:10px;
-                                    border-radius: 3px;
                                 }
 
                             }
         
                             &.num {
                                         select  {
-                                            width:200px;
+                                            width:50%;
                                             margin-right: 10px;
                                         }
         
                                         input[type=text]  {
-                                            width:290px;
+                                            width:50%;
                                         }
                                     
                             }
@@ -458,10 +462,10 @@ body {
                             &.eMail {
     
                                     input[type=text]  {
-                                        width:270px;
+                                        width:40%;
                                     }
                                     select  {
-                                        width:200px;
+                                        width:40%;
         
                                     }
                             }
@@ -475,7 +479,7 @@ body {
     
                                 }
                                 textarea {
-                                    width:1080px;
+                                    width:100%;
                                     border:none;
                                     background:#efefef;
                                     padding:20px;
@@ -495,7 +499,7 @@ body {
                             background:cornflowerblue;
                             color:#fff;
                             border:none;
-                            width:200px;
+                            width:150px;
                             height:50px;
                             padding:10px;
                             border-radius: 3px;
@@ -511,19 +515,17 @@ body {
     
         }
     
-        
-    
-    
     }
     
     #map {
         padding:100px 0 10px 0;
+        width:100%;
 
         h2 {
             width:100%;
             margin-bottom: 50px;
-            font-size: 30px;
-            margin-left: 20px;
+            font-size: 25px;
+            margin-left: 15px;
             
         }
     
@@ -536,30 +538,19 @@ body {
             }
     
              &::after {
-                display: none;
+                display: block;
                 content: '';
                 clear:both;
             }
-            
-            #mapBox{
-                width:60%; 
-                height:500px; 
-                background:#000; 
-                transform: translate(0, 0);
-                position: relative; 
-                float:right;
-            }
-        
-           
-            
+
             .branch {
                 position: relative;
-                width:40%;
-                height: 500px;
+                width:100%;
                 z-index:2;
                 float:left;
                 top: inherit;
                 left: inherit;
+                
         
                 > li{
                     width:100%;
@@ -569,21 +560,23 @@ body {
                         width:100%;
                         padding:20px;
                         
-
+                        &::after {
+                            content:'';
+                            display:block;
+                            clear:both;
+                        }
+                        
                         .comName {
                             font-size:18px;
-                            margin-bottom: 20px;
-                            width: 100%;
+                            margin-bottom: 0px;
+                            width: 50%;
+                            float:left;
     
-                            span {
-                                display: inline-block;
-                                padding:10px;
-                                position: relative;
-                            }  
                         }
     
                             .list {
-                                width:100%;
+                                width:50%;
+                                float:left;
     
                                 p {
                                     font-size: 12px;
@@ -594,6 +587,10 @@ body {
                                         margin-right: 10px;
                                        vertical-align: middle;
         
+                                    }
+
+                                    &:nth-of-type(2) {
+                                        display: none;
                                     }
     
                                 }
@@ -607,6 +604,20 @@ body {
                 }
             }
     
+            
+            #mapBox{
+                width:100%; 
+                height:400px; 
+                background:#000; 
+                transform: translate(0, 0);
+                position: relative; 
+                float:right;
+                margin-bottom: 50px;
+            }
+        
+           
+            
+
         }
         
     

@@ -2161,81 +2161,203 @@ a {
   background: #d4e3ff;
 }
 
-#footer2 {
-  width: 100%;
-  background: #333;
-  color: #888;
-  padding: 40px 0;
-}
-#footer2 .upper {
-  border-bottom: 1px solid #555;
-}
-#footer2 .upper .inner {
-  width: 1180px;
-  margin: 0 auto 30px auto;
-  position: relative;
-}
-#footer2 .upper .inner h1 a {
-  color: #888;
-}
-#footer2 .upper .inner select {
-  background: transparent;
-  background: #444;
-  color: #888;
-  border: none;
-  padding: 10px 100px 10px 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 14px;
-}
-#footer2 .lower {
-  margin-top: 30px;
-}
-#footer2 .lower .inner {
-  width: 1180px;
-  margin: 0 auto;
-  position: relative;
-}
-#footer2 .lower .inner address {
-  font-style: unset;
-  font-size: 14px;
-  margin-bottom: 10px;
-  line-height: 1.3;
-  color: #999;
-  font-weight: 100;
-}
-#footer2 .lower .inner address p {
-  margin-bottom: 5px;
-}
-#footer2 .lower .inner address p:last-of-type {
-  margin-bottom: 30px;
-}
-#footer2 .lower .inner #footmenu a {
-  color: #aaa;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 1.2;
-  margin-right: 20px;
-}
-#footer2 .lower .inner .callCenter {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
-  color: #bbbbbb;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  font-weight: 100;
-}
-#footer2 .lower .inner .callCenter .call {
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 1;
-  color: #999;
-  margin-top: 10px;
-}
+@media screen and (max-width: 1179px) {
+  /* 조직도 */
+  #organization {
+    margin-bottom: 120px;
+  }
+  #organization .inner {
+    width: 1180px;
+    margin: 0 auto;
+  }
+  #organization .inner > p {
+    font-size: 13px;
+    font-weight: 100;
+  }
+  #organization .inner > h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  #organization .inner > h3 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 60px;
+  }
+  #organization .inner .first {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  #organization .inner .first > li {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  #organization .inner .first > li .owner {
+    background: cornflowerblue;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 250px;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  #organization .inner .first > li .owner::before {
+    content: "";
+    display: block;
+    width: 978px;
+    height: 1px;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #bccceb;
+  }
+  #organization .inner .first > li .second::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #organization .inner .first > li .second > li {
+    float: left;
+    text-align: center;
+  }
+  #organization .inner .first > li .second > li div {
+    width: 200px;
+    background: #fff;
+    border-bottom: 1px solid #bccceb;
+    font-weight: 100;
+    color: #333;
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  #organization .inner .first > li .second > li div h3 {
+    width: 100%;
+    text-align: center;
+    background: #e4eaf4;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    border-top: 1px solid #bccceb;
+    border-bottom: 1px solid #bccceb;
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  #organization .inner .first > li .second > li div::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 66px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #bccceb;
+  }
+  #organization .inner .first > li .second .seconCenter {
+    margin: 0 50px;
+  }
+  #organization .inner .first > li .second .seconCenter > div {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  #organization .inner .first > li .second .seconCenter > div::before {
+    content: "";
+    display: block;
+    width: 452px;
+    height: 1px;
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #bccceb;
+  }
+  #organization .inner .first > li .second .seconCenter > div::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #bccceb;
+  }
+  #organization .inner .first > li .second .seconCenter .third::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #organization .inner .first > li .second .seconCenter .third li {
+    margin: 50px 13px 0;
+    float: left;
+  }
+  #organization .inner .first > li .second .seconCenter .third li div::after {
+    height: 25px;
+  }
+  #organization .inner .first > li .second .seconCenter .third li:nth-of-type(2) div::after {
+    height: 50px;
+  }
 
+  #work {
+    padding-bottom: 150px;
+  }
+  #work > .inner {
+    padding-top: 50px;
+    width: 1180px;
+    margin: 0 auto;
+    color: #333;
+  }
+  #work > .inner > p {
+    font-size: 13px;
+    font-weight: 100;
+  }
+  #work > .inner > h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  #work > .inner > h3 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 100px;
+  }
+  #work > .inner > article .box {
+    width: 33%;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  #work > .inner > article .box .inner {
+    width: 100%;
+    padding: 0 20px;
+    height: 100%;
+  }
+  #work > .inner > article .box .inner .caption {
+    border-bottom: 2px solid #333;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #888;
+  }
+  #work > .inner > article .box .inner h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  #work > .inner > article .box .inner p {
+    font-weight: 100;
+    margin-bottom: 15px;
+  }
+  #work > .inner > article .box:hover {
+    background: #d4e3ff;
+  }
+}
 body {
   overflow-x: hidden;
 }
@@ -2419,13 +2541,6 @@ body {
   right: 56%;
   z-index: -1;
 }
-#map .inner #mapBox {
-  width: 1180px;
-  height: 500px;
-  background: #000;
-  transform: translate(290px, 100px);
-  position: relative;
-}
 #map .inner .branch {
   position: absolute;
   width: 400px;
@@ -2521,16 +2636,28 @@ body {
   right: -15px;
   opacity: 1;
 }
+#map .inner #mapBox {
+  width: 1180px;
+  height: 500px;
+  background: #000;
+  transform: translate(290px, 100px);
+  position: relative;
+}
 
 @media screen and (max-width: 1179px) {
+  body {
+    overflow-x: inherit;
+  }
+
   #contact {
     padding: 80px 20px 0;
+    width: 100%;
   }
   #contact .inner {
     width: 100%;
   }
   #contact .inner h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   #contact .inner h2 span {
@@ -2539,11 +2666,13 @@ body {
   #contact .inner > p {
     font-size: 14px;
     margin-bottom: 50px;
-    padding-right: 200px;
+    padding-right: 180px;
   }
   #contact .inner form {
-    padding: 0 20px;
-    box-sizing: border-box;
+    width: 100%;
+  }
+  #contact .inner form fieldset {
+    width: 100%;
   }
   #contact .inner form fieldset table {
     width: 100%;
@@ -2558,33 +2687,26 @@ body {
     margin-bottom: 10px;
   }
   #contact .inner form fieldset table tr td input[type=text], #contact .inner form fieldset table tr td input[type=password] {
-    background: #efefef;
-    border: none;
-    width: 100%;
     height: 50px;
     padding: 20px;
-    border-radius: 3px;
   }
   #contact .inner form fieldset table tr td select {
-    background: #efefef;
-    border: none;
-    width: 200px;
+    width: 100%;
     height: 50px;
     padding: 10px;
-    border-radius: 3px;
   }
   #contact .inner form fieldset table tr.num select {
-    width: 200px;
+    width: 50%;
     margin-right: 10px;
   }
   #contact .inner form fieldset table tr.num input[type=text] {
-    width: 290px;
+    width: 50%;
   }
   #contact .inner form fieldset table tr.eMail input[type=text] {
-    width: 270px;
+    width: 40%;
   }
   #contact .inner form fieldset table tr.eMail select {
-    width: 200px;
+    width: 40%;
   }
   #contact .inner form fieldset table tr.title {
     width: 100%;
@@ -2594,7 +2716,7 @@ body {
     width: 1080px;
   }
   #contact .inner form fieldset table tr.title textarea {
-    width: 1080px;
+    width: 100%;
     border: none;
     background: #efefef;
     padding: 20px;
@@ -2607,7 +2729,7 @@ body {
     background: cornflowerblue;
     color: #fff;
     border: none;
-    width: 200px;
+    width: 150px;
     height: 50px;
     padding: 10px;
     border-radius: 3px;
@@ -2616,12 +2738,13 @@ body {
 
   #map {
     padding: 100px 0 10px 0;
+    width: 100%;
   }
   #map h2 {
     width: 100%;
     margin-bottom: 50px;
-    font-size: 30px;
-    margin-left: 20px;
+    font-size: 25px;
+    margin-left: 15px;
   }
   #map .inner {
     width: 100%;
@@ -2631,22 +2754,13 @@ body {
     display: none;
   }
   #map .inner::after {
-    display: none;
+    display: block;
     content: "";
     clear: both;
   }
-  #map .inner #mapBox {
-    width: 60%;
-    height: 500px;
-    background: #000;
-    transform: translate(0, 0);
-    position: relative;
-    float: right;
-  }
   #map .inner .branch {
     position: relative;
-    width: 40%;
-    height: 500px;
+    width: 100%;
     z-index: 2;
     float: left;
     top: inherit;
@@ -2660,18 +2774,20 @@ body {
     width: 100%;
     padding: 20px;
   }
+  #map .inner .branch > li a::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
   #map .inner .branch > li a .comName {
     font-size: 18px;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  #map .inner .branch > li a .comName span {
-    display: inline-block;
-    padding: 10px;
-    position: relative;
+    margin-bottom: 0px;
+    width: 50%;
+    float: left;
   }
   #map .inner .branch > li a .list {
-    width: 100%;
+    width: 50%;
+    float: left;
   }
   #map .inner .branch > li a .list p {
     font-size: 12px;
@@ -2681,6 +2797,18 @@ body {
     width: 20px;
     margin-right: 10px;
     vertical-align: middle;
+  }
+  #map .inner .branch > li a .list p:nth-of-type(2) {
+    display: none;
+  }
+  #map .inner #mapBox {
+    width: 100%;
+    height: 400px;
+    background: #000;
+    transform: translate(0, 0);
+    position: relative;
+    float: right;
+    margin-bottom: 50px;
   }
 }
 #galTitle {
