@@ -86,7 +86,7 @@ function openSub() {
                 $("<p>").text("다양한 패턴의 무늬를 종이에 새겼습니다."),
                 $("<span>").text("#페스티발"),$("<span>").text("#매직펜트"),$("<span>").text("#매직니트"),
                 $("<div class='menuImg'>").append(
-                    $("<img src='../img/menu/menu1.jpg'>")
+                    $("<img src='img/menu/menu1.jpg'>")
                 )
             )
         )
