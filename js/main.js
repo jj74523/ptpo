@@ -10,7 +10,7 @@ var $menuMo = $(".menuMo");
 
 //태블릿-모바일 메뉴
 
- if($(window).width() < 1179){    
+ if($(window).width() <= 1179){    
         openSub = false;
         $btnCall.on("click",function(){
             $(".menuMo").addClass("on");
@@ -25,13 +25,13 @@ var $menuMo = $(".menuMo");
 $header.on("mouseenter focusin", openSub);
 $header.on("mouseleave focusout", closeSub);
 
+
 $gnb.on("mouseenter focusIn",function(){
     $(this).children("a").addClass("on");
     var target = $(this).children("a").attr("data-menu");
     callData(target);
 
 });
-
 
 
 $gnb.on("mouseleave focusout",function(){
@@ -73,7 +73,7 @@ function openSub() {
             display:"none"
         }).append(
             $("<div class='banner'>").css({
-                width:"30%",
+                width:"28vw",
                 height:"100%",
                 position:"absolute",
                 top:0,
@@ -108,7 +108,6 @@ function openSub() {
 
 }
 
-
 function callData(target) {
     $.ajax({
         url:target
@@ -121,7 +120,6 @@ function callData(target) {
     })
 }
 
-
 function closeSub() {
     $gnb_ul.stop().slideUp(speed/2);
     $(".bgGnb").stop().slideUp(speed/2, function(){
@@ -132,15 +130,5 @@ function closeSub() {
         $(this).remove();
     });
 }
-
-
-/* 모바일 */ 
-
-
-
-// btnCall.onclick = function(){
-//     btnCall.classList.toggle("on");
-//     menuMo.classList.toggle("on");
-// }
 
 
