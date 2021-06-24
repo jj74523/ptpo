@@ -389,9 +389,6 @@ body {
 
 @media screen and (max-width:1179px) {
 
-    body {
-        overflow-x:inherit;
-    }
 
     #contact {
         padding: 80px 20px 0;
@@ -399,7 +396,6 @@ body {
 
         .inner {
             width:100%;
-            margin:0 auto;
     
             h2 {
                 font-size: 26px;
@@ -419,7 +415,6 @@ body {
             form {
         
                 fieldset {
-                    width:100%;
 
                     table {
                         width:100%;
@@ -431,39 +426,25 @@ body {
                             margin-bottom: 30px;
                             
                             th {
-                                box-sizing: border-box;
                                 font-size: 15px;
                                 font-weight: 100;
-                                display: inline-block;
-                                margin-bottom: 10px;
     
                             }
                             td {
-                                display: block;
     
                                 input[type=text], input[type=password] {
-                                    background:#efefef;
-                                    border:none;
                                     width:100%;
-                                    height:50px;
-                                    padding:20px;
-                                    border-radius: 3px;
                                 }
     
                                 select {
-                                    background:#efefef;
-                                    border:none;
                                     width:100%;
-                                    height:50px;
-                                    padding:10px;
-                                    border-radius: 3px;
                                 }
 
                             }
         
                             &.num {
                                         select  {
-                                            width:40%;
+                                            width:41%;
                                             margin-right: 10px;
                                         }
         
@@ -486,18 +467,12 @@ body {
     
                             &.title {
                                 width:100%;
-                                display: block;
-    
                                 input[type=text]  {
                                     width:100%;
-    
+
                                 }
                                 textarea {
                                     width:100%;
-                                    border:none;
-                                    background:#efefef;
-                                    padding:20px;
-                                    resize: none;
                                 }
     
                             }
@@ -507,17 +482,193 @@ body {
                     }
         
                     .sbt {
-                        text-align: center;
         
                         input[type=submit] {
-                            background:cornflowerblue;
-                            color:#fff;
-                            border:none;
                             width:200px;
-                            height:50px;
-                            padding:10px;
-                            border-radius: 3px;
-                            text-align: center;
+                        }
+                    }
+        
+                }
+        
+        
+            }
+        
+    
+        }
+    
+        
+    
+    
+    }
+    
+    #map {
+        padding:100px 0 10px 0;
+        width:100%;
+
+        h2 {
+            width:100%;
+            margin-bottom: 50px;
+            font-size: 25px;
+            margin-left: 15px;
+            
+        }
+    
+        .inner {
+            width:100%;
+            position: relative;
+    
+             &::before {
+                display: none;
+            }
+    
+             &::after {
+                display: block;
+                content: '';
+                clear:both;
+            }
+
+            .branch {
+                position: relative;
+                width:100%;
+                z-index:2;
+                float:left;
+                top: inherit;
+                left: inherit;
+                
+        
+                > li{
+                    width:100%;
+                    height: calc(100%/3);
+    
+                    a {
+                        width:100%;
+                        padding:20px;
+                        
+                        &::after {
+                            content:'';
+                            display:block;
+                            clear:both;
+                        }
+                        
+                        .comName {
+                            font-size:18px;
+                            margin-bottom: 0px;
+                            width: 50%;
+                            float:left;
+    
+                        }
+    
+                            .list {
+                                width:50%;
+                                float:left;
+    
+                                p {
+                                    font-size: 12px;
+                                    margin-bottom: 0;
+    
+                                    img {
+                                        width:20px;
+                                        margin-right: 10px;
+                                       vertical-align: middle;
+        
+                                    }
+
+                                    &:nth-of-type(2) {
+                                        display: none;
+                                    }
+    
+                                }
+                                
+                                
+                            }
+
+                       
+                    }
+    
+                }
+            }
+    
+            
+            #mapBox{
+                width:100%; 
+                height:400px; 
+                background:#000; 
+                transform: translate(0, 0);
+                position: relative; 
+                float:right;
+                margin-bottom: 50px;
+            }
+        
+           
+            
+
+        }
+        
+    
+    }
+
+}
+
+
+@media screen and (max-width:539px) {
+
+
+    #contact {
+
+        .inner {
+    
+            h2 {
+                font-size: 22px;
+
+                span {
+                    font-size: 44px;
+                }
+            }
+        
+            >p {
+                margin-bottom: 60px;
+                padding-right: 20px;
+            }
+        
+            form {
+        
+                fieldset {
+
+                    table {
+                        margin-bottom: 0px;
+                         
+                        tr {
+                            width:100%;
+                            margin-bottom: 10px;
+                            
+                            th {
+                                font-size: 14px;
+                            }
+
+                            &.num {
+                                        select  {
+                                            width:38%;
+                                            margin-right: 5px;
+                                        }
+
+                            }
+        
+                            &.eMail {
+    
+                                    input[type=text]  {
+                                        width:40%;
+                                    }
+
+                            }
+        
+                        }
+        
+                    }
+        
+                    .sbt {
+                        margin-bottom: 50px;
+                        input[type=submit] {
+                            width:100%;
                         }
                     }
         
