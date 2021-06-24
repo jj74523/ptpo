@@ -69,14 +69,8 @@
 
 
 
-
-
-
-
 var container = document.querySelector("#mapBox");
 var branch_btns = document.querySelectorAll(".branch li");
-
-
 var options = { 
 	center: new kakao.maps.LatLng(37.50615938104634,126.75255391880641), 
 	level: 3 

@@ -2465,6 +2465,7 @@ body {
 }
 #contact .inner form fieldset {
   border: none;
+  width: 100%;
 }
 #contact .inner form fieldset legend {
   display: none;
@@ -2726,25 +2727,23 @@ body {
 
   #contact {
     padding: 80px 20px 0;
-    width: 100%;
+    box-sizing: border-box;
   }
   #contact .inner {
     width: 100%;
+    margin: 0 auto;
   }
   #contact .inner h2 {
-    font-size: 20px;
+    font-size: 26px;
     margin-bottom: 20px;
   }
   #contact .inner h2 span {
-    font-size: 60px;
+    font-size: 50px;
   }
   #contact .inner > p {
     font-size: 14px;
     margin-bottom: 50px;
-    padding-right: 180px;
-  }
-  #contact .inner form {
-    width: 100%;
+    padding-right: 200px;
   }
   #contact .inner form fieldset {
     width: 100%;
@@ -2755,40 +2754,54 @@ body {
   }
   #contact .inner form fieldset table tr {
     width: 100%;
+    display: inline-block;
     margin-bottom: 30px;
   }
   #contact .inner form fieldset table tr th {
+    box-sizing: border-box;
     font-size: 15px;
+    font-weight: 100;
+    display: inline-block;
     margin-bottom: 10px;
   }
+  #contact .inner form fieldset table tr td {
+    display: block;
+  }
   #contact .inner form fieldset table tr td input[type=text], #contact .inner form fieldset table tr td input[type=password] {
+    background: #efefef;
+    border: none;
+    width: 100%;
     height: 50px;
     padding: 20px;
+    border-radius: 3px;
   }
   #contact .inner form fieldset table tr td select {
+    background: #efefef;
+    border: none;
     width: 100%;
     height: 50px;
     padding: 10px;
+    border-radius: 3px;
   }
   #contact .inner form fieldset table tr.num select {
-    width: 50%;
+    width: 40%;
     margin-right: 10px;
   }
   #contact .inner form fieldset table tr.num input[type=text] {
-    width: 50%;
+    width: 56%;
   }
   #contact .inner form fieldset table tr.eMail input[type=text] {
-    width: 40%;
+    width: 45%;
   }
   #contact .inner form fieldset table tr.eMail select {
-    width: 40%;
+    width: 50%;
   }
   #contact .inner form fieldset table tr.title {
     width: 100%;
     display: block;
   }
   #contact .inner form fieldset table tr.title input[type=text] {
-    width: 1080px;
+    width: 100%;
   }
   #contact .inner form fieldset table tr.title textarea {
     width: 100%;
@@ -2804,7 +2817,7 @@ body {
     background: cornflowerblue;
     color: #fff;
     border: none;
-    width: 150px;
+    width: 200px;
     height: 50px;
     padding: 10px;
     border-radius: 3px;
