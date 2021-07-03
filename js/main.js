@@ -21,10 +21,8 @@ var $menuMo = $(".menuMo");
         })
 }
 
-
 $header.on("mouseenter focusin", openSub);
 $header.on("mouseleave focusout", closeSub);
-
 
 $gnb.on("mouseenter focusIn",function(){
     $(this).children("a").addClass("on");
@@ -45,7 +43,6 @@ $skipNavi_a.on("focusin",function(){
 $skipNavi_a.on("focusout",function(){
     $(this).removeClass("on"); 
 });
-
 
 function getSubMaxHeight(){
     var ht_max = 0;
@@ -130,5 +127,56 @@ function closeSub() {
         $(this).remove();
     });
 }
+
+
+
+
+/* 메인 슬라이드 */ 
+
+
+const section = $("section");
+const article = section.children("article");
+const navi_li =$(".navi li");
+const btnPrev = $(".btnPrev");
+const btnNext = $(".btnNext");
+const len = article.length;
+let active = 1;
+
+
+btnNext.on("click", e=>{
+    e.preventDefault();
+    (active == len) ? active =1 :active++;
+    activation(active); 
+});
+
+btnPrev.on("click",e=>{
+    e.preventDefault();
+
+    (active ==1) ? active = len : active--;
+    activation(active); 
+});
+
+
+navi_li.on("click", e => {
+    e.preventDefault();
+    active = $(e.currentTarget).index()+1;
+    activation(active); 
+});
+
+
+
+function activation(index) {
+    section.removeClass();
+    section.addClass("on"+index);
+    
+    navi_li.removeClass("on");
+    navi_li.eq(index-1).addClass("on");
+
+    article.addClass("off");
+    article.eq(index-1).removeClass("off");
+    
+}
+
+
 
 
