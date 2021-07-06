@@ -17,6 +17,7 @@ ul,ol,li {list-style:none;}
 a {text-decoration:none;}
 
 
+
 /* tab 이동 */ 
 #skipNavi li a{
     display:block; 
@@ -519,7 +520,7 @@ figure {
     height:100vh;
     overflow:hidden;
     position:relative;
-
+    margin-bottom: 100px;
     >section {
         width:100%;
         height:100%;
@@ -818,14 +819,84 @@ figure {
 
             h1 {
                 font-size: 2vw;
+                margin-bottom: 20px;
             }
 
+            .more {
+                width: 100%;
+                
+                    a {
+                        display: inline-block;
+                        text-align: left;
+                        text-align: right;
+                        color:#333;
+                        font-size: 14px;
+                        position: relative;
+
+                        span:nth-of-type(1) {
+                            position: absolute;
+                            top: 5px;
+                            right: - 20px;
+                            width:100px;
+                            transition:0.5s;
+                            opacity: 0;
+
+                        }
+                        
+                        span:nth-of-type(2) {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width:30px;
+                            height:30px;
+                            display: inline-block;
+                            border:1px solid #bbb;
+                            border-radius: 30px;
+                            transition: 0.5s;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-left: 10px;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top:50%;
+                                left:50%;
+                                transform: translate(-50%,-50%);
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                border-top: 4px solid transparent;
+                                border-left: 6px solid #888;
+                                border-bottom: 4px solid transparent;
+                
+                            }
+                        }
+            
+                        &:hover {
+            
+                            span:nth-of-type(1) {
+                                opacity: 1;
+                                right:40px;
+                            }
+                            span:nth-of-type(2) {
+                                border:1px solid cornflowerblue;
+                                background:cornflowerblue;
+
+                                &::after {
+                                    border-left: 6px solid #fff;
+                                }
+                            }
+                        }
+                    }
+
+            }
         }
 
 
     }
     .pic {
-        width: 1180px;
+        width: 1150px;
         height: 200px;
         overflow: hidden;
         display: inline-block;
@@ -846,6 +917,144 @@ figure {
 
 }
 
+
+#about {
+    .inner {
+        width:1180px;
+        margin:0 auto;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            clear:both;
+            height:1100px;
+            background:#eee;
+            width:1300px;
+            margin-left: -50px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+
+            .aboutTit {
+                width: 30%;
+                h1 {
+                    font-size: 1.6vw;
+                }
+            }
+
+            .imgBox1 {
+                width:60%;
+                min-height:400px;
+                position: absolute;
+                right:0;
+                top:0;
+                overflow: hidden;
+                
+                img {
+                    width: 100%;
+                }
+            }
+
+            .imgBox2 {
+                width: 28%;
+                min-height:500px;
+                position: absolute;
+                top:200px;
+                left:0;
+                overflow: hidden;
+
+                img {
+                   width:300%;
+                }
+            }
+            .aboutTxt {
+                width: 60%;
+                position: absolute;
+                right:0;
+                top:600px;
+                color:#333;
+
+
+                h2 {
+                    font-size: 1.5vw;
+                    margin-bottom: 20px;
+                    
+                }
+                h3 {
+                    font-size: 0.8vw;
+                    font-weight: 100;
+                }
+            }
+
+            .imgBox3 {
+                position: absolute;
+                width: 60%;
+                right:0;
+                top:850px;
+                overflow: hidden;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .imgBox4 {
+                position: absolute;
+                width: 55%;
+                left:0%;
+                top:950px;
+                overflow: hidden;
+                z-index: 2;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+
+    }
+}
+
+
+#product {
+    .inner {
+        border: 1px solid red;
+
+        &::after {
+            content:'';
+            display:block;
+            clear:both;
+        }
+        
+        h1 {
+            width:20%;
+            float:left;
+            margin-left: 230px;
+            transform: rotate(-90deg);
+            text-align: right;
+            border: 1px solid blue;
+        }
+        
+        .wrap {
+            width:50%;
+            float:right;
+
+            ul {
+                display:flex;
+                justify-content: center;
+                li {
+                    height: 600px;
+
+                    overflow: hidden;
+                }
+            }
+
+        }
+        
+    }
+}
 
 
 
