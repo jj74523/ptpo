@@ -8,18 +8,7 @@ var doneClose = true;
 var $btnCall =$(".btnCall");
 var $menuMo = $(".menuMo");
 
-//태블릿-모바일 메뉴
 
- if($(window).width() <= 1179){    
-        openSub = false;
-        $btnCall.on("click",function(){
-            $(".menuMo").addClass("on");
-        });
-        
-        $(".close").on("click",function(){
-            $(this).parent(".menuMo").removeClass("on");
-        })
-}
 
 $header.on("mouseenter focusin", openSub);
 $header.on("mouseleave focusout", closeSub);
@@ -129,10 +118,25 @@ function closeSub() {
 }
 
 
+//태블릿-모바일 메뉴
 
+if($(window).width() <= 1179){ 
+    var pc = openSub();
+    $(pc).hide();
+
+    $btnCall.on("click",function(){
+        $(".menuMo").addClass("on");
+
+    });
+    
+    $(".close").on("click",function(){
+        $(this).parent(".menuMo").removeClass("on");
+        
+    })
+
+}
 
 /* 메인 슬라이드 */ 
-
 
 const section = $("section");
 const article = section.children("article");
@@ -164,7 +168,6 @@ navi_li.on("click", e => {
 });
 
 
-
 function activation(index) {
     section.removeClass();
     section.addClass("on"+index);
@@ -176,6 +179,7 @@ function activation(index) {
     article.eq(index-1).removeClass("off");
     
 }
+
 
 
 

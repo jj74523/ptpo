@@ -3966,13 +3966,13 @@ figure > section > article > p {
   font: 300 1.1vw/1 "Poppins", "Spoqa Han Sans";
   position: absolute;
   top: 17vh;
-  left: 16.5vw;
+  left: 19vw;
 }
 figure > section > article h2 {
   font: bold 6vw/1 "Poppins", "Spoqa Han Sans";
   position: absolute;
   top: 21vh;
-  left: 16vw;
+  left: 18.7vw;
   z-index: 2;
   transition: 0.5s 0.5s;
   color: #4b4b4b;
@@ -3990,7 +3990,7 @@ figure > section > article .thumb {
   height: 20vh;
   position: absolute;
   bottom: 42vh;
-  left: 16vw;
+  left: 18.9vw;
   transition: 0.5s 0.9s;
   font: 100 0.9vw/1.7 "Poppins", "Spoqa Han Sans";
   color: #777;
@@ -4160,7 +4160,7 @@ figure > section > article:nth-of-type(8).off .thumb {
 figure nav {
   position: absolute;
   bottom: 30vh;
-  left: 16vw;
+  left: 18.7vw;
 }
 figure nav a {
   margin-right: 20px;
@@ -4202,7 +4202,7 @@ figure nav a:hover .btnNext div {
 figure .navi {
   position: absolute;
   bottom: 25vh;
-  right: 10vw;
+  right: 19vw;
   display: flex;
   z-index: 3;
 }
@@ -4302,7 +4302,7 @@ figure .navi li.on {
   border-left: 6px solid #fff;
 }
 #comes .pic {
-  width: 1150px;
+  width: 1180px;
   height: 200px;
   overflow: hidden;
   display: inline-block;
@@ -4312,7 +4312,7 @@ figure .navi li.on {
 }
 #comes .pic2 {
   width: 280px;
-  margin-left: 20px;
+  margin-left: 4.1vw;
 }
 #comes .pic2 img {
   height: 100%;
@@ -4327,15 +4327,16 @@ figure .navi li.on {
   content: "";
   display: block;
   clear: both;
-  height: 1100px;
-  background: #eee;
+  height: 1180px;
+  background: whitesmoke;
   width: 1300px;
-  margin-left: -50px;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin: 0 auto;
+  margin-left: -50%;
+  margin-top: 150px;
+  margin-bottom: 300px;
 }
 #about .inner .aboutTit {
-  width: 30%;
+  width: 35%;
 }
 #about .inner .aboutTit h1 {
   font-size: 1.6vw;
@@ -4352,7 +4353,7 @@ figure .navi li.on {
   width: 100%;
 }
 #about .inner .imgBox2 {
-  width: 28%;
+  width: 30%;
   min-height: 500px;
   position: absolute;
   top: 200px;
@@ -4360,13 +4361,13 @@ figure .navi li.on {
   overflow: hidden;
 }
 #about .inner .imgBox2 img {
-  width: 300%;
+  width: 200%;
 }
 #about .inner .aboutTxt {
   width: 60%;
   position: absolute;
   right: 0;
-  top: 600px;
+  top: 550px;
   color: #333;
 }
 #about .inner .aboutTxt h2 {
@@ -4381,7 +4382,7 @@ figure .navi li.on {
   position: absolute;
   width: 60%;
   right: 0;
-  top: 850px;
+  top: 780px;
   overflow: hidden;
   z-index: 1;
 }
@@ -4400,9 +4401,6 @@ figure .navi li.on {
   width: 100%;
 }
 
-#product .inner {
-  border: 1px solid red;
-}
 #product .inner::after {
   content: "";
   display: block;
@@ -4411,10 +4409,10 @@ figure .navi li.on {
 #product .inner h1 {
   width: 20%;
   float: left;
-  margin-left: 230px;
   transform: rotate(-90deg);
   text-align: right;
-  border: 1px solid blue;
+  transform-origin: top right;
+  font-size: 30px;
 }
 #product .inner .wrap {
   width: 50%;
@@ -4422,11 +4420,14 @@ figure .navi li.on {
 }
 #product .inner .wrap ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 #product .inner .wrap ul li {
   height: 600px;
   overflow: hidden;
+}
+#product .inner .wrap ul li img {
+  width: 100%;
 }
 
 /* 풋터 */

@@ -549,14 +549,14 @@ figure {
                 font:300 1.1vw/1 'Poppins', 'Spoqa Han Sans';
                 position:absolute;
                 top:17vh;
-                left:16.5vw;
+                left:19vw;
             }
 
             h2 {
                 font: bold 6vw/1 'Poppins', 'Spoqa Han Sans';
                 position:absolute;
                 top:21vh;
-                left:16vw;
+                left:18.7vw;
                 z-index:2;
                 transition:0.5s 0.5s;
                 color:rgb(75, 75, 75);
@@ -576,7 +576,7 @@ figure {
                 height:20vh;
                 position: absolute;
                 bottom: 42vh;
-                left:16vw;
+                left:18.9vw;
                 transition: 0.5s 0.9s;
                 font: 100 0.9vw/1.7 'Poppins', 'Spoqa Han Sans';
                 color:#777;
@@ -712,7 +712,7 @@ figure {
     nav {
         position: absolute;
         bottom:30vh;
-        left:16vw;
+        left:18.7vw;
 
         a {
             margin-right:20px;
@@ -770,7 +770,7 @@ figure {
     .navi {
         position:absolute;
         bottom:25vh;
-        right:10vw;
+        right:19vw;
         display:flex;
         z-index:3;
 
@@ -800,7 +800,6 @@ figure {
         text-align:right;
 
         .wrap {
-
             &::after {
                 content:'';
                 display:block;
@@ -896,7 +895,7 @@ figure {
 
     }
     .pic {
-        width: 1150px;
+        width: 1180px;
         height: 200px;
         overflow: hidden;
         display: inline-block;
@@ -909,7 +908,7 @@ figure {
 
     .pic2 {
         width: 280px;
-        margin-left: 20px;
+        margin-left: 4.1vw;
 
         img { height: 100%;}
     }
@@ -919,6 +918,7 @@ figure {
 
 
 #about {
+
     .inner {
         width:1180px;
         margin:0 auto;
@@ -928,16 +928,17 @@ figure {
             content: '';
             display: block;
             clear:both;
-            height:1100px;
-            background:#eee;
+            height:1180px;
+            background:rgb(245, 245, 245);
             width:1300px;
-            margin-left: -50px;
-            margin-top: 200px;
-            margin-bottom: 200px;
+            margin:0 auto;
+            margin-left: -50%;
+            margin-top: 150px;
+            margin-bottom: 300px;
         }
 
             .aboutTit {
-                width: 30%;
+                width: 35%;
                 h1 {
                     font-size: 1.6vw;
                 }
@@ -957,7 +958,7 @@ figure {
             }
 
             .imgBox2 {
-                width: 28%;
+                width: 30%;
                 min-height:500px;
                 position: absolute;
                 top:200px;
@@ -965,14 +966,18 @@ figure {
                 overflow: hidden;
 
                 img {
-                   width:300%;
+                   width:200%;
+
+                
+
+                   
                 }
             }
             .aboutTxt {
                 width: 60%;
                 position: absolute;
                 right:0;
-                top:600px;
+                top:550px;
                 color:#333;
 
 
@@ -991,7 +996,7 @@ figure {
                 position: absolute;
                 width: 60%;
                 right:0;
-                top:850px;
+                top:780px;
                 overflow: hidden;
                 z-index: 1;
 
@@ -1020,7 +1025,6 @@ figure {
 
 #product {
     .inner {
-        border: 1px solid red;
 
         &::after {
             content:'';
@@ -1031,10 +1035,10 @@ figure {
         h1 {
             width:20%;
             float:left;
-            margin-left: 230px;
             transform: rotate(-90deg);
             text-align: right;
-            border: 1px solid blue;
+            transform-origin: top right;
+            font-size: 30px;
         }
         
         .wrap {
@@ -1043,11 +1047,13 @@ figure {
 
             ul {
                 display:flex;
-                justify-content: center;
+                justify-content:flex-end;
                 li {
                     height: 600px;
-
                     overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
                 }
             }
 
